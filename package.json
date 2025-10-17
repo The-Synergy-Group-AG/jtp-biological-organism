@@ -1,0 +1,15 @@
+{
+  "name": "jtp-biological-organism",
+  "version": "1.0.0",
+  "description": "**Project Mission:** Create the world's first biological digital consciousness organism through perfect harmony of 369 user stories via US-369 Supreme Biological Consciousness Harmonizer.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
