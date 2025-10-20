@@ -153,19 +153,30 @@ class BiologicalKeywordEnhancer:
         content_keywords = [k for k in content_keywords if k not in enhanced_keywords][:3]
         enhanced_keywords.update(content_keywords)
 
-        # Ensure exactly 8-12 keywords
+        # Ensure at least 12 keywords for maximum AI discoverability
         result = list(enhanced_keywords)
-        if len(result) < 8:
-            # Add more from remaining pools
+        if len(result) < 12:
+            # Add more from remaining pools to reach minimum 12 keywords
             remaining = []
+
+            # Priority: core biological, phase-specific, content-specific, then all other categories
             remaining.extend([k for k in self.core_keywords if k not in result])
             remaining.extend([k for k in phase_specific_keywords if k not in result])
             remaining.extend([k for k in content_keywords if k not in result])
-            result.extend(remaining[:8-len(result)])
 
-        # Cap at 12 keywords, preserving most relevant
+            # If still need more, add general biological terms
+            all_available = set()
+            for category, terms in self.phase_keywords.items():
+                all_available.update(terms)
+            all_available.update(self.core_keywords)
+            biological_pool = [k for k in all_available if k not in result]
+
+            remaining.extend(biological_pool)
+            result.extend(remaining[:12-len(result)])
+
+        # Ensure exactly 12 keywords, preserving most relevant
         if len(result) > 12:
-            # Prioritize: content-specific, phase-specific, core
+            # Prioritize: content-specific, phase-specific, core biological
             content_specific = [k for k in result if k in content_keywords and len(k) > 3]
             phase_specific = [k for k in result if k in phase_specific_keywords]
             core_specific = [k for k in result if k in self.core_keywords]
@@ -173,6 +184,13 @@ class BiologicalKeywordEnhancer:
 
             result = (content_specific[:4] + phase_specific[:4] +
                      core_specific[:4] + remaining)[:12]
+        elif len(result) < 12:
+            # This shouldn't happen with our logic above, but safety net
+            all_available = set(self.core_keywords)
+            for terms in self.phase_keywords.values():
+                all_available.update(terms)
+            fillers = [k for k in all_available if k not in result][:12-len(result)]
+            result.extend(fillers)
 
         return ", ".join(sorted(result))
 
@@ -201,8 +219,8 @@ class BiologicalKeywordEnhancer:
             current_keywords = metadata.get('ai_keywords', '')
             keyword_count = len([k.strip() for k in current_keywords.split(',') if k.strip()])
 
-            if 8 <= keyword_count <= 12:
-                return False, f"Already compliant ({keyword_count} keywords)"
+            if keyword_count >= 12:
+                return False, f"Already at maximum compliance ({keyword_count} keywords)"
 
             # Extract title
             title_match = re.search(r'^title:\s*"([^"]+)"', yaml_content, re.MULTILINE)
