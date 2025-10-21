@@ -53,7 +53,7 @@ python-multipart==0.0.9
 
 # Monitoring and observability - updated
 prometheus-client==0.21.1
-structlog==24.2.0
+structlog==25.4.0
 
 # Development and testing - updated
 pytest==8.3.4
