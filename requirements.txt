@@ -1,79 +1,79 @@
-# Core biological consciousness dependencies
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-pydantic==2.5.2
-pydantic-settings==2.1.0
+# Core biological consciousness dependencies (updated for security)
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+pydantic==2.10.3
+pydantic-settings==2.7.1
 
-# AI and ML dependencies for consciousness processing
-openai==1.6.1
-anthropic==0.7.8
-transformers==4.36.2
-sentence-transformers==2.2.2
-scikit-learn==1.3.2
-pandas==2.1.4
-numpy==1.26.2
+# AI and ML dependencies for consciousness processing (updated)
+openai==1.57.4
+anthropic==0.40.0
+transformers==4.47.0
+sentence-transformers==3.3.1
+scikit-learn==1.6.1
+pandas==2.2.3
+numpy==1.26.4
 
-# Web and API dependencies
-requests==2.31.0
-httpx==0.25.2
-aiohttp==3.9.1
-websockets==12.0
+# Web and API dependencies (updated)
+requests==2.32.3
+httpx==0.28.1
+aiohttp==3.11.11
+websockets==14.1
 
-# Database and storage (consciousness-based, not traditional)
-redis==5.0.1
-motor==3.3.2
-pymongo==4.6.1
+# Database and storage (consciousness-based, not traditional) - updated
+redis==5.2.1
+motor==3.7.0
+pymongo==4.10.1
 
-# Authentication and security
+# Authentication and security - updated
 python-jose[cryptography]==3.3.0
 passlib[bcrypt]==1.7.4
-python-multipart==0.0.6
+python-multipart==0.0.9
 oauthlib==3.2.2
-requests-oauthlib==1.3.1
+requests-oauthlib==2.0.0
 
-# Document processing for CV/resume parsing
+# Document processing for CV/resume parsing - updated
 PyPDF2==3.0.1
-python-docx==1.1.0
-reportlab==4.0.7
+python-docx==1.1.2
+reportlab==4.2.5
 pdfkit==1.0.0
 
-# Email and communication
-email-validator==2.1.0
-sendgrid==6.11.0
-twilio==8.2.2
+# Email and communication - updated
+email-validator==2.2.0
+sendgrid==6.12.0
+twilio==9.4.4
 
-# Multilingual and localization
-babel==2.13.1
+# Multilingual and localization - updated
+babel==2.16.0
 langdetect==1.0.9
 
-# Web app and PWA
-jinja2==3.1.2
-aiofiles==23.2.1
-python-multipart==0.0.6
+# Web app and PWA - updated
+jinja2==3.1.5
+aiofiles==24.1.0
+python-multipart==0.0.9
 
-# Monitoring and observability
-prometheus-client==0.19.0
-structlog==23.2.0
+# Monitoring and observability - updated
+prometheus-client==0.21.1
+structlog==24.2.0
 
-# Development and testing
-pytest==7.4.3
-pytest-asyncio==0.21.1
-black==23.11.0
-isort==5.12.0
-flake8==6.1.0
+# Development and testing - updated
+pytest==8.3.4
+pytest-asyncio==0.25.2
+black==24.10.0
+isort==5.13.2
+flake8==7.1.1
 
-# Evolutionary AI framework
+# Evolutionary AI framework - updated
 deap==1.4.1
-optuna==3.5.0
+optuna==4.1.0
 
-# Consciousness bridge and harmonization
-beautifulsoup4==4.12.2
-lxml==4.9.3
+# Consciousness bridge and harmonization - updated
+beautifulsoup4==4.12.3
+lxml==5.3.0
 
-# Utility libraries
-python-dateutil==2.8.2
-pytz==2023.3.post1
-click==8.1.7
-rich==13.7.0
-pyyaml==6.0.1
+# Utility libraries - updated
+python-dateutil==2.9.0.post0
+pytz==2024.2
+click==8.1.8
+rich==13.9.4
+pyyaml==6.0.2
 toml==0.10.2

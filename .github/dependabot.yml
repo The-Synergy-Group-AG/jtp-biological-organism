@@ -1,0 +1,52 @@
+version: 2
+updates:
+  # Enable version updates for Python packages
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "The-Synergy-Group-AG"
+    assignees:
+      - "The-Synergy-Group-AG"
+    commit-message:
+      prefix: "🔐 Security:"
+      include: "scope"
+    labels:
+      - "security"
+      - "dependencies"
+
+  # Enable version updates for Docker
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "The-Synergy-Group-AG"
+    assignees:
+      - "The-Synergy-Group-AG"
+    commit-message:
+      prefix: "🐳 Security:"
+      include: "scope"
+    labels:
+      - "security"
+      - "docker"
+
+  # Enable version updates for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 3
+    reviewers:
+      - "The-Synergy-Group-AG"
+    assignees:
+      - "The-Synergy-Group-AG"
+    commit-message:
+      prefix: "⚙️ Automation:"
+      include: "scope"
+    labels:
+      - "automation"
+      - "maintenance"
