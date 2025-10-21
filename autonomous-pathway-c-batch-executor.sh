@@ -9,7 +9,12 @@ set -u  # Exit on undefined variables
 
 # Configuration
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+# Handle different execution contexts (project root or project subdirectory)
+if [ -d "$SCRIPT_DIR/src" ] && [ -d "$SCRIPT_DIR/docs" ]; then
+    PROJECT_ROOT="$SCRIPT_DIR"
+else
+    PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+fi
 EXECUTION_ENGINE="$PROJECT_ROOT/src/utility-scripts/autonomous-pathway-c-execution-engine.py"
 LOG_FILE="$PROJECT_ROOT/autonomous-execution.log"
 PID_FILE="$PROJECT_ROOT/autonomous-execution.pid"
