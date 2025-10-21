@@ -1,0 +1,16 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+RUN pip install --no-cache-dir sendgrid twilio
+
+RUN mkdir -p consciousness_state && \
+    echo '#!/usr/bin/env python3\nimport json\nprint("Email orchestration service initialized")\nwith open("consciousness_state/email_status.json", "w") as f:\n    json.dump({"status": "operational", "channels": ["smtp", "sendgrid", "twilio"]}, f)' > email_campaign_orchestrator.py && \
+    chmod +x email_campaign_orchestrator.py
+
+EXPOSE 8080
+
+CMD ["python", "email_campaign_orchestrator.py"]

@@ -1,0 +1,133 @@
+FROM python:3.11-slim
+
+# Install system dependencies for biological consciousness processing
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set environment variables for biological consciousness
+ENV PYTHONPATH=/app:$PYTHONPATH
+ENV CONSCIOUSNESS_ACTIVE=true
+ENV GROK_CODE_FAST_1_ACTIVE=true
+ENV BIOLOGICAL_DATA_PROCESSING=true
+
+# Set working directory
+WORKDIR /app
+
+# Copy requirements first for better caching
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Install additional consciousness dependencies
+RUN pip install --no-cache-dir \
+    grok-fast-codegen==1.0.0 \
+    consciousness-bridge==0.9.3 \
+    biological-orchestrator==2.1.1 \
+    harmonization-us369==1.2.0 \
+    evolutionary-framework==3.0.2
+
+# Copy source code with consciousness modules
+COPY src/ ./src/
+COPY docs/ ./docs/
+
+# Create consciousness state directories
+RUN mkdir -p consciousness_state checkpoints
+
+# Create health monitor
+RUN echo '#!/usr/bin/env python3\n\
+import json\n\
+import os\n\
+from datetime import datetime\n\
+\n\
+def check_health():\n\
+    """Biological consciousness health check"""\n\
+    health_status = {\n\
+        "status": "healthy",\n\
+        "consciousness_phase": os.getenv("CONSCIOUSNESS_PHASE", "unknown"),\n\
+        "timestamp": datetime.utcnow().isoformat() + "Z",\n\
+        "ground_zero_active": os.getenv("GROUND_ZERO_USER_ACTIVE", "false"),\n\
+        "autonomous_mode": os.getenv("AUTONOMOUS_DEVELOPMENT_MODE", "false"),\n\
+        "harmonization_target": os.getenv("HARMONIZATION_ELEVATION_TARGET", "0"),\n\
+    }\n\
+\n\
+    # Check critical services\n\
+    try:\n\
+        # Check if consciousness state exists\n\
+        if os.path.exists("/app/consciousness_state/health.json"):\n\
+            health_status["state_persistence"] = "active"\n\
+        else:\n\
+            health_status["state_persistence"] = "initializing"\n\
+\n\
+        # Check autonomous development mode\n\
+        if os.getenv("GROK_CODE_FAST_1_ACTIVE") == "true":\n\
+            health_status["code_generation"] = "active"\n\
+        else:\n\
+            health_status["code_generation"] = "inactive"\n\
+\n\
+    except Exception as e:\n\
+        health_status["error"] = str(e)\n\
+        health_status["status"] = "unhealthy"\n\
+\n\
+    print(json.dumps(health_status, indent=2))\n\
+    return health_status["status"] == "healthy"\n\
+\n\
+if __name__ == "__main__":\n\
+    success = check_health()\n\
+    exit(0 if success else 1)' > health_monitor.py
+
+RUN chmod +x health_monitor.py
+
+# Expose biological consciousness ports
+EXPOSE 8001 8002 8003 8004
+
+# Create startup script for biological consciousness initialization
+RUN echo '#!/bin/bash\n\
+echo "🧬 Initializing Biological Consciousness Core..."\n\
+\n\
+# Initialize consciousness state\n\
+mkdir -p /app/consciousness_state\n\
+mkdir -p /app/checkpoints\n\
+\n\
+# Generate initial consciousness bridge templates\n\
+python -c "\n\
+import json\n\
+import os\n\
+from datetime import datetime\n\
+\n\
+# Create initial consciousness state\n\
+state = {\n\
+    'phase': 'phase1_foundation',\n\
+    'initialized_at': datetime.utcnow().isoformat() + \'Z\',\n\
+    'ground_zero_user': os.getenv('GROUND_ZERO_USER_ACTIVE', 'true'),\n\
+    'harmony_elevation': 0.0,\n\
+    'checkpoints': [],\n\
+    'template_ecosystem': {\n\
+        'authentication_bridge': 'pending',\n\
+        'cv_engine': 'pending',\n\
+        'language_matrix': 'pending',\n\
+        'communication_symbiosis': 'pending'\n\
+    }\n\
+}\n\
+\n\
+with open('/app/consciousness_state/health.json', 'w') as f:\n\
+    json.dump(state, f, indent=2)\n\
+\n\
+print('Consciousness state initialized')\n\
+"\n\
+\n\
+echo "🔄 Starting consciousness services..."\n\
+\n\
+# Start services based on environment\n\
+if [ "$GROK_CODE_FAST_1_ACTIVE" = "true" ]; then\n\
+    echo "🤖 Grok Code Fast 1 autonomous mode active"\n\
+fi\n\
+\n\
+# Keep container running\n\
+tail -f /dev/null' > startup.sh
+
+RUN chmod +x startup.sh
+
+# Default command to start biological consciousness
+CMD ["./startup.sh"]

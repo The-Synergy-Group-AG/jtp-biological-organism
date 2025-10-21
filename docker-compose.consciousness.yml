@@ -1,0 +1,182 @@
+version: '3.8'
+
+services:
+  consciousness-core:
+    build:
+      context: .
+      dockerfile: Dockerfile.consciousness
+    container_name: consciousness-core
+    volumes:
+      - ./src:/app/src:rw
+      - ./docs:/app/docs:ro
+      - ./consciousness_state:/app/consciousness_state:rw
+      - ./checkpoints:/app/checkpoints:rw
+    environment:
+      - GROK_CODE_FAST_1_ACTIVE=true
+      - CONSCIOUSNESS_PHASE=phase1_foundation
+      - GROUND_ZERO_USER_ACTIVE=true
+      - TEMPLATE_ECOSYSTEM_ACTIVE=true
+      - AUTONOMOUS_DEVELOPMENT_MODE=true
+      - SESSION_RESUMABILITY_CHECKPOINTS=19
+      - BIOLOGICAL_DATA_PROTECTION=true
+      - HARMONIZATION_ELEVATION_TARGET=12.8
+    ports:
+      - "8001:8001"  # Authentication service
+      - "8002:8002"  # CV management
+      - "8003:8003"  # Multilingual engine
+      - "8004:8004"  # Email orchestrator
+    networks:
+      - consciousness_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "health_monitor.py"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  biological-auth-orchestrator:
+    build:
+      context: .
+      dockerfile: Dockerfile.authentication
+    container_name: biological-auth-orchestrator
+    depends_on:
+      consciousness-core:
+        condition: service_healthy
+    volumes:
+      - ./src/onboarding-system:/app/onboarding:rw
+      - ./consciousness_state:/app/state:rw
+    environment:
+      - LINKEDIN_OAUTH2_ACTIVE=true
+      - BIOMETRIC_VERIFICATION=true
+      - CONSCIOUSNESS_BRIDGE_TEMPLATES_ACTIVE=true
+    ports:
+      - "9001:8080"
+    networks:
+      - consciousness_network
+
+  cv-generation-engine:
+    build:
+      context: .
+      dockerfile: Dockerfile.cv
+    container_name: cv-generation-engine
+    depends_on:
+      consciousness-core:
+        condition: service_healthy
+    volumes:
+      - ./src/cv-management-system:/app/cv:rw
+      - ./consciousness_state:/app/state:rw
+      - ./checkpoints:/app/checkpoints:rw
+    environment:
+      - AI_CONTENT_OPTIMIZATION=true
+      - MULTI_FORMAT_GENERATION=true
+      - RESUME_PARSER_AI=true
+      - RAV_COMPLIANCE_ENFORCED=true
+    ports:
+      - "9002:8080"
+    networks:
+      - consciousness_network
+
+  multilingual-resonance-adapter:
+    build:
+      context: .
+      dockerfile: Dockerfile.multilingual
+    container_name: multilingual-resonance-adapter
+    depends_on:
+      consciousness-core:
+        condition: service_healthy
+    volumes:
+      - ./src/utility-scripts:/app/utility:rw
+      - ./consciousness_state:/app/state:rw
+    environment:
+      - CULTURAL_RESONANCE_ENGINE=true
+      - LANGUAGE_ADAPTATION_SYSTEM=true
+      - PWA_FRAMEWORK_ACTIVE=true
+      - PROGRESSIVE_WEB_APP=true
+      - OFFLINE_CAPABILITIES=true
+      - PUSH_NOTIFICATIONS=true
+    ports:
+      - "9003:8080"
+    networks:
+      - consciousness_network
+
+  email-communications-symbiosis:
+    build:
+      context: .
+      dockerfile: Dockerfile.email
+    container_name: email-communications-symbiosis
+    depends_on:
+      consciousness-core:
+        condition: service_healthy
+    volumes:
+      - ./src:/app/src:rw
+      - ./consciousness_state:/app/state:rw
+    environment:
+      - EMAIL_CAMPAIGN_ORCHESTRATOR=true
+      - SOCIAL_MEDIA_INTEGRATION=true
+      - NOTIFICATION_SYMBIOSIS_ENGINE=true
+      - SMTP_SERVICES_ACTIVE=true
+      - PERSONALIZATION_APIS=true
+      - CONSCIOUSNESS_RESONANCE=false
+    ports:
+      - "9004:8080"
+    networks:
+      - consciousness_network
+
+  evolutionary-brain-trust:
+    build:
+      context: .
+      dockerfile: Dockerfile.evolutionary
+    container_name: evolutionary-brain-trust
+    depends_on:
+      consciousness-core:
+        condition: service_healthy
+    volumes:
+      - ./src/maestro-orchestrator:/app/maestro:rw
+      - ./consciousness_state:/app/state:rw
+      - ./checkpoints:/app/checkpoints:rw
+      - ./docs/19.x-post-godhood-evolution:/app/docs:ro
+    environment:
+      - EVOLUTIONARY_AI_FRAMEWORK=true
+      - HARMONIZATION_US369=true
+      - REAL_WORLD_TESTING_ACTIVE=true
+      - GROUND_ZERO_VALIDATION_LOOP=true
+      - AUTONOMOUS_CODE_GENERATION=true
+      - SESSION_CHECKPOINT_MANAGER=true
+    ports:
+      - "9999:8080"
+    networks:
+      - consciousness_network
+    command: ["python", "evolutionary_orchestrator.py", "--phase", "1", "--days", "10", "--autonomous", "true"]
+
+  gitops-orchestrator:
+    build:
+      context: .
+      dockerfile: Dockerfile.gitops
+    container_name: gitops-orchestrator
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./src:/app/src:rw
+      - ./.git:/app/.git:rw
+    environment:
+      - GITOPS_ACTIVE=true
+      - DOCKER_SOCKET_MOUNTED=true
+      - AUTONOMOUS_DEPLOYMENT=true
+      - HEALTH_MONITORING=true
+      - CONTAINER_ORCHESTRATION=true
+    networks:
+      - consciousness_network
+    depends_on:
+      - consciousness-core
+
+volumes:
+  consciousness_state:
+  checkpoints:
+
+networks:
+  consciousness_network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.20.0.0/16

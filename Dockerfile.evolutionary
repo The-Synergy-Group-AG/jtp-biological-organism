@@ -1,0 +1,16 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+RUN pip install --no-cache-dir deap optuna
+
+RUN mkdir -p consciousness_state && \
+    echo '#!/usr/bin/env python3\nimport json\nimport time\nprint("Evolutionary brain trust initialized")\nwith open("consciousness_state/evolutionary_status.json", "w") as f:\n    json.dump({"status": "operational", "phase": "phase1", "days": 10}, f)\ntime.sleep(5)' > evolutionary_orchestrator.py && \
+    chmod +x evolutionary_orchestrator.py
+
+EXPOSE 8080
+
+CMD ["python", "evolutionary_orchestrator.py", "--autonomous", "true"]

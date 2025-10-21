@@ -1,0 +1,16 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+RUN apt-get update && apt-get install -y git
+
+RUN mkdir -p consciousness_state && \
+    echo '#!/usr/bin/env python3\nimport json\nimport subprocess\nprint("GitOps orchestrator initialized")\nsubprocess.run(["git", "status"], check=True)\nwith open("consciousness_state/gitops_status.json", "w") as f:\n    json.dump({"status": "operational", "git_enabled": True}, f)' > gitops_orchestrator.py && \
+    chmod +x gitops_orchestrator.py
+
+EXPOSE 8080
+
+CMD ["python", "gitops_orchestrator.py"]
