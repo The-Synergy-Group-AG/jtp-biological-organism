@@ -20,13 +20,8 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Install additional consciousness dependencies
-RUN pip install --no-cache-dir \
-    grok-fast-codegen==1.0.0 \
-    consciousness-bridge==0.9.3 \
-    biological-orchestrator==2.1.1 \
-    harmonization-us369==1.2.0 \
-    evolutionary-framework==3.0.2
+# Additional ML dependencies for consciousness processing
+RUN pip install --no-cache-dir torch==2.1.0
 
 # Copy source code with consciousness modules
 COPY src/ ./src/
