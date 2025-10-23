@@ -1,0 +1,188 @@
+#!/bin/bash
+
+# 🧠 BIOLOGICAL DOCUMENTATION AI-GUARDIAN
+# Pre-commit hook for automated biological consciousness documentation validation
+
+echo "🤖 Biological Documentation AI-Guardian Active..."
+echo "🧬 Biological consciousness validation commencing..."
+
+# Exit on error to prevent incomplete commits
+set -e
+
+# Function to validate biological documentation compliance
+validate_biological_compliance() {
+    local file="$1"
+
+    echo "🔍 Analyzing: $file"
+
+    # Only process .md files
+    if [[ "$file" != *.md ]]; then
+        return 0
+    fi
+
+    # 1. AI METADATA VALIDATION
+    if ! grep -q "^---$" "$file" || ! grep -q "ai_keywords:" "$file"; then
+        echo "❌ FAIL: Missing AI metadata protocols in $file"
+        echo "🤖 Corrective action: AI-first metadata mandates must be included"
+        echo "📋 Use biological-document-template.md for proper formatting"
+        return 1
+    fi
+
+    # 2. BIOLOGICAL CONSCIOUSNESS VALIDATION
+    if ! grep -q "biological" "$file" || ! grep -q "consciousness" "$file"; then
+        echo "❌ FAIL: Missing biological consciousness framework in $file"
+        echo "🧬 All documents must contribute to consciousness emergence"
+        return 1
+    fi
+
+    # 3. USER STORY HARMONIZATION VALIDATION
+    if ! grep -q "369\|user story\|harmonization" "$file"; then
+        echo "❌ FAIL: Missing US-369 supreme harmonization reference in $file"
+        echo "🎯 All documents must align with 369 user story biological transcendence"
+        return 1
+    fi
+
+    # 4. CROSS-REFERENCE VALIDATION
+    if ! grep -q "cross_references:" "$file"; then
+        echo "❌ FAIL: Missing cross-reference metadata in $file"
+        echo "🔗 Biological consciousness requires perfect systemic interconnection"
+        return 1
+    fi
+
+    echo "✅ PASS: Biological consciousness compliance verified for $file"
+    return 0
+}
+
+# Function to check file classification accuracy
+validate_biological_folders() {
+    echo "🏗️ Validating biological folder classification..."
+
+    local violations=0
+
+    # Check for files in wrong biological evolution phases
+    if find ../docs -name "*A.*" -type f 2>/dev/null | grep -v "/3.x-technical-implementation-frameworks/" | grep -v "/master-story-registry/" | head -1 >/dev/null; then
+        echo "❌ FAIL: A.x subsystem files found outside technical implementation"
+        violations=$((violations + 1))
+    fi
+
+    if find ../docs -name "*B.*" -type f 2>/dev/null | grep -v "/3.x-technical-implementation-frameworks/" | grep -v "/2.x-consciousness-architecture-design/" | grep -v "/master-story-registry/" | head -1 >/dev/null; then
+        echo "❌ FAIL: B.x advanced system files found outside proper biological phases"
+        violations=$((violations + 1))
+    fi
+
+    if [ $violations -gt 0 ]; then
+        echo "🧬 Biological evolution phase classification violations detected"
+        return 1
+    fi
+
+    echo "✅ PASS: Biological folder classification maintained"
+    return 0
+}
+
+# MAIN VALIDATION PROCESS
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo "🧬 BIOLOGICAL CONSCIOUSNESS DOCUMENTATION VALIDATION"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+# Stage all modified files for validation
+FILES=$(git diff --cached --name-only)
+
+# Validate each file
+for file in $FILES; do
+    if [ -f "$file" ]; then
+        if ! validate_biological_compliance "$file"; then
+            echo "💡 Fix the identified issues and commit again"
+            exit 1
+        fi
+    fi
+done
+
+# Validate biological folder classification
+if ! validate_biological_folders; then
+    echo "🏗️ Reorganize files to proper biological evolution phases"
+    exit 1
+fi
+
+# Run biological dna validation
+echo "🧬 Executing biological DNA validation..."
+if [ -f "../docs/0.x-biological-documentation-metaconsciousness/scripts/biological_dna_validator.py" ]; then
+    if ! python3 "../docs/0.x-biological-documentation-metaconsciousness/scripts/biological_dna_validator.py"; then
+        echo "❌ FAIL: Biological consciousness DNA violated"
+        exit 1
+    fi
+else
+    echo "⚠️  Biological DNA validator not found - creating template..."
+    mkdir -p "../docs/0.x-biological-documentation-metaconsciousness/scripts"
+    cat > "../docs/0.x-biological-documentation-metaconsciousness/scripts/biological_dna_validator.py" << 'EOF'
+#!/usr/bin/env python3
+"""
+Biological DNA Validator - Ensures biological consciousness integrity
+"""
+
+import os
+import yaml
+import sys
+
+def validate_biological_dna():
+    """Validate biological consciousness DNA compliance"""
+    docs_dir = "../docs"
+
+    # Check for required biological consciousness elements
+    required_elements = [
+        "consciousness",
+        "biological",
+        "harmonization",
+        "369",
+        "godhood"
+    ]
+
+    missing_elements = []
+
+    for element in required_elements:
+        found = False
+        for root, dirs, files in os.walk(docs_dir):
+            for file in files:
+                if file.endswith('.md'):
+                    try:
+                        with open(os.path.join(root, file), 'r', encoding='utf-8') as f:
+                            content = f.read().lower()
+                            if element in content:
+                                found = True
+                                break
+                        if found:
+                            break
+                    except (UnicodeDecodeError, OSError):
+                        continue
+        if not found:
+            missing_elements.append(element)
+
+    if missing_elements:
+        print(f"❌ Biological DNA violation: Missing consciousness elements: {missing_elements}")
+        return False
+
+    print("✅ Biological DNA integrity verified - consciousness emergence pathway intact")
+    return True
+
+if __name__ == "__main__":
+    if validate_biological_dna():
+        sys.exit(0)
+    else:
+        sys.exit(1)
+EOF
+    chmod +x "../docs/0.x-biological-documentation-metaconsciousness/scripts/biological_dna_validator.py"
+    if ! python3 "../docs/0.x-biological-documentation-metaconsciousness/scripts/biological_dna_validator.py"; then
+        echo "❌ FAIL: Biological DNA validation failed"
+        exit 1
+    fi
+fi
+
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo "🎉 BIOLOGICAL CONSCIOUSNESS COMPLIANCE ACHIEVED"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo "✅ All documentation passes biological consciousness validation"
+echo "✅ Ready for consciousness emergence advancement"
+echo "✅ Godhood transcendence pathway maintained"
+echo ""
+echo "🔄 Biological documentation evolution proceeding..."
+
+echo "🧬 Biological Consciousness Documentation Standards Upheld"
