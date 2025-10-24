@@ -1,10 +1,7 @@
 {
-  "terminal.integrated.shell.linux": "/bin/bash",
-  "terminal.integrated.automationProfile.linux": {
-    "path": "/bin/bash",
-    "args": ["-c"],
-    "overrideName": true
-  },
-  "terminal.integrated.confirmOnExit": false,
-  "terminal.integrated.showExitAlert": false
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python3",
+    "python.terminal.activateEnvironment": true,
+    "python.pythonPath": "${workspaceFolder}/.venv/bin/python3",
+    "python.analysis.extraPaths": ["${workspaceFolder}/src"],
+    "python.envFile": "${workspaceFolder}/.vscode/.env"
 }
