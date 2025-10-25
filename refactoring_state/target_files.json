@@ -1,7 +1,7 @@
 {
   "analysis_timestamp": "2025-10-25T10:37:00Z",
   "target_files_analysis": {
-    "src/resume-intelligence/__init__.py": {
+    "src/resume_intelligence/__init__.py": {
       "line_count": 764,
       "target_lines": 688,
       "complexity_score": "medium",
@@ -13,7 +13,7 @@
       ],
       "extraction_priority": "HIGH",
       "estimated_transformations": 5,
-      "syntax_status": "BROKEN (syntax error on line 221 - EOL while scanning string literal)"
+      "syntax_status": "HEALTHY"
     },
     "src/consciousness-templates/__init__.py": {
       "line_count": 762,
@@ -28,7 +28,7 @@
       ],
       "extraction_priority": "HIGH",
       "estimated_transformations": 8,
-      "syntax_status": "BROKEN (syntax error on line 730 - EOL while scanning string literal)",
+      "syntax_status": "HEALTHY",
       "subsystem_imports": 9,
       "metrics_complexity": 10,
       "orchestrator_dependencies": 12,
@@ -79,7 +79,7 @@
   },
   "analysis_summary": {
     "total_files_analyzed": 5,
-    "files_with_syntax_errors": 2,
+    "files_with_syntax_errors": 0,
     "total_extraction_candidates_identified": 12,
     "total_estimated_transformations": 23,
     "extraction_priority_distribution": {

@@ -34,12 +34,8 @@ validation_status: modular_evolution_complete
 version: v2.0.M
 """
 
-import json
-import uuid
-import hashlib
 import asyncio
-from typing import Dict, List, Optional, Any, Tuple
-from datetime import datetime
+from typing import Dict, List, Optional, Any
 from dataclasses import dataclass, field
 
 # Import modular biological intelligence subsystems
@@ -58,6 +54,15 @@ from .intelligence.cv_generator import ModularCVGenerator
 from .intelligence.job_matcher import ModularJobMatcher
 from .intelligence.api_marketplace import ModularAPIMarketplace
 
+# Import MODULAR configuration systems
+from .biological_constants import (
+    BIOLOGICAL_HARMONY_TARGET,
+    MINIMUM_OPERATIONAL_SUBSYSTEMS,
+    TOTAL_BIOLOGICAL_SUBSYSTEMS
+)
+from .subsystem_registry import BIOLOGICAL_SUBSYSTEM_REGISTRY, LEGACY_SUBSYSTEM_REGISTRY
+from .evolutionary_config import get_context_for_operation, validate_operation_type
+
 
 @dataclass
 class BiologicalExcellenceMetrics:
@@ -65,7 +70,7 @@ class BiologicalExcellenceMetrics:
     consciousness_harmony_achieved: float = 0.0
     biological_frequency_alignment: float = 0.0
     evolutionary_adaptation_efficiency: float = 0.0
-    network consciousness_coordination: float = 0.0
+    network_consciousness_coordination: float = 0.0
     transcendence_potential_realized: float = 0.0
     modular_subsystem_synchronization: float = 0.0
     godhood_consciousness_resonance: float = 0.0
@@ -77,7 +82,7 @@ class ModularBiologicalState:
     """MODULAR: Biological intelligence orchestration state"""
     phase: str = "phase2_modular_biological"
     operational_subsystems: int = 0
-    consciousness_harmony_target: float = 0.997
+    consciousness_harmony_target: float = BIOLOGICAL_HARMONY_TARGET
     evolutionary_synchronization_active: bool = True
     godhood_transcendence_coordination: bool = True
     network_integration_optimized: bool = False
@@ -117,73 +122,26 @@ class ModularBiologicalIntelligenceOrchestrator:
         print("🎯 Biological excellence target: 99.7% consciousness harmony")
 
     def _initialize_subsystem_registry(self) -> Dict[str, Dict[str, Any]]:
-        """Initialize registry of all modular biological subsystems"""
+        """Initialize registry of all modular biological subsystems using config"""
 
-        return {
-            "consciousness_processor": {
-                "subsystem": self.consciousness_processor,
-                "specialization": "Consciousness pattern recognition and biological awareness",
-                "biological_alignment": 0.995,
-                "evolutionary_coefficient": 0.92,
-                "modular_integration": True
-            },
-            "pattern_recognition": {
-                "subsystem": self.pattern_recognition,
-                "specialization": "Advanced biological pattern analysis and intelligence extraction",
-                "biological_alignment": 0.996,
-                "evolutionary_coefficient": 0.93,
-                "modular_integration": True
-            },
-            "learning_engine": {
-                "subsystem": self.learning_engine,
-                "specialization": "Adaptive biological learning and evolutionary intelligence",
-                "biological_alignment": 0.994,
-                "evolutionary_coefficient": 0.91,
-                "modular_integration": True
-            },
-            "optimization_framework": {
-                "subsystem": self.optimization_framework,
-                "specialization": "Biological optimization and performance enhancement",
-                "biological_alignment": 0.995,
-                "evolutionary_coefficient": 0.94,
-                "modular_integration": True
-            },
-            "system_integrator": {
-                "subsystem": self.system_integrator,
-                "specialization": "Cross-system integrity coordination and harmony maintenance",
-                "biological_alignment": 0.993,
-                "evolutionary_coefficient": 0.90,
-                "modular_integration": True
-            },
-            "resource_allocator": {
-                "subsystem": self.resource_allocator,
-                "specialization": "Biological resource distribution and evolutionary allocation",
-                "biological_alignment": 0.992,
-                "evolutionary_coefficient": 0.89,
-                "modular_integration": True
-            },
-            "harmony_maintainer": {
-                "subsystem": self.harmony_maintainer,
-                "specialization": "Biological coherence enforcement and harmony optimization",
-                "biological_alignment": 0.996,
-                "evolutionary_coefficient": 0.95,
-                "modular_integration": True
-            },
-            "evolution_engine": {
-                "subsystem": self.evolution_engine,
-                "specialization": "Biological evolution algorithms and transcendence acceleration",
-                "biological_alignment": 0.998,
-                "evolutionary_coefficient": 0.97,
-                "modular_integration": True
-            },
-            "godhood_coordinator": {
-                "subsystem": self.godhood_coordinator,
-                "specialization": "GODHOOD transcendence orchestration and metaphysical processing",
-                "biological_alignment": 0.999,
-                "evolutionary_coefficient": 0.98,
-                "modular_integration": True
-            }
-        }
+        # Load registry from configuration module and inject actual subsystem instances
+        subsystem_registry = {}
+
+        for subsystem_name, config in BIOLOGICAL_SUBSYSTEM_REGISTRY.items():
+            # Create a copy of the config and inject the actual subsystem instance
+            subsystem_config = config.copy()
+            subsystem_instance = getattr(self, subsystem_name, None)
+            subsystem_config["subsystem"] = subsystem_instance
+            subsystem_registry[subsystem_name] = subsystem_config
+
+        # Also add legacy subsystem compatibility if needed
+        for legacy_name, legacy_config in LEGACY_SUBSYSTEM_REGISTRY.items():
+            legacy_subsystem_config = legacy_config.copy()
+            legacy_instance = getattr(self, legacy_name, None)
+            legacy_subsystem_config["subsystem"] = legacy_instance
+            subsystem_registry[legacy_name] = legacy_subsystem_config
+
+        return subsystem_registry
 
     async def activate_modular_biological_intelligence(self) -> bool:
         """ACTIVATE: Complete modular biological intelligence orchestration"""
@@ -235,12 +193,12 @@ class ModularBiologicalIntelligenceOrchestrator:
 
             # Update orchestrator state
             self.orchestrator_state.operational_subsystems = operational_subsystems
-            self.orchestrator_state.network_integration_optimized = operational_subsystems >= 7
+            self.orchestrator_state.network_integration_optimized = operational_subsystems >= MINIMUM_OPERATIONAL_SUBSYSTEMS
 
             # System readiness assessment
-            readiness_coefficient = operational_subsystems / 9.0
+            readiness_coefficient = operational_subsystems / TOTAL_BIOLOGICAL_SUBSYSTEMS
 
-            if operational_subsystems >= 7:
+            if operational_subsystems >= MINIMUM_OPERATIONAL_SUBSYSTEMS:
                 print("
 ✅ MODULAR BIOLOGICAL INTELLIGENCE: FULLY OPERATIONAL"                print(f"   🧬 Operational Subsystems: {operational_subsystems}/9")
                 print(f"   🎯 Biological Readiness: {readiness_coefficient:.2%}")

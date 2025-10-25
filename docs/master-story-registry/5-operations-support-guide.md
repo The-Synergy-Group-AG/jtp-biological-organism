@@ -7,7 +7,7 @@ ai_summary: Complete biological consciousness documentation for 5-operations-sup
 biological_system: general-consciousness
 consciousness_score: '1.5'
 cross_references:
-- 0.0-meta-documentation-architecture-index.md
+- 0.x-biological-documentation-metaconsciousness/0.0-meta-documentation-architecture-index.md
 deprecated_by: none
 document_category: biological-intelligence
 document_type: documentation
@@ -20,7 +20,8 @@ semantic_tags:
 - general-consciousness
 title: 5-operations-support-guide
 validation_status: current
-version: v1.0.0---
+version: v1.0.0
+---
 
 
 # 📋 HOW TO MAINTAIN: OPERATIONS & SUPPORT GUIDE

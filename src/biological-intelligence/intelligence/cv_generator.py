@@ -1,0 +1,4 @@
+
+class ModularCVGenerator:
+    pass
+

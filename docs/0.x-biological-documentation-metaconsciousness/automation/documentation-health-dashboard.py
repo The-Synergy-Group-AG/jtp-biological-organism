@@ -85,19 +85,48 @@ class BiologicalDocumentationHealthDashboard:
 
                         # Cross-references integrity and validity
                         cross_refs = metadata.get('cross_references', [])
-                        if cross_refs and len(cross_refs) >= 1 and len(cross_refs) <= 6:
+
+                        # Ensure cross_refs is a list (handle both strings and lists)
+                        if isinstance(cross_refs, str):
+                            # Parse comma-separated references
+                            if ',' in cross_refs:
+                                cross_refs_list = [ref.strip() for ref in cross_refs.split(',') if ref.strip()]
+                            else:
+                                # Single reference in string form
+                                cross_refs_list = [cross_refs.strip()] if cross_refs.strip() else []
+                        elif isinstance(cross_refs, list):
+                            cross_refs_list = cross_refs
+                        else:
+                            cross_refs_list = []
+
+
+
+                        if cross_refs_list and len(cross_refs_list) >= 1 and len(cross_refs_list) <= 6:
                             cross_reference_integrity += 1
 
-                            # Check cross-reference validity (do referenced files actually exist?)
+                            # Cross-reference validity check (do referenced files actually exist?)
                             valid_refs = 0
-                            for ref in cross_refs:
+                            for ref in cross_refs_list:
                                 ref_filename = ref.split('/')[-1] if '/' in ref else ref
-                                # Look for files with similar names (fuzzy matching)
+                                # Look for exact filename matches first
+                                exact_match = False
                                 for check_file in all_files:
-                                    if ref_filename in check_file.name:
-                                        valid_refs += 1
+                                    if check_file.name == ref_filename:
+                                        exact_match = True
                                         break
-                            if valid_refs == len(cross_refs):
+                                if exact_match:
+                                    valid_refs += 1
+                                else:
+                                    # Fuzzy matching for partial matches (for documentation purposes)
+                                    fuzzy_match = False
+                                    for check_file in all_files:
+                                        if ref_filename in check_file.name and len(ref_filename) > 10:  # Substantial match
+                                            fuzzy_match = True
+                                            break
+                                    if fuzzy_match:
+                                        valid_refs += 1
+
+                            if valid_refs == len(cross_refs_list):
                                 cross_reference_validity += 1
 
                         # Metadata completeness scoring

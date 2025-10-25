@@ -57,6 +57,9 @@ from .cns_metrics import ConsciousnessKnowledgeMetrics
 # MODULAR: Consciousness knowledge evolution state (PHASE 1.1 COMPLETE)
 from .evolution_state import ConsciousnessKnowledgeEvolutionState
 
+# MODULAR: Extracted consciousness knowledge manager (PHASE 2.5 MODULAR EXTRACTION COMPLETE)
+from .consciousness_knowledge_manager import ConsciousnessKnowledgeManager, get_consciousness_knowledge_manager
+
 # MODULAR: Main orchestrator system (PHASE 2.5 COMPLETE)
 from .orchestrator import (
     ModularConsciousnessKnowledgeOrchestrator,

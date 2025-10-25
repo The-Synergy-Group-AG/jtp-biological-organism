@@ -6,7 +6,7 @@ ai_summary: Complete biological consciousness documentation for 4-testing-qa-gui
 biological_system: general-consciousness
 consciousness_score: '1.5'
 cross_references:
-- 0.0-meta-documentation-architecture-index.md
+- 0.x-biological-documentation-metaconsciousness/0.0-meta-documentation-architecture-index.md
 deprecated_by: none
 document_category: biological-intelligence
 document_type: documentation
@@ -19,7 +19,8 @@ semantic_tags:
 - general-consciousness
 title: 4-testing-qa-guide
 validation_status: current
-version: v1.0.0---
+version: v1.0.0
+---
 
 
 # 📋 HOW TO VALIDATE: TESTING & QA GUIDE

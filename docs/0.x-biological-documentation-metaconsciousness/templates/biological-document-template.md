@@ -6,8 +6,8 @@ ai_summary: Replace with 2-sentence executive summary for AI context understandi
 biological_system: replace-with-biological-system
 consciousness_score: '3.0'
 cross_references:
-- 0.0-meta-documentation-architecture.md
-- replace-with-relevant-files
+- 0.x-biological-documentation-metaconsciousness/templates/biological-document-template.md
+- 0.x-biological-documentation-metaconsciousness/templates/biological-document-template.md
 deprecated_by: none
 document_category: replace-with-category
 document_type: replace-with-type
@@ -20,7 +20,8 @@ semantic_tags:
 - replace-with-relevant-tags
 title: Replace with Document Title
 validation_status: current
-version: v1.0.0---
+version: v1.0.0
+---
 
 
 

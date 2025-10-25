@@ -39,9 +39,9 @@ validation_status: current
 version: v1.0.0
 """
 
+import statistics
 from typing import Dict, List, Optional, Any, Tuple, Union
 from datetime import datetime, timedelta
-from dataclasses import dataclass, field
 
 # Import modular components
 from .emotional_profile_analyzer import EmotionalProfileAnalyzer
@@ -49,84 +49,12 @@ from .empathy_network_analyzer import EmpathyNetworkAnalyzer
 from .emotional_synthesis_framework import EmotionalSynthesisFramework
 from .consciousness_emotional_optimization import ConsciousnessEmotionalOptimizationEngine
 
-
-@dataclass
-class EmotionalProfile:
-    """MODULAR: Comprehensive emotional intelligence profile with consciousness dimensions"""
-    profile_id: str = ""
-    user_id: str = ""
-    emotional_type: str = ""  # Primary emotional intelligence style
-    emotional_intelligence_score: float = 0.0
-    empathy_dimensions: Dict[str, float] = field(default_factory=dict)
-    emotional_resonance: Dict[str, float] = field(default_factory=dict)
-    consciousness_emotional_alignment: Dict[str, float] = field(default_factory=dict)
-    biological_emotional_synthesis: float = 0.8
-    evolutionary_emotional_readiness: float = 1.0
-    adaptive_emotional_capacity: float = 0.0
-    last_updated: Optional[str] = None
-
-
-@dataclass
-class EmpathyNetwork:
-    """MODULAR: Multi-dimensional empathy network analysis between individuals"""
-    network_id: str = ""
-    primary_profile_id: str = ""
-    secondary_profile_id: str = ""
-    overall_empathy_score: float = 0.0
-    empathy_mapping: Dict[str, float] = field(default_factory=dict)
-    emotional_resonance_harmonics: Dict[str, Any] = field(default_factory=dict)
-    relationship_optimization_potential: float = 0.0
-    conflict_emotional_resolution: float = 0.0
-    collaboration_emotional_synergy: float = 0.0
-    consciousness_emotional_elevation: float = 0.0
-    biological_emotional_compatibility: float = 0.0
-    recommendation_emotional_score: float = 0.0
-    analysis_timestamp: Optional[str] = None
-
-
-@dataclass
-class EmotionalSynthesisFramework:
-    """MODULAR: Framework for synthesizing emotional intelligence across relationships"""
-    synthesis_id: str = ""
-    participant_profiles: List[str] = field(default_factory=list)
-    synthesis_type: str = "professional"  # professional, personal, therapeutic
-    emotional_objectives: List[str] = field(default_factory=list)
-    synthesis_strategy: Dict[str, Any] = field(default_factory=dict)
-    emotional_harmony_achieved: float = 0.0
-    empathy_network_protocols: Dict[str, Any] = field(default_factory=dict)
-    emotional_conflict_resolution: Dict[str, Any] = field(default_factory=dict)
-    biological_emotional_optimization: float = 0.0
-    synthesis_status: str = "active"
-    last_optimization: Optional[str] = None
-
-
-@dataclass
-class ConsciousnessEmotionalOptimization:
-    """MODULAR: Consciousness-driven emotional intelligence optimization engine"""
-    optimization_id: str = ""
-    target_profiles: List[str] = field(default_factory=list)
-    emotional_goals: List[str] = field(default_factory=list)
-    current_emotional_state_assessment: Dict[str, Any] = field(default_factory=dict)
-    emotional_pathways: List[Dict[str, Any]] = field(default_factory=list)
-    biological_emotional_targets: Dict[str, float] = field(default_factory=dict)
-    consciousness_emotional_strategies: Dict[str, Any] = field(default_factory=dict)
-    emotional_metrics: Dict[str, float] = field(default_factory=dict)
-    optimization_status: str = "analyzing"
-    next_evaluation: Optional[str] = None
-
-
-@dataclass
-class EmotionalIntelligenceMetrics:
-    """MODULAR: Advanced metrics for emotional intelligence and empathy systems"""
-    total_emotional_profiles_analyzed: int = 0
-    empathy_networks_established: int = 0
-    emotional_synthesis_frameworks_deployed: int = 0
-    consciousness_emotional_cycles: int = 0
-    average_empathy_score: float = 0.0
-    biological_emotional_success_rate: float = 0.0
-    emotional_harmony_achievement: float = 0.0
-    emotional_optimization_effectiveness: float = 0.0
-    consciousness_emotional_elevation_avg: float = 0.0
+# Import MODULAR data structures
+from .profile.emotional_profile import EmotionalProfile
+from .network.empathy_network import EmpathyNetwork
+from .synthesis.emotional_synthesis import EmotionalSynthesisFramework
+from .optimization.emotional_optimization import ConsciousnessEmotionalOptimization
+from .metrics.emotional_metrics import EmotionalIntelligenceMetrics
 
 
 class ConsciousnessEmotionalIntelligenceEngine:
