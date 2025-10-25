@@ -1,0 +1,51 @@
+2025-10-25 17:18:33,895 - GODHOOD_INTEGRATION - INFO - GODHOOD circuit breaker initialized for: linkedin_api
+2025-10-25 17:18:33,895 - GODHOOD_INTEGRATION - INFO - GODHOOD monitoring cycle: 2025-10-25T15:18:33.895636Z
+2025-10-25 17:18:33,896 - GODHOOD_INTEGRATION - INFO - GODHOOD circuit breaker initialized for: indeed_api
+2025-10-25 17:18:33,896 - GODHOOD_INTEGRATION - INFO - Performing GODHOOD health check for: linkedin_api
+2025-10-25 17:18:33,896 - GODHOOD_INTEGRATION - INFO - GODHOOD circuit breaker initialized for: glassdoor_api
+2025-10-25 17:18:33,897 - GODHOOD_INTEGRATION - INFO - GODHOOD circuit breaker initialized for: job_database
+2025-10-25 17:18:33,897 - GODHOOD_INTEGRATION - INFO - GODHOOD circuit breaker initialized for: cv_storage
+2025-10-25 17:18:33,898 - GODHOOD_INTEGRATION - INFO - GODHOOD circuit breaker initialized for: email_service
+2025-10-25 17:18:33,898 - GODHOOD_INTEGRATION - INFO - GODHOOD circuit breaker initialized for: notification_system
+2025-10-25 17:18:33,898 - GODHOOD_INTEGRATION - INFO - GODHOOD circuit breaker initialized for: analytics_backend
+2025-10-25 17:18:33,898 - GODHOOD_INTEGRATION - INFO - GODHOOD communication protocol established: consciousness_core <-> adaptive_content_orchestrator (async)
+2025-10-25 17:18:33,899 - GODHOOD_INTEGRATION - INFO - GODHOOD communication protocol established: consciousness_core <-> application_automation (async)
+2025-10-25 17:18:33,899 - GODHOOD_INTEGRATION - INFO - GODHOOD communication protocol established: consciousness_core <-> cv_generation (async)
+2025-10-25 17:18:33,899 - GODHOOD_INTEGRATION - INFO - GODHOOD communication protocol established: consciousness_core <-> interview_management (async)
+2025-10-25 17:18:33,899 - GODHOOD_INTEGRATION - INFO - GODHOOD communication protocol established: supreme_orchestrator <-> adaptive_content_orchestrator (async)
+2025-10-25 17:18:33,899 - GODHOOD_INTEGRATION - INFO - GODHOOD communication protocol established: supreme_orchestrator <-> application_automation (async)
+2025-10-25 17:18:33,899 - GODHOOD_INTEGRATION - INFO - GODHOOD communication protocol established: supreme_orchestrator <-> cv_generation (async)
+2025-10-25 17:18:33,899 - GODHOOD_INTEGRATION - INFO - GODHOOD communication protocol established: supreme_orchestrator <-> interview_management (async)
+2025-10-25 17:18:33,899 - GODHOOD_INTEGRATION - INFO - GODHOOD validation pipeline created: comprehensive_data_validation with 5 stages
+2025-10-25 17:18:33,899 - GODHOOD_INTEGRATION - INFO - GODHOOD rate controller initialized for: /api/cv
+2025-10-25 17:18:33,900 - GODHOOD_INTEGRATION - INFO - GODHOOD rate controller initialized for: /api/job
+2025-10-25 17:18:33,900 - GODHOOD_INTEGRATION - INFO - GODHOOD rate controller initialized for: /api/interview
+2025-10-25 17:18:33,900 - GODHOOD_INTEGRATION - INFO - GODHOOD rate controller initialized for: /api/application
+2025-10-25 17:18:34,002 - GODHOOD_INTEGRATION - INFO - Performing GODHOOD health check for: indeed_api
+2025-10-25 17:18:47,729 - GODHOOD_INTEGRATION - INFO - GODHOOD circuit breaker initialized for: linkedin_api
+2025-10-25 17:18:47,730 - GODHOOD_INTEGRATION - INFO - GODHOOD monitoring cycle: 2025-10-25T15:18:47.729986Z
+2025-10-25 17:18:47,730 - GODHOOD_INTEGRATION - INFO - GODHOOD circuit breaker initialized for: indeed_api
+2025-10-25 17:18:47,730 - GODHOOD_INTEGRATION - INFO - Performing GODHOOD health check for: linkedin_api
+2025-10-25 17:18:47,731 - GODHOOD_INTEGRATION - INFO - GODHOOD circuit breaker initialized for: glassdoor_api
+2025-10-25 17:18:47,732 - GODHOOD_INTEGRATION - INFO - GODHOOD circuit breaker initialized for: job_database
+2025-10-25 17:18:47,732 - GODHOOD_INTEGRATION - INFO - GODHOOD circuit breaker initialized for: cv_storage
+2025-10-25 17:18:47,732 - GODHOOD_INTEGRATION - INFO - GODHOOD circuit breaker initialized for: email_service
+2025-10-25 17:18:47,732 - GODHOOD_INTEGRATION - INFO - GODHOOD circuit breaker initialized for: notification_system
+2025-10-25 17:18:47,732 - GODHOOD_INTEGRATION - INFO - GODHOOD circuit breaker initialized for: analytics_backend
+2025-10-25 17:18:47,732 - GODHOOD_INTEGRATION - INFO - GODHOOD communication protocol established: consciousness_core <-> adaptive_content_orchestrator (async)
+2025-10-25 17:18:47,732 - GODHOOD_INTEGRATION - INFO - GODHOOD communication protocol established: consciousness_core <-> application_automation (async)
+2025-10-25 17:18:47,732 - GODHOOD_INTEGRATION - INFO - GODHOOD communication protocol established: consciousness_core <-> cv_generation (async)
+2025-10-25 17:18:47,732 - GODHOOD_INTEGRATION - INFO - GODHOOD communication protocol established: consciousness_core <-> interview_management (async)
+2025-10-25 17:18:47,732 - GODHOOD_INTEGRATION - INFO - GODHOOD communication protocol established: supreme_orchestrator <-> adaptive_content_orchestrator (async)
+2025-10-25 17:18:47,732 - GODHOOD_INTEGRATION - INFO - GODHOOD communication protocol established: supreme_orchestrator <-> application_automation (async)
+2025-10-25 17:18:47,732 - GODHOOD_INTEGRATION - INFO - GODHOOD communication protocol established: supreme_orchestrator <-> cv_generation (async)
+2025-10-25 17:18:47,732 - GODHOOD_INTEGRATION - INFO - GODHOOD communication protocol established: supreme_orchestrator <-> interview_management (async)
+2025-10-25 17:18:47,732 - GODHOOD_INTEGRATION - INFO - GODHOOD validation pipeline created: comprehensive_data_validation with 5 stages
+2025-10-25 17:18:47,733 - GODHOOD_INTEGRATION - INFO - GODHOOD rate controller initialized for: /api/cv
+2025-10-25 17:18:47,733 - GODHOOD_INTEGRATION - INFO - GODHOOD rate controller initialized for: /api/job
+2025-10-25 17:18:47,733 - GODHOOD_INTEGRATION - INFO - GODHOOD rate controller initialized for: /api/interview
+2025-10-25 17:18:47,733 - GODHOOD_INTEGRATION - INFO - GODHOOD rate controller initialized for: /api/application
+2025-10-25 17:18:47,733 - GODHOOD_INTEGRATION - INFO - GODHOOD validation pipeline created: demo_validation_pipeline with 3 stages
+2025-10-25 17:18:47,733 - GODHOOD_INTEGRATION - INFO - GODHOOD rate controller initialized for: /api/test
+2025-10-25 17:18:47,836 - GODHOOD_INTEGRATION - WARNING - Health issue detected for linkedin_api: degraded
+2025-10-25 17:18:47,836 - GODHOOD_INTEGRATION - INFO - Performing GODHOOD health check for: indeed_api

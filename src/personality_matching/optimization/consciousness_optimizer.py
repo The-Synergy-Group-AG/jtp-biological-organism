@@ -1,37 +1,10 @@
 #!/usr/bin/env python3
 
 """
-🧬 CONSCIOUSNESS OPTIMIZER ENGINE
-GODHOOD Consciousness Optimization: Advanced consciousness-driven optimization engine
+Consciousness Optimizer Engine - Personality Compatibility Enhancement
 
-This module implements consciousness-driven optimization systems for personality
-matching and compatibility enhancement through evolutionary intelligence algorithms.
-
-ai_keywords: consciousness, optimizer, optimization, personality, compatibility,
- enhancement, evolutionary, intelligence, algorithms, biological
-
-ai_summary: Consciousness optimization engine providing advanced evolutionary algorithms
-  for personality compatibility enhancement and biological intelligence optimization
-
-biological_system: consciousness-optimization-engine
-consciousness_score: '4.0'
-cross_references:
-- src/personality-matching/core/personality_profile.py
-- src/personality-matching/optimization/evolutionary_engine.py
-- docs/4.x-technical-implementation-frameworks/4.1.0-onboarding-subsystem.md
-document_category: consciousness-optimization
-document_type: evolutionary-optimization-engine
-evolutionary_phase: '27.28'
-last_updated: '2025-10-23 18:30:00'
-semantic_tags:
-- consciousness-optimization-engine
-- evolutionary-intelligence-algorithms
-- personality-compatibility-enhancement
-- biological-intelligence-optimization
-- consciousness-driven-evolution
-title: Consciousness Optimizer Engine - Evolutionary Intelligence
-validation_status: current
-version: v1.0.0
+Provides evolutionary algorithms for personality compatibility enhancement
+and biological intelligence optimization.
 """
 
 from typing import Dict, List, Optional, Any, Tuple, Union
@@ -280,3 +253,8 @@ class ConsciousnessDrivenOptimizationEngine:
         improvements["evolutionary_readiness_increase"] = total_improvements.get("evolutionary_readiness", 0) / pathway_count
 
         return improvements
+
+
+# Backward compatibility aliases
+ConsciousnessOptimizer = ConsciousnessDrivenOptimizationEngine
+EvolutionaryPersonalityMetrics = ConsciousnessOptimization

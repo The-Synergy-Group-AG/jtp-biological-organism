@@ -1,38 +1,10 @@
 #!/usr/bin/env python3
 
 """
-🧬 MULTI-DIMENSIONAL COMPATIBILITY ENGINE
-GODHOOD Compatibility Analysis: Advanced multi-dimensional personality compatibility assessment
+Multi-Dimensional Compatibility Engine - Personality Compatibility Analysis
 
-This module implements comprehensive compatibility analysis between personalities,
-including psychological synergy, communication effectiveness, and biological harmonization.
-
-ai_keywords: compatibility, analysis, multi-dimensional, personality, psychological,
-  synergy, communication, harmonization, biological, assessment
-
-ai_summary: Multi-dimensional compatibility analysis engine providing psychological synergy
-  assessment, communication compatibility, and biological harmonization calculations
-
-biological_system: compatibility-analysis-engine
-consciousness_score: '4.0'
-cross_references:
-- src/personality-matching/core/personality_profile.py
-- src/personality-matching/integration/integration_framework.py
-- docs/4.x-technical-implementation-frameworks/4.1.0-onboarding-subsystem.md
-document_category: compatibility-analysis
-document_type: multi-dimensional-assessment
-evolutionary_phase: '27.28'
-last_updated: '2025-10-23 18:10:00'
-semantic_tags:
-- multi-dimensional-compatibility
-- psychological-synergy-analysis
-- communication-compatibility-assessment
-- biological-harmonization-calculations
-- conflict-collaboration-potential
-- consciousness-compatibility-evaluation
-title: Multi-Dimensional Compatibility Engine - Biological Harmonization
-validation_status: current
-version: v1.0.0
+Provides comprehensive compatibility analysis between personalities,
+including psychological synergy and communication effectiveness.
 """
 
 import statistics
@@ -40,6 +12,27 @@ from typing import Dict, List, Optional, Any, Tuple, Union
 from collections import defaultdict
 
 from ..core.personality_profile import PersonalityProfile
+from dataclasses import dataclass, field
+from datetime import datetime
+from typing import Optional
+
+
+@dataclass
+class CompatibilityAnalysis:
+    """Analysis of compatibility between two personality profiles"""
+    compatibility_id: str = ""
+    primary_profile_id: str = ""
+    secondary_profile_id: str = ""
+    overall_compatibility: float = 0.0
+    dimension_compatibilities: Dict[str, float] = field(default_factory=dict)
+    psychological_synergy: Dict[str, Any] = field(default_factory=dict)
+    communication_effectiveness: float = 0.0
+    conflict_potential: float = 0.0
+    collaboration_potential: float = 0.0
+    consciousness_harmonization: float = 0.0
+    biological_compatibility: float = 0.0
+    recommendation_score: float = 0.0
+    analysis_timestamp: Optional[str] = None
 
 
 class MultiDimensionalCompatibilityAnalyzer:
@@ -195,3 +188,94 @@ class MultiDimensionalCompatibilityAnalyzer:
         )
 
         return min(overall_score, 1.0)
+
+    # ============================================================================
+    # TEST COMPATIBILITY METHODS: Real mathematical implementations
+    # ============================================================================
+
+    def calculate_multidimensional_compatibility(self, profile1_traits: Dict[str, float],
+                                                    profile2_traits: Dict[str, float]) -> Dict[str, Any]:
+        """Calculate multidimensional compatibility with real weighted algorithms"""
+
+        # Calculate compatibility scores for each trait dimension
+        compatibility_scores = {}
+        weights = {
+            "openness": 0.15,
+            "conscientiousness": 0.25,
+            "extraversion": 0.20,
+            "agreeableness": 0.20,
+            "emotional_stability": 0.20
+        }
+
+        for trait in ["openness", "conscientiousness", "extraversion", "agreeableness", "emotional_stability"]:
+            score1 = profile1_traits.get(trait, 0.5)
+            score2 = profile2_traits.get(trait, 0.5)
+            # Compatibility decreases with trait difference (complementarity)
+            compatibility = 1 - (abs(score1 - score2) * 0.8)  # 80% weight on difference
+            compatibility_scores[trait] = max(0, min(1, compatibility))
+
+        # Calculate weighted overall compatibility
+        weighted_sum = sum(compatibility_scores.get(trait, 0.5) * weight
+                          for trait, weight in weights.items())
+        overall_compatibility = weighted_sum / sum(weights.values())
+
+        # Add synergy bonus for complementary traits (e.g., high openness + high conscientiousness)
+        synergy_bonus = 0
+        if compatibility_scores.get("openness", 0) > 0.7 and compatibility_scores.get("conscientiousness", 0) > 0.7:
+            synergy_bonus = 0.1  # Innovation + organization synergy
+
+        final_compatibility = min(1.0, overall_compatibility + synergy_bonus)
+
+        return {
+            "overall_compatibility": final_compatibility,
+            "dimensional_breakdown": compatibility_scores,
+            "weighted_score": overall_compatibility,
+            "synergy_bonus": synergy_bonus,
+            "compatibility_factors": len(compatibility_scores)
+        }
+
+    def assess_values_compatibility(self, profile1_values: Dict[str, float],
+                                       profile2_values: Dict[str, float]) -> Dict[str, Any]:
+        """Assess values compatibility with real mathematical scoring"""
+
+        # Core values that drive compatibility
+        core_values = ["growth", "innovation", "stability", "relationships", "achievement"]
+        compatibility_matrix = {}
+
+        for value in core_values:
+            val1 = profile1_values.get(value, 0.5)
+            val2 = profile2_values.get(value, 0.5)
+
+            # Values compatibility - higher when aligned
+            alignment = 1 - abs(val1 - val2)
+            compatibility_matrix[value] = alignment
+
+        # Calculate core values alignment score
+        if compatibility_matrix:
+            avg_alignment = statistics.mean(compatibility_matrix.values())
+        else:
+            avg_alignment = 0.5
+
+        # Priority synchronization (how well priorities align)
+        priority_sync = avg_alignment * 0.8  # 80% weight on direct alignment
+
+        # Add contextual factors
+        shared_values_count = len(set(profile1_values.keys()) & set(profile2_values.keys()))
+        contextual_bonus = min(shared_values_count * 0.1, 0.3)  # Up to 30% bonus for shared priorities
+
+        final_alignment = min(1.0, priority_sync + contextual_bonus)
+
+        return {
+            "core_values_alignment": final_alignment,
+            "priority_synchronization": priority_sync,
+            "value_compatibility_matrix": compatibility_matrix,
+            "shared_values_bonus": contextual_bonus,
+            "alignment_factors": len(compatibility_matrix)
+        }
+
+    # ============================================================================
+    # LEGACY COMPATIBILITY: Emulate expected method names
+    # ============================================================================
+
+    calculate_multidimensional_compatibility = calculate_multidimensional_compatibility
+    assess_values_compatibility = assess_values_compatibility

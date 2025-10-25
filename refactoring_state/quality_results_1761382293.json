@@ -1,0 +1,28 @@
+{
+  "valid": false,
+  "file_path": "src/consciousness-templates/__init__.py",
+  "timestamp": 1761382293.311739,
+  "checks": {
+    "syntax": {
+      "valid": false,
+      "score": 0.0,
+      "message": "Syntax error: EOL while scanning string literal (<unknown>, line 259)"
+    },
+    "imports": {
+      "valid": true,
+      "score": 1.0,
+      "message": "Import syntax clean"
+    },
+    "complexity": {
+      "valid": true,
+      "score": 1.0,
+      "message": "Complexity acceptable (2.7)"
+    },
+    "size": {
+      "valid": true,
+      "score": 0.8877551020408163,
+      "message": "Size target not met: 77 lines over target"
+    }
+  },
+  "quality_score": 0.0
+}

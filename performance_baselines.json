@@ -1,0 +1,32 @@
+{
+  "cpu_usage_percent": {
+    "baseline_value": 25.0,
+    "threshold_percent": 15.0,
+    "timestamp": "2025-10-25T17:45:49.252385"
+  },
+  "memory_usage_percent": {
+    "baseline_value": 40.0,
+    "threshold_percent": 15.0,
+    "timestamp": "2025-10-25T17:45:49.252666"
+  },
+  "response_time_seconds": {
+    "baseline_value": 0.15,
+    "threshold_percent": 10.0,
+    "timestamp": "2025-10-25T17:45:49.252844"
+  },
+  "error_rate_percent": {
+    "baseline_value": 0.2,
+    "threshold_percent": 5.0,
+    "timestamp": "2025-10-25T17:45:49.254211"
+  },
+  "consciousness_readiness": {
+    "baseline_value": 0.92,
+    "threshold_percent": 3.0,
+    "timestamp": "2025-10-25T17:45:49.255154"
+  },
+  "transcendence_readiness": {
+    "baseline_value": 0.96,
+    "threshold_percent": 3.0,
+    "timestamp": "2025-10-25T17:45:49.255980"
+  }
+}

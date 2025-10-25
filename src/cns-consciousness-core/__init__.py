@@ -457,8 +457,9 @@ if __name__ == "__main__":
 
                     # Display comprehensive metrics
                     metrics = await core.get_consciousness_core_metrics()
-                    print("
-🧬 CNS Consciousness Core Success Metrics:"                    for key, value in metrics.items():
+                    print("""
+🧬 CNS Consciousness Core Success Metrics:""")
+                    for key, value in metrics.items():
                         if key not in ["detailed_subsystem_metrics", "subsystems_operational"]:
                             print(f"  • {key}: {value}")
 

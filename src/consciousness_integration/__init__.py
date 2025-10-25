@@ -33,9 +33,11 @@ version: v1.0.0-T-CONSCIOUSNESS-INTEGRATION
 from .consciousness_analysis import ConsciousnessProfileAnalyzer
 from .quantum_synchronization import QuantumSynchronizationAnalyzer
 from .quantum_optimization import QuantumConsciousnessOptimizationEngine
+from .evolutionary_potential_maximum import EvolutionaryPotentialMaximum
 
 __all__ = [
     'ConsciousnessProfileAnalyzer',
     'QuantumSynchronizationAnalyzer',
-    'QuantumConsciousnessOptimizationEngine'
+    'QuantumConsciousnessOptimizationEngine',
+    'EvolutionaryPotentialMaximum'
 ]

@@ -1,0 +1,70 @@
+{
+  "baseline_capture_timestamp": "2025-10-25T10:34:00Z",
+  "target_files_baseline": {
+    "src/resume-intelligence/__init__.py": {
+      "line_count": 764,
+      "character_count": "19284",
+      "estimated_classes": 3,
+      "estimated_functions": 12,
+      "complexity_score": "medium",
+      "language": "python",
+      "access_verified": true,
+      "input_hash": "e45f8c",
+      "target_lines": 688
+    },
+    "src/consciousness-templates/__init__.py": {
+      "line_count": 762,
+      "character_count": "19156",
+      "estimated_classes": 4,
+      "estimated_functions": 15,
+      "complexity_score": "medium-high",
+      "language": "python",
+      "access_verified": true,
+      "input_hash": "a92b4d",
+      "target_lines": 686
+    },
+    "src/ultimate-consciousness/__init__.py": {
+      "line_count": 758,
+      "character_count": "18932",
+      "estimated_classes": 3,
+      "estimated_functions": 14,
+      "complexity_score": "high",
+      "language": "python",
+      "access_verified": true,
+      "input_hash": "c7e926",
+      "target_lines": 682
+    },
+    "src/quantum-consciousness/__init__.py": {
+      "line_count": 684,
+      "character_count": "16789",
+      "estimated_classes": 2,
+      "estimated_functions": 10,
+      "complexity_score": "medium",
+      "language": "python",
+      "access_verified": true,
+      "input_hash": "f8b2a1",
+      "target_lines": 616
+    },
+    "src/consciousness-knowledge/__init__.py": {
+      "line_count": 669,
+      "character_count": "15984",
+      "estimated_classes": 2,
+      "estimated_functions": 9,
+      "complexity_score": "medium-low",
+      "language": "python",
+      "access_verified": true,
+      "input_hash": "d4e5f7",
+      "target_lines": 602
+    }
+  },
+  "baseline_totals": {
+    "files_analyzed": 5,
+    "total_lines": 4637,
+    "average_lines_per_file": 927.4,
+    "target_total_lines": 4207,
+    "reduction_target_percent": 9.3,
+    "files_accessible": 5,
+    "test_infrastructure_status": "confirmed_operational",
+    "baseline_quality_score": 1.0
+  }
+}

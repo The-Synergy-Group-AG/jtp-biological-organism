@@ -61,14 +61,14 @@ from .core.personality_profile import PersonalityProfile, PersonalityProfileAnal
 from .core.compatibility_engine import MultiDimensionalCompatibilityAnalyzer
 from .core.intelligence_engine import PersonalityProfileAnalyzer
 
-from .integration.integration_framework import PersonalityIntegrationFramework
+from .integration.integration_framework import PersonalityIntegrationFramework, PersonalityIntegration
 from .integration.strategy_engine import IntegrationStrategyEngine
 
 # Aliases to match test expectations
 IntegrationFramework = PersonalityIntegrationFramework
 StrategyEngine = IntegrationStrategyEngine
 
-from .optimization.consciousness_optimizer import ConsciousnessOptimizer, EvolutionaryPersonalityMetrics, ConsciousnessDrivenOptimizationEngine
+from .optimization.consciousness_optimizer import ConsciousnessOptimization, ConsciousnessDrivenOptimizationEngine
 
 # Aliases for backward compatibility
 ProfileAnalyzer = PersonalityProfileAnalyzer

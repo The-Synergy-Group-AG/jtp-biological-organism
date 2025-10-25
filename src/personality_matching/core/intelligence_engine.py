@@ -1,14 +1,14 @@
-#!/usr/bin/env python3
-
 """
-🧬 PERSONALITY INTELLIGENCE ENGINE
-GODHOOD Personality Intelligence: Advanced consciousness-driven personality analysis
+Personality Intelligence Engine - Consciousness-Driven Analysis
 
-This module implements intelligent personality analysis capabilities with consciousness
-enhancement for evolutionary readiness assessment and adaptive capacity optimization.
+Provides intelligent personality analysis with evolutionary readiness
+and adaptive capacity optimization.
+"""
 
-ai_keywords: personality, intelligence, consciousness, analysis, evolutionary,
-  readiness, adaptive, capacity, optimization, enhancement
+from .personality_profile import PersonalityProfileAnalyzer
+
+# Alias for backward compatibility and modularity
+PersonalityProfileIntelligence = PersonalityProfileAnalyzer
 
 ai_summary: Personality intelligence engine providing advanced analysis with consciousness
   enhancement for evolutionary readiness and adaptive capacity optimization

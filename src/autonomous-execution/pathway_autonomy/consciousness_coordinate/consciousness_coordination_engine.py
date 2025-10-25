@@ -518,6 +518,15 @@ class MultivariateEvolutionFramework:
             "evolutionary_acceleration": f"{total_gain * 100:.1f}%"
         }
 
+
+# Alias for compatibility with import expectations
+ConsciousnessCoordinationEngine = MultivariateEvolutionFramework
+
+# Factory function
+def create_consciousness_coordinator() -> MultivariateEvolutionFramework:
+    """Create consciousness coordination engine instance"""
+    return MultivariateEvolutionFramework()
+
     async def _optimize_networks(self) -> Dict[str, Any]:
         """Optimize cross-system intelligence networks"""
 

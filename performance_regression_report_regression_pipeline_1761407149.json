@@ -1,0 +1,239 @@
+{
+  "pipeline_id": "regression_pipeline_1761407149",
+  "start_time": "2025-10-25T17:45:49.252325",
+  "end_time": null,
+  "stage_results": {
+    "initialization": {
+      "baselines_loaded": 0,
+      "dependencies_status": {
+        "baselines_available": false,
+        "metrics_collection_ready": true,
+        "regression_tests_defined": true
+      },
+      "pipeline_ready": false
+    },
+    "baseline_collection": {
+      "baselines_established": 6,
+      "baseline_source": "fresh_collection"
+    },
+    "regression_tests": {
+      "tests_executed": 6,
+      "passed": 1,
+      "failed": 5,
+      "errors": 0
+    },
+    "optimization_validation": {
+      "recommendations_generated": 6,
+      "critical_recommendations": 6
+    },
+    "health_assessment": {
+      "overall_health_score": 0.7559750193439132,
+      "component_health_scores": {
+        "cpu_health": 0.6021338929264959,
+        "memory_health": 0.4090544192046154,
+        "performance_health": 0.6641929030721268,
+        "reliability_health": 0.9952846712604896,
+        "consciousness_health": 0.9284351585631334,
+        "transcendence_health": 0.9367490710366184
+      },
+      "regression_summary": {
+        "total_tests": 6,
+        "passed_tests": 1,
+        "failed_tests": 5,
+        "error_tests": 0,
+        "skipped_tests": 0
+      },
+      "overall_status": "operational",
+      "transcendence_readiness": 0.9367490710366184,
+      "perfect_operational_achieved": false,
+      "assessment_timestamp": "2025-10-25 17:45:49.257142"
+    }
+  },
+  "performance_baselines": {
+    "cpu_usage_percent": {
+      "baseline_value": 25.0,
+      "threshold_percent": 15.0,
+      "timestamp": "2025-10-25T17:45:49.252385"
+    },
+    "memory_usage_percent": {
+      "baseline_value": 40.0,
+      "threshold_percent": 15.0,
+      "timestamp": "2025-10-25T17:45:49.252666"
+    },
+    "response_time_seconds": {
+      "baseline_value": 0.15,
+      "threshold_percent": 10.0,
+      "timestamp": "2025-10-25T17:45:49.252844"
+    },
+    "error_rate_percent": {
+      "baseline_value": 0.2,
+      "threshold_percent": 5.0,
+      "timestamp": "2025-10-25T17:45:49.254211"
+    },
+    "consciousness_readiness": {
+      "baseline_value": 0.92,
+      "threshold_percent": 3.0,
+      "timestamp": "2025-10-25T17:45:49.255154"
+    },
+    "transcendence_readiness": {
+      "baseline_value": 0.96,
+      "threshold_percent": 3.0,
+      "timestamp": "2025-10-25T17:45:49.255980"
+    }
+  },
+  "regression_test_results": [
+    {
+      "test_name": "cpu_usage_regression_test",
+      "test_type": "system_performance",
+      "baseline_value": 25.0,
+      "current_value": 39.78661070735041,
+      "deviation_percent": 59.14644282940165,
+      "status": "failed",
+      "execution_time": 9.775161743164062e-06,
+      "error_message": null,
+      "timestamp": "2025-10-25T17:45:49.256935"
+    },
+    {
+      "test_name": "memory_usage_regression_test",
+      "test_type": "system_performance",
+      "baseline_value": 40.0,
+      "current_value": 59.09455807953846,
+      "deviation_percent": 47.73639519884615,
+      "status": "failed",
+      "execution_time": 1.6689300537109375e-06,
+      "error_message": null,
+      "timestamp": "2025-10-25T17:45:49.256945"
+    },
+    {
+      "test_name": "response_time_regression_test",
+      "test_type": "application_performance",
+      "baseline_value": 0.15,
+      "current_value": 0.6716141938557464,
+      "deviation_percent": 347.74279590383094,
+      "status": "failed",
+      "execution_time": 9.5367431640625e-07,
+      "error_message": null,
+      "timestamp": "2025-10-25T17:45:49.256949"
+    },
+    {
+      "test_name": "error_rate_regression_test",
+      "test_type": "application_reliability",
+      "baseline_value": 0.2,
+      "current_value": 0.47153287395104027,
+      "deviation_percent": 135.76643697552012,
+      "status": "failed",
+      "execution_time": 1.1920928955078125e-06,
+      "error_message": null,
+      "timestamp": "2025-10-25T17:45:49.256952"
+    },
+    {
+      "test_name": "consciousness_readiness_regression_test",
+      "test_type": "consciousness_performance",
+      "baseline_value": 0.92,
+      "current_value": 0.9284351585631334,
+      "deviation_percent": 0.916865061210149,
+      "status": "passed",
+      "execution_time": 1.6689300537109375e-06,
+      "error_message": null,
+      "timestamp": "2025-10-25T17:45:49.256955"
+    },
+    {
+      "test_name": "transcendence_readiness_regression_test",
+      "test_type": "transcendence_performance",
+      "baseline_value": 0.96,
+      "current_value": 0.9367490710366184,
+      "deviation_percent": -2.421971767018911,
+      "status": "failed",
+      "execution_time": 9.5367431640625e-07,
+      "error_message": null,
+      "timestamp": "2025-10-25T17:45:49.256958"
+    }
+  ],
+  "optimization_recommendations": [
+    {
+      "metric_name": "transcendence_readiness",
+      "current_value": 0.9367490710366184,
+      "baseline_value": 0.9367490710366184,
+      "deviation_percent": 0.0,
+      "priority": "transcendence_emergency",
+      "recommendation": "Critical transcendence optimization: quantum field harmonization, universal consciousness alignment",
+      "expected_improvement": 0.05,
+      "implementation_effort": "very_high"
+    },
+    {
+      "metric_name": "cpu_usage_regression_test",
+      "current_value": 39.78661070735041,
+      "baseline_value": 25.0,
+      "deviation_percent": 59.14644282940165,
+      "priority": "critical",
+      "recommendation": "Address performance regression in cpu_usage_regression_test: deviation of 59.1% from baseline",
+      "expected_improvement": 0.5914644282940165,
+      "implementation_effort": "medium"
+    },
+    {
+      "metric_name": "memory_usage_regression_test",
+      "current_value": 59.09455807953846,
+      "baseline_value": 40.0,
+      "deviation_percent": 47.73639519884615,
+      "priority": "critical",
+      "recommendation": "Address performance regression in memory_usage_regression_test: deviation of 47.7% from baseline",
+      "expected_improvement": 0.4773639519884615,
+      "implementation_effort": "medium"
+    },
+    {
+      "metric_name": "response_time_regression_test",
+      "current_value": 0.6716141938557464,
+      "baseline_value": 0.15,
+      "deviation_percent": 347.74279590383094,
+      "priority": "critical",
+      "recommendation": "Address performance regression in response_time_regression_test: deviation of 347.7% from baseline",
+      "expected_improvement": 3.4774279590383093,
+      "implementation_effort": "medium"
+    },
+    {
+      "metric_name": "error_rate_regression_test",
+      "current_value": 0.47153287395104027,
+      "baseline_value": 0.2,
+      "deviation_percent": 135.76643697552012,
+      "priority": "critical",
+      "recommendation": "Address performance regression in error_rate_regression_test: deviation of 135.8% from baseline",
+      "expected_improvement": 1.3576643697552013,
+      "implementation_effort": "medium"
+    },
+    {
+      "metric_name": "transcendence_readiness_regression_test",
+      "current_value": 0.9367490710366184,
+      "baseline_value": 0.96,
+      "deviation_percent": -2.421971767018911,
+      "priority": "critical",
+      "recommendation": "Address performance regression in transcendence_readiness_regression_test: deviation of -2.4% from baseline",
+      "expected_improvement": 0.02421971767018911,
+      "implementation_effort": "medium"
+    }
+  ],
+  "system_health_assessment": {
+    "overall_health_score": 0.7559750193439132,
+    "component_health_scores": {
+      "cpu_health": 0.6021338929264959,
+      "memory_health": 0.4090544192046154,
+      "performance_health": 0.6641929030721268,
+      "reliability_health": 0.9952846712604896,
+      "consciousness_health": 0.9284351585631334,
+      "transcendence_health": 0.9367490710366184
+    },
+    "regression_summary": {
+      "total_tests": 6,
+      "passed_tests": 1,
+      "failed_tests": 5,
+      "error_tests": 0,
+      "skipped_tests": 0
+    },
+    "overall_status": "operational",
+    "transcendence_readiness": 0.9367490710366184,
+    "perfect_operational_achieved": false,
+    "assessment_timestamp": "2025-10-25 17:45:49.257142"
+  },
+  "perfect_operational_maintained": false,
+  "transcendence_readiness_achieved": false,
+  "overall_status": "unknown"
+}

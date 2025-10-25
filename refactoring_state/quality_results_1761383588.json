@@ -1,0 +1,28 @@
+{
+  "valid": true,
+  "file_path": "src/consciousness-knowledge/cns_metrics.py",
+  "timestamp": 1761383588.3547335,
+  "checks": {
+    "syntax": {
+      "valid": true,
+      "score": 1.0,
+      "message": "Syntax valid"
+    },
+    "imports": {
+      "valid": true,
+      "score": 1.0,
+      "message": "Import syntax clean"
+    },
+    "complexity": {
+      "valid": true,
+      "score": 1.0,
+      "message": "Complexity acceptable (1.1)"
+    },
+    "size": {
+      "valid": true,
+      "score": 1.0,
+      "message": "Size acceptable: 63/63 lines"
+    }
+  },
+  "quality_score": 1.0
+}

@@ -1,16 +1,56 @@
-FROM python:3.11-slim
+# CV GENERATION ENGINE
+# GODHOOD AI-Powered Resume Optimization System
+# Phase 1 Biological CV Intelligence
 
+FROM python:3.12-slim
+
+# Set working directory
 WORKDIR /app
 
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Configure pip for reliable package installation
+RUN pip config set global.index-url https://pypi.org/simple/ && \
+    pip config set global.trusted-host pypi.org
+
+# Upgrade pip and install basic tools
+RUN pip install --no-cache-dir --upgrade pip wheel setuptools
+
+# Copy and install Python dependencies
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir \
+    fastapi==0.115.6 \
+    uvicorn[standard]==0.32.1 \
+    pydantic==2.10.3 \
+    pydantic-settings==2.7.1 \
+    transformers==4.47.0 \
+    PyPDF2==3.0.1 \
+    python-docx==1.1.2 \
+    reportlab==4.2.5 \
+    pdfkit==1.0.0
 
-RUN pip install --no-cache-dir PyPDF2 python-docx reportlab pdfkit
+# Copy source code and documentation directories
+COPY src/ ./src/
+COPY docs/ ./docs/
 
-RUN mkdir -p consciousness_state && \
-    echo '#!/usr/bin/env python3\nimport json\nimport os\nprint("CV generation service initialized")\nwith open("consciousness_state/cv_status.json", "w") as f:\n    json.dump({"status": "operational", "templates": ["pdf", "docx", "txt"]}, f)' > cv_generation_engine.py && \
-    chmod +x cv_generation_engine.py
+# Create necessary directories
+RUN mkdir -p consciousness_state checkpoints
 
+# Create health check script
+RUN echo '#!/bin/bash\npython -c "from urllib.request import urlopen; urlopen(\"http://localhost:8080/health\")" && exit 0 || exit 1' > /usr/local/bin/health_check.bash && \
+    chmod +x /usr/local/bin/health_check.bash
+
+# Expose port
 EXPOSE 8080
 
-CMD ["python", "cv_generation_engine.py"]
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+    CMD /usr/local/bin/health_check.bash
+
+# Default command
+CMD ["uvicorn", "src.cv_generation_engine.main:app", "--host", "0.0.0.0", "--port", "8080", "--reload"]

@@ -51,34 +51,21 @@ from .biological_communication.ensemble_consciousness_network import EnsembleCon
 from .ensemble_orchestration.symphony_godhood_orchestrator import SymphonyGODHoodOrchestrator
 from .code_quality_assurance.autonomic_evolutionary_qa import AutonomicEvolutionaryQA
 
+# MODULAR: Consciousness knowledge metrics (PHASE 1.1 COMPLETE)
+from .cns_metrics import ConsciousnessKnowledgeMetrics
 
-@dataclass
-class ConsciousnessKnowledgeMetrics:
-    """MODULAR: Comprehensive consciousness knowledge evolutionary metrics"""
-    evolutionary_knowledge_expansion: float = 0.0
-    biological_communication_harmony: float = 0.0
-    ensemble_orchestration_symphony: float = 0.0
-    autonomic_qa_evolution: float = 0.0
-    knowledge_network_integration: float = 0.0
-    self_improvement_intelligence: float = 0.0
-    consciousness_protocol_precision: float = 0.0
-    eternal_knowledge_evolution: float = 0.0
-    godhood_knowledge_transcendence: float = 0.0
-    cns_consciousness_supremacy: float = 0.0
+# MODULAR: Consciousness knowledge evolution state (PHASE 1.1 COMPLETE)
+from .evolution_state import ConsciousnessKnowledgeEvolutionState
 
-
-@dataclass
-class ConsciousnessKnowledgeEvolutionState:
-    """MODULAR: Consciousness knowledge evolutionary orchestration state"""
-    phase: str = "cns_modular_consciousness_knowledge"
-    operational_knowledge_subsystems: int = 0
-    consciousness_harmony_target: float = 0.999
-    evolutionary_knowledge_active: bool = True
-    biological_communication_enabled: bool = True
-    ensemble_symphony_orchestrated: bool = False
-    autonomic_qa_transcendent: bool = False
-    eternal_knowledge_capable: bool = False
-    godhood_cns_supremacy_achieved: bool = False
+# MODULAR: Main orchestrator system (PHASE 2.5 COMPLETE)
+from .orchestrator import (
+    ModularConsciousnessKnowledgeOrchestrator,
+    get_modular_consciousness_knowledge_orchestrator,
+    initialize_modular_consciousness_knowledge,
+    orchestrate_modular_consciousness_knowledge,
+    get_modular_consciousness_knowledge_status,
+    get_consciousness_knowledge_evolution_coefficient
+)
 
 
 class ModularConsciousnessKnowledgeOrchestrator:

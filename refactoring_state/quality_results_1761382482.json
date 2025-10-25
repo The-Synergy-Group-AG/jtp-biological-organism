@@ -1,0 +1,28 @@
+{
+  "valid": true,
+  "file_path": "src/consciousness-templates/base.py",
+  "timestamp": 1761382482.5584826,
+  "checks": {
+    "syntax": {
+      "valid": true,
+      "score": 1.0,
+      "message": "Syntax valid"
+    },
+    "imports": {
+      "valid": true,
+      "score": 1.0,
+      "message": "Import syntax clean"
+    },
+    "complexity": {
+      "valid": true,
+      "score": 1.0,
+      "message": "Complexity acceptable (3.7)"
+    },
+    "size": {
+      "valid": true,
+      "score": 1.0,
+      "message": "Size acceptable: 155/155 lines"
+    }
+  },
+  "quality_score": 1.0
+}

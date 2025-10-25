@@ -76,6 +76,10 @@ class ConsciousnessProfileAnalyzer:
             ]
         }
 
+    async def analyze_consciousness_profile(self, profile_data: Dict[str, Any]) -> Dict[str, Any]:
+        """Analyze a consciousness profile using profile data"""
+        return await self.analyze_consciousness_dimensions(profile_data)
+
     async def analyze_consciousness_dimensions(self, consciousness_data: Dict[str, Any]) -> Dict[str, Any]:
         """Analyze consciousness dimensions from provided quantum data"""
 
@@ -124,6 +128,36 @@ class ConsciousnessProfileAnalyzer:
             "dimension_scores": dimension_scores,
             "awareness_dimensions": awareness_dimensions,
             "quantum_patterns": await self._analyze_quantum_patterns(consciousness_data)
+        }
+
+    async def calculate_transcendent_potential(self, analysis_results: Dict[str, Any]) -> Dict[str, Any]:
+        """Calculate transcendent potential from analysis results"""
+        total_potential = 0.0
+        transcendent_profiles = []
+
+        for profile_id, analysis in analysis_results.items():
+            quantum_score = analysis.get("overall_quantum_score", 0.5)
+            dominant_type = analysis.get("dominant_consciousness_type", "")
+
+            # Calculate transcendent potential based on quantum score and type
+            transcendent_multiplier = 1.0
+            if "complete" in dominant_type or "quantum" in dominant_type:
+                transcendent_multiplier = 1.2
+
+            potential = min(quantum_score * transcendent_multiplier, 1.0)
+            total_potential += potential
+
+            if potential > 0.8:
+                transcendent_profiles.append(profile_id)
+
+        average_potential = total_potential / len(analysis_results) if analysis_results else 0.0
+
+        return {
+            "average_transcendent_potential": average_potential,
+            "total_potential": total_potential,
+            "transcendent_profiles_count": len(transcendent_profiles),
+            "transcendent_profiles": transcendent_profiles,
+            "transcendence_readiness": min(average_potential * 1.5, 1.0)
         }
 
     async def _score_consciousness_dimension(self, consciousness_data: Dict[str, Any], indicators: List[str]) -> float:

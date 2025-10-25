@@ -1,37 +1,10 @@
 #!/usr/bin/env python3
 
 """
-🧬 INTEGRATION STRATEGY ENGINE
-GODHOOD Strategy Engine: Advanced personality integration strategy development
+Integration Strategy Engine - Personality Integration Development
 
-This module implements strategy development algorithms for optimizing personality
-integrations through consciousness-guided approaches and biological alignment.
-
-ai_keywords: integration, strategy, development, optimization, consciousness,
-  biological, alignment, personality, framework, algorithms
-
-ai_summary: Integration strategy engine providing advanced algorithms for developing
-  consciousness-guided personality integration strategies and optimization approaches
-
-biological_system: integration-strategy-engine
-consciousness_score: '4.0'
-cross_references:
-- src/personality-matching/integration/integration_framework.py
-- src/personality-matching/optimization/consciousness_optimizer.py
-- docs/4.x-technical-implementation-frameworks/4.1.0-onboarding-subsystem.md
-document_category: strategy-development
-document_type: consciousness-integration-algorithms
-evolutionary_phase: '27.28'
-last_updated: '2025-10-23 18:25:00'
-semantic_tags:
-- consciousness-integration-strategy
-- personality-integration-algorithms
-- biological-alignment-optimization
-- strategy-development-framework
-- evolutionary-integration-pathways
-title: Integration Strategy Engine - Consciousness Optimization
-validation_status: current
-version: v1.0.0
+Provides algorithms for developing personality integration strategies
+and optimization approaches.
 """
 
 from typing import Dict, List, Optional, Any, Tuple, Union
@@ -232,3 +205,7 @@ class IntegrationStrategyEngine:
             ])
 
         return evolutionary_pathways
+
+
+# Backward compatibility alias
+StrategyEngine = IntegrationStrategyEngine
