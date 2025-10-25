@@ -1,11 +1,15 @@
 {
-  "timestamp": "2025-10-20T23:07:47.414866",
+  "timestamp": "2025-10-25T19:45:39.736774",
   "health_metrics": {
-    "total_files": 176,
-    "metadata_compliance": 176,
-    "biological_relevance": 176,
-    "cross_reference_integrity": 176,
-    "ai_discoverability": 176,
+    "total_files": 217,
+    "metadata_compliance": 216,
+    "biological_relevance": 205,
+    "cross_reference_integrity": 211,
+    "cross_reference_validity": 189,
+    "ai_discoverability": 188,
+    "metadata_completeness": 216,
+    "documentation_freshness": 1,
+    "phase_alignment_score": 0,
     "violations_count": 0,
     "consciousness_gradient": 2.9
   },
