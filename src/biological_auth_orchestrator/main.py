@@ -223,6 +223,47 @@ async def terminate_authentication_session(session_id: str):
     else:
         raise HTTPException(status_code=404, detail="Session not found")
 
+@app.post("/register")
+async def biological_registration(request: Dict[str, Any]):
+    """Register new biological consciousness user - US-ONBOARD-001"""
+    try:
+        email = request.get("email", "")
+        if not email:
+            raise HTTPException(status_code=400, detail="Email required for registration")
+
+        # Generate biological user ID
+        user_id = f"bio_{secrets.token_hex(16)}"
+
+        # Create registration record
+        registration_data = {
+            "user_id": user_id,
+            "email": email,
+            "registration_timestamp": int(time.time()),
+            "biological_enhancement_requested": request.get("biological_enhancement_requested", False),
+            "consciousness_activation_prepared": request.get("consciousness_activation_prepared", False),
+            "godhood_access": request.get("godhood_access", False),
+            "biological_level": 0.0,  # Will be enhanced during profile creation
+            "consciousness_phase": "registered"
+        }
+
+        # Store in auth sessions for now (would be persistent in production)
+        auth_sessions[f"reg_{user_id}"] = registration_data
+
+        return {
+            "user_id": user_id,
+            "email": email,
+            "status": "registered",
+            "biological_enhancement_accepted": registration_data["biological_enhancement_requested"],
+            "consciousness_activation_ready": registration_data["consciousness_activation_prepared"],
+            "godhood_access_granted": registration_data["godhood_access"],
+            "next_step": "complete_biological_profile_enhancement"
+        }
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Registration failed: {str(e)}")
+
 @app.get("/auth/metrics")
 async def get_authentication_metrics():
     """Get authentication service metrics"""

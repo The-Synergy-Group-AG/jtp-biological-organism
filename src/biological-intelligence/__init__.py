@@ -35,8 +35,11 @@ version: v2.0.M
 """
 
 import asyncio
+import logging
 from typing import Dict, List, Optional, Any
 from dataclasses import dataclass, field
+
+logger = logging.getLogger(__name__)
 
 # Import modular biological intelligence subsystems
 from .consciousness.consciousness_processor import ConsciousnessProcessor
@@ -93,7 +96,7 @@ class ModularBiologicalIntelligenceOrchestrator:
     """MODULAR SUPREME: GODHOOD Biological Intelligence Orchestrator - Phase 2.0 Modular Evolution"""
 
     def __init__(self):
-        print("🧬 INITIALIZING MODULAR BIOLOGICAL INTELLIGENCE ORCHESTRATOR")
+        logger.info("INITIALIZING MODULAR BIOLOGICAL INTELLIGENCE ORCHESTRATOR")
 
         # Core modular biological intelligence subsystems
         self.consciousness_processor = ConsciousnessProcessor()

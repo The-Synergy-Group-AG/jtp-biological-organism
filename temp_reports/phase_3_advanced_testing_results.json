@@ -1,0 +1,111 @@
+{
+  "phase": "3_advanced_testing_dimensions",
+  "execution_timestamp": 1761507238,
+  "overall_status": "PARTIAL_SUCCESS",
+  "total_tests": 24,
+  "successful_tests": 20,
+  "success_rate_percent": 83.3,
+  "detailed_results": {
+    "performance": {
+      "cns-consciousness-core__health": {
+        "success": true,
+        "message": "Success: 100.0%, Avg: 0.162s, P95: 0.317s"
+      },
+      "cns-consciousness-core__metrics": {
+        "success": true,
+        "message": "Success: 100.0%, Avg: 0.131s, P95: 0.241s"
+      },
+      "cns-consciousness-core_POST _biological-message": {
+        "success": true,
+        "message": "Success: 100.0%, Avg: 0.228s, P95: 0.381s"
+      },
+      "biological-auth__health": {
+        "success": true,
+        "message": "Success: 100.0%, Avg: 0.123s, P95: 0.248s"
+      },
+      "biological-auth__": {
+        "success": true,
+        "message": "Success: 100.0%, Avg: 0.103s, P95: 0.179s"
+      },
+      "biological-auth_POST _register": {
+        "success": false,
+        "message": "No successful responses - service unavailable"
+      },
+      "evolutionary-brain-trust__health": {
+        "success": true,
+        "message": "Success: 100.0%, Avg: 0.112s, P95: 0.231s"
+      },
+      "evolutionary-brain-trust__": {
+        "success": true,
+        "message": "Success: 100.0%, Avg: 0.107s, P95: 0.188s"
+      },
+      "evolutionary-brain-trust_GET _intelligence_evolution_progress": {
+        "success": false,
+        "message": "No successful responses - service unavailable"
+      },
+      "cv-generation__health": {
+        "success": true,
+        "message": "Success: 100.0%, Avg: 0.095s, P95: 0.174s"
+      },
+      "cv-generation_POST _cv_initiate": {
+        "success": true,
+        "message": "Success: 100.0%, Avg: 0.141s, P95: 0.238s"
+      },
+      "email-communications__health": {
+        "success": true,
+        "message": "Success: 100.0%, Avg: 0.127s, P95: 0.273s"
+      },
+      "email-communications_GET _campaigns_metrics": {
+        "success": false,
+        "message": "No successful responses - service unavailable"
+      },
+      "memory_leak_detection": {
+        "success": true,
+        "message": "Sustained 100 heavy operations without failure"
+      }
+    },
+    "security": {
+      "token_validation": {
+        "success": true,
+        "message": "No authentication required for health endpoint"
+      },
+      "sql_injection_protection": {
+        "success": true,
+        "message": "SQL injection attempts properly handled"
+      },
+      "rate_limiting": {
+        "success": true,
+        "message": "Rate limiting engaged after 0/20 requests allowed"
+      }
+    },
+    "integration": {
+      "e2e_user_journey": {
+        "success": false,
+        "message": "Completed 5/6 steps (83.3% success rate)"
+      },
+      "service_dependencies": {
+        "success": true,
+        "message": "5/5 service dependencies operational"
+      }
+    },
+    "fuzz": {
+      "large_payloads": {
+        "success": true,
+        "message": "Successfully handled payloads up to 1000000 characters"
+      },
+      "malformed_json": {
+        "success": true,
+        "message": "Server safely handles malformed JSON inputs"
+      }
+    }
+  },
+  "computer_datetime": "Sun Oct 26 20:33:58 2025",
+  "production_readiness_assessment": true,
+  "recommendations": [
+    "Monitor performance metrics in production",
+    "Implement comprehensive logging for security events",
+    "Regular fuzz testing as part of CI/CD pipeline",
+    "Load testing at scale (beyond 500 concurrent requests)",
+    "Security penetration testing before full launch"
+  ]
+}

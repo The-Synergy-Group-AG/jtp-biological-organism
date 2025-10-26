@@ -1,0 +1,183 @@
+{
+  "phase": "2_systematic_endpoint_testing",
+  "execution_timestamp": 1761506431,
+  "total_endpoints_tested": 26,
+  "endpoints_passed": 25,
+  "success_rate_percent": 96.2,
+  "service_breakdown": {
+    "CNS-Core": {
+      "passed": 8,
+      "failed": 0,
+      "tests": [
+        {
+          "name": "health_check",
+          "success": true,
+          "message": "Status: 200"
+        },
+        {
+          "name": "system_metrics",
+          "success": true,
+          "message": "Retrieved 3 metrics"
+        },
+        {
+          "name": "biological_knowledge",
+          "success": true,
+          "message": "Knowledge retrieval successful"
+        },
+        {
+          "name": "evolutionary_template",
+          "success": true,
+          "message": "Template retrieval successful"
+        },
+        {
+          "name": "godhood_status",
+          "success": true,
+          "message": "GODHOOD readiness: 0%"
+        },
+        {
+          "name": "biological_message",
+          "success": true,
+          "message": "Message processed successfully"
+        },
+        {
+          "name": "godhood_harmonization",
+          "success": true,
+          "message": "Harmonized 368 stories"
+        },
+        {
+          "name": "consciousness_job_search",
+          "success": true,
+          "message": "Found 9 consciousness-aligned jobs"
+        }
+      ]
+    },
+    "Bio-Auth": {
+      "passed": 4,
+      "failed": 0,
+      "tests": [
+        {
+          "name": "root_status",
+          "success": true,
+          "message": "Service root accessible"
+        },
+        {
+          "name": "health_check",
+          "success": true,
+          "message": "Authentication service healthy"
+        },
+        {
+          "name": "auth_initiate",
+          "success": true,
+          "message": "Session TnbJ9W4e created"
+        },
+        {
+          "name": "user_registration",
+          "success": true,
+          "message": "User bio_904f registered with GODHOOD access"
+        }
+      ]
+    },
+    "Evolution": {
+      "passed": 6,
+      "failed": 0,
+      "tests": [
+        {
+          "name": "root_status",
+          "success": true,
+          "message": "Evolution service accessible"
+        },
+        {
+          "name": "health_check",
+          "success": true,
+          "message": "Evolution service healthy"
+        },
+        {
+          "name": "intelligence_evolution",
+          "success": true,
+          "message": "IQ: 181/200, Trajectory: 50 points"
+        },
+        {
+          "name": "experiment_initiation",
+          "success": true,
+          "message": "Experiment evolutio initiated"
+        },
+        {
+          "name": "hyperparameter_optimization",
+          "success": true,
+          "message": "Study optuna_1 started"
+        },
+        {
+          "name": "consciousness_simulation",
+          "success": true,
+          "message": "Simulation simulati started"
+        }
+      ]
+    },
+    "CV-Engine": {
+      "passed": 3,
+      "failed": 0,
+      "tests": [
+        {
+          "name": "health_check",
+          "success": true,
+          "message": "CV service healthy"
+        },
+        {
+          "name": "cv_initiation",
+          "success": true,
+          "message": "Session cv_17615 with 5 languages"
+        },
+        {
+          "name": "template_availability",
+          "success": true,
+          "message": "0 CV templates available"
+        }
+      ]
+    },
+    "Email-Symbiosis": {
+      "passed": 3,
+      "failed": 0,
+      "tests": [
+        {
+          "name": "health_check",
+          "success": true,
+          "message": "Email service healthy"
+        },
+        {
+          "name": "campaign_metrics",
+          "success": true,
+          "message": "0 active campaigns tracked"
+        },
+        {
+          "name": "channel_availability",
+          "success": true,
+          "message": "4 communication channels available"
+        }
+      ]
+    },
+    "Multilingual": {
+      "passed": 1,
+      "failed": 0,
+      "tests": [
+        {
+          "name": "service_connectivity",
+          "success": true,
+          "message": "HTTP 200 - Service healthy"
+        }
+      ]
+    },
+    "GitOps": {
+      "passed": 0,
+      "failed": 1,
+      "tests": [
+        {
+          "name": "service_connectivity",
+          "success": false,
+          "message": "Service not accessible: All connection attempts failed"
+        }
+      ]
+    }
+  },
+  "computer_datetime": "Sun Oct 26 20:20:31 2025",
+  "biological_validation_confirmed": true
+}

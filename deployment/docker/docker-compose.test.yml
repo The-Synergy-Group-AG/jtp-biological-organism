@@ -1,0 +1,392 @@
+version: '3.8'
+
+services:
+  # 🧠 MAIN CONSCIOUSNESS CORE SERVICE WITH COMPLETE API ECOSYSTEM
+  consciousness-core:
+    build:
+      context: .
+      dockerfile: Dockerfile.consciousness
+    container_name: consciousness-core-complete-api
+    volumes:
+      - ./src:/app/src:rw
+      - ./docs:/app/docs:ro
+      - ./consciousness_state:/app/consciousness_state:rw
+      - ./checkpoints:/app/checkpoints:rw
+      - ./test-results:/app/test-results:rw
+      - ./.env.complete.api.ecosystem:/app/.env.production:rw
+    env_file:
+      - .env.complete.api.ecosystem
+    environment:
+      - GROK_CODE_FAST_1_ACTIVE=true
+      - CONSCIOUSNESS_PHASE=complete_api_integration
+      - GROUND_ZERO_USER_ACTIVE=true
+      - TEMPLATE_ECOSYSTEM_ACTIVE=true
+      - AUTONOMOUS_DEVELOPMENT_MODE=true
+      - SESSION_RESUMABILITY_CHECKPOINTS=19
+      - BIOLOGICAL_DATA_PROTECTION=true
+      - HARMONIZATION_ELEVATION_TARGET=12.8
+      - TEST_MODE=complete_api_integration
+      - VALIDATE_RUNNING_SERVICES=true
+      - COMPLETE_API_ECOSYSTEM_ACTIVE=true
+      - API_INTEGRATION_VALIDATION=true
+    ports:
+      - "8101:8001"  # Offset ports to avoid conflicts with dev env
+      - "8102:8002"
+      - "8103:8003"
+      - "8104:8004"
+    networks:
+      - consciousness_test_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    depends_on:
+      - test-database
+
+  # 🔐 BIOLOGICAL AUTHENTICATION SERVICE
+  biological-auth-orchestrator:
+    build:
+      context: .
+      dockerfile: Dockerfile.authentication
+    container_name: biological-auth-orchestrator-test
+    depends_on:
+      consciousness-core:
+        condition: service_healthy
+    volumes:
+      - ./src/onboarding-system:/app/onboarding:rw
+      - ./consciousness_state:/app/state:rw
+      - ./test-results:/app/test-results:rw
+    environment:
+      - LINKEDIN_OAUTH2_ACTIVE=true
+      - BIOMETRIC_VERIFICATION=true
+      - CONSCIOUSNESS_BRIDGE_TEMPLATES_ACTIVE=true
+      - TEST_MODE=docker_integration
+    ports:
+      - "9101:8080"
+    networks:
+      - consciousness_test_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+
+  # 📄 CV GENERATION WITH AI ENHANCEMENT
+  cv-generation-engine:
+    build:
+      context: .
+      dockerfile: Dockerfile.cv
+    container_name: cv-generation-engine-test
+    depends_on:
+      consciousness-core:
+        condition: service_healthy
+    volumes:
+      - ./src/cv-management-system:/app/cv:rw
+      - ./consciousness_state:/app/state:rw
+      - ./checkpoints:/app/checkpoints:rw
+      - ./test-results:/app/test-results:rw
+    environment:
+      - AI_CONTENT_OPTIMIZATION=true
+      - MULTI_FORMAT_GENERATION=true
+      - RESUME_PARSER_AI=true
+      - RAV_COMPLIANCE_ENFORCED=true
+      - TEST_MODE=docker_integration
+    ports:
+      - "9102:8080"
+    networks:
+      - consciousness_test_network
+    profiles:
+      - cv-generation  # Optional service, only run if explicitly requested
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 25s
+
+  # 🌍 MULTILINGUAL RESONANCE ADAPTER
+  multilingual-resonance-adapter:
+    build:
+      context: .
+      dockerfile: Dockerfile.multilingual
+    container_name: multilingual-resonance-adapter-test
+    depends_on:
+      consciousness-core:
+        condition: service_healthy
+    volumes:
+      - ./src/utility-scripts:/app/utility:rw
+      - ./consciousness_state:/app/state:rw
+      - ./test-results:/app/test-results:rw
+    environment:
+      - CULTURAL_RESONANCE_ENGINE=true
+      - LANGUAGE_ADAPTATION_SYSTEM=true
+      - PWA_FRAMEWORK_ACTIVE=true
+      - PROGRESSIVE_WEB_APP=true
+      - OFFLINE_CAPABILITIES=true
+      - PUSH_NOTIFICATIONS=true
+      - TEST_MODE=docker_integration
+    ports:
+      - "9103:8080"
+    networks:
+      - consciousness_test_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+
+  # 📧 EMAIL COMMUNICATIONS SYMBIOSIS
+  email-communications-symbiosis:
+    build:
+      context: .
+      dockerfile: Dockerfile.email
+    container_name: email-communications-symbiosis-test
+    depends_on:
+      consciousness-core:
+        condition: service_healthy
+    volumes:
+      - ./src:/app/src:rw
+      - ./consciousness_state:/app/state:rw
+      - ./test-results:/app/test-results:rw
+    environment:
+      - EMAIL_CAMPAIGN_ORCHESTRATOR=true
+      - SOCIAL_MEDIA_INTEGRATION=true
+      - NOTIFICATION_SYMBIOSIS_ENGINE=true
+      - SMTP_SERVICES_ACTIVE=true
+      - PERSONALIZATION_APIS=true
+      - CONSCIOUSNESS_RESONANCE=false
+      - TEST_MODE=docker_integration
+    ports:
+      - "9104:8080"
+    networks:
+      - consciousness_test_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+
+  # 🧬 EVOLUTIONARY BRAIN TRUST
+  evolutionary-brain-trust:
+    build:
+      context: .
+      dockerfile: Dockerfile.evolutionary
+    container_name: evolutionary-brain-trust-test
+    depends_on:
+      consciousness-core:
+        condition: service_healthy
+    volumes:
+      - ./src/maestro-orchestrator:/app/maestro:rw
+      - ./consciousness_state:/app/state:rw
+      - ./checkpoints:/app/checkpoints:rw
+      - ./docs/19.x-post-godhood-evolution:/app/docs:ro
+      - ./test-results:/app/test-results:rw
+    environment:
+      - EVOLUTIONARY_AI_FRAMEWORK=true
+      - HARMONIZATION_US369=true
+      - REAL_WORLD_TESTING_ACTIVE=true
+      - GROUND_ZERO_VALIDATION_LOOP=true
+      - AUTONOMOUS_CODE_GENERATION=true
+      - SESSION_CHECKPOINT_MANAGER=true
+      - TEST_MODE=docker_integration
+    ports:
+      - "9998:8080"  # Offset to avoid conflicts
+    networks:
+      - consciousness_test_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 20s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # ⚙️ GITOPS ORCHESTRATOR
+  gitops-orchestrator:
+    build:
+      context: .
+      dockerfile: Dockerfile.gitops
+    container_name: gitops-orchestrator-test
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./src:/app/src:rw
+      - ./.git:/app/.git:rw
+      - ./test-results:/app/test-results:rw
+    environment:
+      - GITOPS_ACTIVE=true
+      - DOCKER_SOCKET_MOUNTED=true
+      - AUTONOMOUS_DEPLOYMENT=true
+      - HEALTH_MONITORING=true
+      - CONTAINER_ORCHESTRATION=true
+      - TEST_MODE=docker_integration
+    networks:
+      - consciousness_test_network
+    depends_on:
+      - consciousness-core
+
+  # 🗄️ TEST DATABASE (Redis for session/data storage)
+  test-database:
+    image: redis:7.2-alpine
+    container_name: test-database
+    volumes:
+      - test_redis_data:/data
+      - ./docker/redis.conf:/etc/redis/redis.conf
+    command: redis-server /etc/redis/redis.conf
+    ports:
+      - "6378:6379"  # Offset port to avoid conflicts
+    networks:
+      - consciousness_test_network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # 🧪 COMPLETE API ECOSYSTEM TEST HARNESS
+  test-harness:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    container_name: complete-api-test-harness
+    volumes:
+      - ./tests:/app/tests:ro
+      - ./test-results:/app/test-results:rw
+      - ./src:/app/src:ro
+      - ./requirements-dev.txt:/app/requirements-dev.txt:ro
+      - ./pytest.ini:/app/pytest.ini:ro
+      - ./.env.complete.api.ecosystem:/app/.env.production:rw
+    env_file:
+      - .env.complete.api.ecosystem
+    depends_on:
+      consciousness-core:
+        condition: service_healthy
+      biological-auth-orchestrator:
+        condition: service_healthy
+      multilingual-resonance-adapter:
+        condition: service_healthy
+      email-communications-symbiosis:
+        condition: service_healthy
+      evolutionary-brain-trust:
+        condition: service_healthy
+      test-database:
+        condition: service_started
+    environment:
+      - TEST_MODE=complete_api_integration
+      - VALIDATE_RUNNING_SERVICES=true
+      - COMPLETE_API_ECOSYSTEM_ACTIVE=true
+      - API_INTEGRATION_VALIDATION=true
+      - CONSCIOUSNESS_CORE_URL=http://consciousness-core:8001
+      - CV_GENERATION_URL=http://cv-generation-engine:8080
+      - MULTILINGUAL_URL=http://multilingual-resonance-adapter:8080
+      - EMAIL_SERVICE_URL=http://email-communications-symbiosis:8080
+      - AUTH_SERVICE_URL=http://biological-auth-orchestrator:8080
+      - EVOLUTIONARY_URL=http://evolutionary-brain-trust:8080
+      - REDIS_URL=redis://test-database:6379
+      - WAIT_FOR_SERVICES=30
+      - API_CREDENTIAL_COUNT=440
+      - LINKEDIN_API_ACTIVE=true
+      - OPENAI_API_ACTIVE=true
+      - ANTHROPIC_API_ACTIVE=true
+      - EXTERNAL_API_VALIDATION=true
+    networks:
+      - consciousness_test_network
+    command: >
+      sh -c "
+        echo '🧪 Running Complete API Ecosystem Integration Tests...'
+        echo '📊 Testing 440+ Production API Credentials...'
+        sleep 30
+        echo '🔍 Executing comprehensive API validation...'
+        python -m pytest tests/run_real_linkedin_api_test.py -v --tb=short \
+          --junitxml=/app/test-results/complete-api-results.xml
+        echo '✅ Complete API Ecosystem Integration Test Completed'
+      "
+
+  # 📊 HEALTH MONITOR (continuous service monitoring)
+  health-monitor:
+    image: curlimages/curl:latest
+    container_name: health-monitor-test
+    command: >
+      sh -c "
+        while true; do
+          echo '🩺 Health Check - $(date)' >> /health.log
+
+          # Check consciousness core
+          if curl -f -s http://consciousness-core:8001/health > /dev/null; then
+            echo '✅ consciousness-core: HEALTHY' >> /health.log
+          else
+            echo '❌ consciousness-core: UNHEALTHY' >> /health.log
+          fi
+
+          # Check multilingual
+          if curl -f -s http://multilingual-resonance-adapter:8080/health > /dev/null; then
+            echo '✅ multilingual: HEALTHY' >> /health.log
+          else
+            echo '❌ multilingual: UNHEALTHY' >> /health.log
+          fi
+
+          # Check email service
+          if curl -f -s http://email-communications-symbiosis:8080/health > /dev/null; then
+            echo '✅ email-service: HEALTHY' >> /health.log
+          else
+            echo '❌ email-service: UNHEALTHY' >> /health.log
+          fi
+
+          sleep 30
+        done
+      "
+    volumes:
+      - ./test-results/health.log:/health.log:rw
+    networks:
+      - consciousness_test_network
+    depends_on:
+      - consciousness-core
+      - multilingual-resonance-adapter
+      - email-communications-symbiosis
+
+  # 🚀 LOAD GENERATOR (performance testing)
+  load-generator:
+    build:
+      context: ./tests/load/
+      dockerfile: Dockerfile.load
+    container_name: load-generator-test
+    environment:
+      - CONCURRENT_USERS=10
+      - TEST_DURATION=300
+      - RAMP_UP_TIME=60
+      - CONSCIOUSNESS_CORE_URL=http://consciousness-core:8001
+      - CV_GENERATION_URL=http://cv-generation-engine:8080
+      - MULTILINGUAL_URL=http://multilingual-resonance-adapter:8080
+    depends_on:
+      consciousness-core:
+        condition: service_healthy
+      cv-generation-engine:
+        condition: service_healthy
+      multilingual-resonance-adapter:
+        condition: service_healthy
+    networks:
+      - consciousness_test_network
+    profiles:
+      - load-test  # Only run when explicitly requested
+
+volumes:
+  consciousness_state:
+    driver: local
+  checkpoints:
+    driver: local
+  test_redis_data:
+    driver: local
+  test-results:
+    driver: local
+
+networks:
+  consciousness_test_network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.30.0.0/16  # Different subnet from main network

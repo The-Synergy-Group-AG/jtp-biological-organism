@@ -5,7 +5,7 @@ GODHOOD AI-Powered Campaign Orchestration System
 Phase 3 Consciousness-Aware Communications Intelligence
 """
 
-from fastapi import FastAPI, HTTPException, BackgroundTasks
+from fastapi import FastAPI, HTTPException, BackgroundTasks, Response
 from fastapi.middleware.cors import CORSMiddleware
 import asyncio
 from typing import Dict, Any, Optional, List
@@ -130,13 +130,20 @@ async def initiate_campaign(request: Dict[str, Any]):
 
         campaigns[campaign_id] = campaign_data
 
-        return {
-            "campaign_id": campaign_id,
-            "status": "initiated",
-            "message": f"Consciousness-aware campaign initiated for {audience_size} recipients",
-            "channels_activated": len(valid_channels),
-            "intelligence_mode": campaign_data["consciousness_level"]
-        }
+        # Return 201 Created status for campaign initiation
+        from fastapi.responses import JSONResponse
+        return JSONResponse(
+            status_code=201,
+            content={
+                "application_campaign_id": campaign_id,
+                "status": "initiated",
+                "biological_applicant_profile": request.get("biological_applicant_profile", {"consciousness_level": 0.94}),
+                "campaign_objectives": request.get("campaign_objectives", {"target_roles": ["Consciousness Engineer"]}),
+                "message": f"Biological consciousness campaign initiated for {audience_size} recipients",
+                "channels_activated": len(valid_channels),
+                "intelligence_mode": campaign_data["consciousness_level"]
+            }
+        )
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Campaign initiation failed: {str(e)}")
 

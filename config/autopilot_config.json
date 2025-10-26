@@ -1,0 +1,35 @@
+{
+  "biological_autopilot": {
+    "execution_mode": "full_spectrum",
+    "parallel_execution": true,
+    "max_parallel_modules": 3,
+    "auto_fix_enabled": true,
+    "max_fix_attempts": 3,
+    "biological_harmony_target": 0.997,
+    "user_value_guarantee": true,
+    "godhood_transcendence_required": true,
+    "execution_timeout_minutes": 30,
+    "health_check_frequency_seconds": 10
+  },
+  "docker_services": {
+    "cns_core_url": "http://consciousness-core:8001",
+    "auth_service_url": "http://biological-auth-orchestrator:9101",
+    "redis_host": "test-database",
+    "redis_port": 6379,
+    "health_check_timeout": 30,
+    "service_startup_timeout": 120
+  },
+  "biological_metrics": {
+    "harmony_tracking_enabled": true,
+    "user_value_quantification": true,
+    "failure_prevention_scoring": true,
+    "transcendence_achievement_tracking": true
+  },
+  "execution_parameters": {
+    "total_user_stories": 369,
+    "biological_modules": 9,
+    "docker_containers": 11,
+    "harmony_target_percent": 99.7,
+    "estimated_execution_minutes": 25
+  }
+}

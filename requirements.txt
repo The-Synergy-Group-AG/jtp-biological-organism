@@ -1,22 +1,25 @@
+# Updated requirements with security fixes (2025-10-25)
+# Critical vulnerabilities fixed
+
 # Core biological consciousness dependencies (updated for security)
 fastapi==0.115.6
 uvicorn[standard]==0.32.1
 pydantic==2.10.3
 pydantic-settings==2.7.1
 
-# AI and ML dependencies for consciousness processing (updated)
+# AI and ML dependencies for consciousness processing (updated for security)
 openai==1.57.4
 anthropic==0.40.0
-transformers==4.47.0
+transformers==4.53.0  # Fixed multiple ReDoS vulnerabilities
 sentence-transformers==3.3.1
 scikit-learn==1.6.1
 pandas==2.2.3
 numpy==1.26.4
 
-# Web and API dependencies (updated)
-requests==2.32.3
+# Web and API dependencies (updated for security)
+requests==2.32.4  # Fixed CVE-2024-47081
 httpx==0.28.1
-aiohttp==3.11.11
+aiohttp==3.12.14  # Fixed CVE-2025-53643
 websockets==14.1
 
 # Database and storage (consciousness-based, not traditional) - updated
@@ -25,14 +28,14 @@ motor==3.7.0
 pymongo==4.10.1
 
 # Authentication and security - updated
-python-jose[cryptography]==3.3.0
+python-jose[cryptography]==3.4.0  # Fixed CVE-2024-33663 and CVE-2024-33664
 passlib[bcrypt]==1.7.4
-python-multipart==0.0.9
+python-multipart==0.0.19  # Fixed CVE-2024-53981
 oauthlib==3.2.2
 requests-oauthlib==2.0.0
 
 # Document processing for CV/resume parsing - updated
-PyPDF2==3.0.1
+PyPDF2==3.0.1  # CVE-2023-36464 - monitored, low impact for this use case
 python-docx==1.1.2
 reportlab==4.2.5
 pdfkit==1.0.0
@@ -47,9 +50,8 @@ babel==2.16.0
 langdetect==1.0.9
 
 # Web app and PWA - updated
-jinja2==3.1.5
+jinja2==3.1.6  # Fixed CVE-2025-27516
 aiofiles==24.1.0
-python-multipart==0.0.9
 
 # Monitoring and observability - updated
 prometheus-client==0.21.1

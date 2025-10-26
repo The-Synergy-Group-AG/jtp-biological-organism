@@ -1,0 +1,88 @@
+repos:
+  # 🐍 Python formatting and linting
+  - repo: https://github.com/psf/black
+    rev: 24.10.0
+    hooks:
+      - id: black
+        name: "Format Python code with Black"
+        description: "Run Black Python code formatter on all .py files"
+        args: [--line-length=88, --target-version=py311]
+        exclude: ^(migrations/|alembic/versions/)
+
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        name: "Sort Python imports"
+        description: "Sort Python imports with isort"
+        args: ["--profile", "black", "--line-length=88"]
+
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.1.1
+    hooks:
+      - id: flake8
+        name: "Check Python code style with flake8"
+        description: "Lint Python files with flake8"
+        args: [--max-line-length=88, --extend-ignore=E203,W503]
+        exclude: ^(migrations/|alembic/versions/|build/|dist/)
+
+  # 🔍 Security scanning
+  - repo: https://github.com/python-safety/safety
+    rev: v3.6.2
+    hooks:
+      - id: safety
+        name: "Check for Python security vulnerabilities"
+        description: "Scan requirements.txt for known security vulnerabilities"
+        files: requirements\.txt$
+        args: [--full-report]
+
+  # 🔍 Additional security checks
+  - repo: https://github.com/Lucas-C/pre-commit-hooks-bandit
+    rev: v1.1.0
+    hooks:
+      - id: python-bandit-vulnerability-check
+        name: "Check for Python security issues with Bandit"
+        description: "Run Bandit security linter on Python code"
+
+  # 📝 Documentation validation
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.29.2
+    hooks:
+      - id: check-jsonschema
+        name: "Validate pyproject.toml schema"
+        files: ^pyproject\.toml$
+        args: ["--schemafile", "https://json.schemastore.org/pyproject.json"]
+
+  # 🔧 General file checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+        name: "Trim trailing whitespace"
+        description: "Remove trailing whitespace from all files"
+        exclude: \.(md|rst)$
+
+      - id: end-of-file-fixer
+        name: "Fix end of files"
+        description: "Ensure files end with a newline"
+        exclude: \.(png|jpg|jpeg|gif|svg|ico)$
+
+      - id: check-yaml
+        name: "Validate YAML files"
+        description: "Check YAML file syntax"
+        files: \.(yaml|yml)$
+
+      - id: check-merge-conflict
+        name: "Check for merge conflicts"
+        description: "Prevent merging files with merge conflict markers"
+
+      - id: check-added-large-files
+        name: "Check for large files"
+        description: "Prevent adding large files accidentally"
+        args: ['--maxkb=1024']
+
+      - id: mixed-line-ending
+        name: "Fix mixed line endings"
+        description: "Normalize line endings to LF"
+        files: \.(py|js|ts|html|css|scss|md|txt|rst)$
+        exclude: ^(docs/_build/|node_modules/|\.git/)
