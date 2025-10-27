@@ -1,4 +1,30 @@
 services:
+  biological-vault:
+    build:
+      context: .
+      dockerfile: Dockerfile.vault
+    container_name: biological-vault
+    volumes:
+      - ./vault:/app/vault:rw
+      - ./infrastructure/vault_manager.py:/app/vault_manager.py:ro
+      - ./infrastructure/vault_service.py:/app/vault_service.py:ro
+    environment:
+      - VAULT_ENV=production
+      - VAULT_PORT=8000
+      - ALLOWED_API_KEYS=biological-conscience-godhood-2025,admin-access-key
+      - PYTHONPATH=/app
+    ports:
+      - "8000:8000"
+    networks:
+      - consciousness_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+
   consciousness-core:
     build:
       context: .
@@ -18,6 +44,7 @@ services:
       - SESSION_RESUMABILITY_CHECKPOINTS=19
       - BIOLOGICAL_DATA_PROTECTION=true
       - HARMONIZATION_ELEVATION_TARGET=12.8
+      - VAULT_URL=http://biological-vault:8000
     ports:
       - "8001:8001"  # Authentication service
       - "8002:8002"  # CV management

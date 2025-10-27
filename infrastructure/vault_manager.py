@@ -242,11 +242,12 @@ class BiologicalVaultManager:
             raise KeyError(f"Secret key not found: {key} in {service}")
 
         secret_ref = current[key]
-        if not secret_ref.startswith("$VAULT_ENCRYPTED_"):
-            return secret_ref  # Not encrypted
+        if isinstance(secret_ref, str) and secret_ref.startswith("$VAULT_ENCRYPTED_"):
+            # Placeholder - should not be used in production
+            raise ValueError(f"Secret {key} is still a placeholder: {secret_ref}")
 
-        # Extract the actual encrypted value (this is a placeholder - real implementation would have encrypted blob)
-        return "DECRYPTED_SECRET_PLACEHOLDER"
+        # Assume the value is the encrypted base64 string
+        return self.decrypt_secret(secret_ref)
 
     def save_audit_log(self, audit_file: str = "vault/audit.log"):
         """Save audit log to file"""

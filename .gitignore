@@ -3,3 +3,19 @@ src/cv-management-system/__pycache__/
 *.pyc
 *.pyo
 .DS_Store
+
+# 🔐 CRITICAL SECURITY - NEVER COMMIT VAULT FILES
+# The following contain production API keys, master keys, and secrets
+vault/
+vault/keys/
+vault/keys/master.key
+vault/secrets/
+vault/secrets/production.json
+vault/policies/
+vault/policies/access-policies.json
+vault/audit.log
+
+# 🚨 SECURITY WARNING:
+# Vault files contain encrypted production credentials
+# Master key provides access to all production API keys
+# These files should only exist locally or in production deployments
