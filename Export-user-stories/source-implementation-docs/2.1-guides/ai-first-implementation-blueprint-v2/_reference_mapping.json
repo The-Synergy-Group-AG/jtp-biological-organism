@@ -1,0 +1,369 @@
+{
+  "_meta": {
+    "original_file": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md",
+    "split_date": "2025-07-06T19:18:07.185437",
+    "parts": 5
+  },
+  "mappings": [
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#ai-first-implementation-blueprint-job-tracker-pro-enhanced",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#ai-first-implementation-blueprint-job-tracker-pro-enhanced",
+      "section": "AI-First Implementation Blueprint - Job Tracker Pro (Enhanced)",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#table-of-contents",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#table-of-contents",
+      "section": "Table of Contents",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#executive-summary",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#executive-summary",
+      "section": "Executive Summary",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#key-enhancements-in-v20",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#key-enhancements-in-v20",
+      "section": "Key Enhancements in v2.0",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#1-privacy-data-architecture",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#1-privacy-data-architecture",
+      "section": "1. Privacy & Data Architecture",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#11-zero-knowledge-architecture",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#11-zero-knowledge-architecture",
+      "section": "1.1 Zero-Knowledge Architecture",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#12-data-classification-storage",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#12-data-classification-storage",
+      "section": "1.2 Data Classification & Storage",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#primary-collections",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#primary-collections",
+      "section": "Primary Collections",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#13-privacy-controls-implementation",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#13-privacy-controls-implementation",
+      "section": "1.3 Privacy Controls Implementation",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#2-technical-architecture",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#2-technical-architecture",
+      "section": "2. Technical Architecture",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#21-microservices-architecture",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#21-microservices-architecture",
+      "section": "2.1 Microservices Architecture",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#optimized-for-62gb-thread-configuration",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#optimized-for-62gb-thread-configuration",
+      "section": "Optimized for 6\u00d72GB thread configuration",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#22-event-driven-architecture",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#22-event-driven-architecture",
+      "section": "2.2 Event-Driven Architecture",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#event-bus-implementation-for-module-communication",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#event-bus-implementation-for-module-communication",
+      "section": "Event bus implementation for module communication",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#23-service-mesh-configuration",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#23-service-mesh-configuration",
+      "section": "2.3 Service Mesh Configuration",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#istio-service-mesh-for-zero-trust-networking",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#istio-service-mesh-for-zero-trust-networking",
+      "section": "Istio service mesh for zero-trust networking",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#3-conversational-ai-engine",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#3-conversational-ai-engine",
+      "section": "3. Conversational AI Engine",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#31-conversation-flow-architecture",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#31-conversation-flow-architecture",
+      "section": "3.1 Conversation Flow Architecture",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#32-intent-recognition-entity-extraction",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#32-intent-recognition-entity-extraction",
+      "section": "3.2 Intent Recognition & Entity Extraction",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#33-context-management",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#33-context-management",
+      "section": "3.3 Context Management",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#34-natural-language-generation",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#34-natural-language-generation",
+      "section": "3.4 Natural Language Generation",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#4-user-experience-interfaces",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#4-user-experience-interfaces",
+      "section": "4. User Experience & Interfaces",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#41-progressive-web-app-architecture",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#41-progressive-web-app-architecture",
+      "section": "4.1 Progressive Web App Architecture",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#42-multi-modal-interaction-patterns",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#42-multi-modal-interaction-patterns",
+      "section": "4.2 Multi-Modal Interaction Patterns",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#43-accessibility-first-design",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#43-accessibility-first-design",
+      "section": "4.3 Accessibility-First Design",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#5-feature-implementations",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/01-ai-first-implementation-blueprint-job-tracker-pro-enhanced.md#5-feature-implementations",
+      "section": "5. Feature Implementations",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#51-job-search-discovery-us-051-to-us-089",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/02-6-integration-specifications.md#51-job-search-discovery-us-051-to-us-089",
+      "section": "5.1 Job Search & Discovery (US-051 to US-089)",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#52-application-tracking-us-011-to-us-029",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/02-6-integration-specifications.md#52-application-tracking-us-011-to-us-029",
+      "section": "5.2 Application Tracking (US-011 to US-029)",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#53-analytics-intelligence-us-045-to-us-089",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/02-6-integration-specifications.md#53-analytics-intelligence-us-045-to-us-089",
+      "section": "5.3 Analytics & Intelligence (US-045 to US-089)",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#54-gamification-motivation-us-090-to-us-181",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/02-6-integration-specifications.md#54-gamification-motivation-us-090-to-us-181",
+      "section": "5.4 Gamification & Motivation (US-090 to US-181)",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#55-professional-development-us-182-to-us-265",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/02-6-integration-specifications.md#55-professional-development-us-182-to-us-265",
+      "section": "5.5 Professional Development (US-182 to US-265)",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#56-networking-social-features-us-266-to-us-329",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/02-6-integration-specifications.md#56-networking-social-features-us-266-to-us-329",
+      "section": "5.6 Networking & Social Features (US-266 to US-329)",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#57-rav-compliance-module-us-357-to-us-409",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/02-6-integration-specifications.md#57-rav-compliance-module-us-357-to-us-409",
+      "section": "5.7 RAV Compliance Module (US-357 to US-409)",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#6-integration-specifications",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/02-6-integration-specifications.md#6-integration-specifications",
+      "section": "6. Integration Specifications",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#61-job-board-integrations",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/03-7-performance-scalability.md#61-job-board-integrations",
+      "section": "6.1 Job Board Integrations",
+      "part": 3
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#62-calendar-integration",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/03-7-performance-scalability.md#62-calendar-integration",
+      "section": "6.2 Calendar Integration",
+      "part": 3
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#63-email-integration",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/03-7-performance-scalability.md#63-email-integration",
+      "section": "6.3 Email Integration",
+      "part": 3
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#64-document-storage-integration",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/03-7-performance-scalability.md#64-document-storage-integration",
+      "section": "6.4 Document Storage Integration",
+      "part": 3
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#7-performance-scalability",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/03-7-performance-scalability.md#7-performance-scalability",
+      "section": "7. Performance & Scalability",
+      "part": 3
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#71-performance-optimization",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/03-7-performance-scalability.md#71-performance-optimization",
+      "section": "7.1 Performance Optimization",
+      "part": 3
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#72-scalability-architecture",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/03-7-performance-scalability.md#72-scalability-architecture",
+      "section": "7.2 Scalability Architecture",
+      "part": 3
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#kubernetes-deployment-for-horizontal-scaling",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/03-7-performance-scalability.md#kubernetes-deployment-for-horizontal-scaling",
+      "section": "Kubernetes deployment for horizontal scaling",
+      "part": 3
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#73-performance-benchmarks",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/03-7-performance-scalability.md#73-performance-benchmarks",
+      "section": "7.3 Performance Benchmarks",
+      "part": 3
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#8-security-compliance",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/03-7-performance-scalability.md#8-security-compliance",
+      "section": "8. Security & Compliance",
+      "part": 3
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#81-security-architecture",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/03-7-performance-scalability.md#81-security-architecture",
+      "section": "8.1 Security Architecture",
+      "part": 3
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#82-gdpr-privacy-compliance",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/04-9-testing-quality-assurance.md#82-gdpr-privacy-compliance",
+      "section": "8.2 GDPR & Privacy Compliance",
+      "part": 4
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#83-rav-compliance-security",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/04-9-testing-quality-assurance.md#83-rav-compliance-security",
+      "section": "8.3 RAV Compliance Security",
+      "part": 4
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#9-testing-quality-assurance",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/04-9-testing-quality-assurance.md#9-testing-quality-assurance",
+      "section": "9. Testing & Quality Assurance",
+      "part": 4
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#91-conversational-ai-testing",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/04-9-testing-quality-assurance.md#91-conversational-ai-testing",
+      "section": "9.1 Conversational AI Testing",
+      "part": 4
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#92-performance-testing",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/04-9-testing-quality-assurance.md#92-performance-testing",
+      "section": "9.2 Performance Testing",
+      "part": 4
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#93-quality-metrics",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/04-9-testing-quality-assurance.md#93-quality-metrics",
+      "section": "9.3 Quality Metrics",
+      "part": 4
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#10-deployment-operations",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/04-9-testing-quality-assurance.md#10-deployment-operations",
+      "section": "10. Deployment & Operations",
+      "part": 4
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#101-deployment-strategy",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/04-9-testing-quality-assurance.md#101-deployment-strategy",
+      "section": "10.1 Deployment Strategy",
+      "part": 4
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#progressive-deployment-with-canary-releases",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/04-9-testing-quality-assurance.md#progressive-deployment-with-canary-releases",
+      "section": "Progressive deployment with canary releases",
+      "part": 4
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#102-monitoring-observability",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/04-9-testing-quality-assurance.md#102-monitoring-observability",
+      "section": "10.2 Monitoring & Observability",
+      "part": 4
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#103-operational-procedures",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/04-9-testing-quality-assurance.md#103-operational-procedures",
+      "section": "10.3 Operational Procedures",
+      "part": 4
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#11-success-metrics",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/04-9-testing-quality-assurance.md#11-success-metrics",
+      "section": "11. Success Metrics",
+      "part": 4
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#111-ai-first-kpis",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/04-9-testing-quality-assurance.md#111-ai-first-kpis",
+      "section": "11.1 AI-First KPIs",
+      "part": 4
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#112-business-success-metrics",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/05-conclusion.md#112-business-success-metrics",
+      "section": "11.2 Business Success Metrics",
+      "part": 5
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.1-guides/02-ai-first-implementation-blueprint-v2.md#conclusion",
+      "new": "docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/05-conclusion.md#conclusion",
+      "section": "Conclusion",
+      "part": 5
+    }
+  ]
+}

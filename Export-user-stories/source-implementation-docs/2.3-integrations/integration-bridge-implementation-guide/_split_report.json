@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "input_file": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md",
+  "output_directory": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide",
+  "statistics": {
+    "original_size_kb": 53,
+    "original_lines": 34,
+    "parts_created": 3,
+    "average_lines_per_part": 533
+  },
+  "parts": [
+    {
+      "number": 1,
+      "title": "Integration Bridge Implementation Guide",
+      "sections": 14,
+      "lines": 664
+    },
+    {
+      "number": 2,
+      "title": "5. Email Bridge Implementation",
+      "sections": 14,
+      "lines": 667
+    },
+    {
+      "number": 3,
+      "title": "10. Testing & Monitoring",
+      "sections": 6,
+      "lines": 269
+    }
+  ]
+}

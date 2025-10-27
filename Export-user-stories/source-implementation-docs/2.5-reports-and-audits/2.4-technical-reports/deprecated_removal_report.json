@@ -1,0 +1,259 @@
+{
+  "backup_location": "deprecated_backup/20250724_180804",
+  "components_removed": [
+    {
+      "name": "agent_framework",
+      "path": "src/core/agent_framework",
+      "size_bytes": 1424415,
+      "size_mb": 1.36
+    },
+    {
+      "name": "agent_framework-ai-first",
+      "path": "src/core/agent_framework-ai-first",
+      "size_bytes": 20225,
+      "size_mb": 0.02
+    },
+    {
+      "name": "agent_framework-ai-first-complete",
+      "path": "src/core/agent_framework-ai-first-complete",
+      "size_bytes": 22199,
+      "size_mb": 0.02
+    },
+    {
+      "name": "agent_framework-ai-first-real",
+      "path": "src/core/agent_framework-ai-first-real",
+      "size_bytes": 12429,
+      "size_mb": 0.01
+    },
+    {
+      "name": "agent_framework-ai-first-v9",
+      "path": "src/core/agent_framework-ai-first-v9",
+      "size_bytes": 130630,
+      "size_mb": 0.12
+    },
+    {
+      "name": "ai",
+      "path": "src/core/ai",
+      "size_bytes": 303282,
+      "size_mb": 0.29
+    },
+    {
+      "name": "ai-ai-first",
+      "path": "src/core/ai-ai-first",
+      "size_bytes": 18664,
+      "size_mb": 0.02
+    },
+    {
+      "name": "ai_agents",
+      "path": "src/core/ai_agents",
+      "size_bytes": 736396,
+      "size_mb": 0.7
+    },
+    {
+      "name": "ai_agents-ai-first",
+      "path": "src/core/ai_agents-ai-first",
+      "size_bytes": 10088,
+      "size_mb": 0.01
+    },
+    {
+      "name": "ai_auth",
+      "path": "src/core/ai_auth",
+      "size_bytes": 53503,
+      "size_mb": 0.05
+    },
+    {
+      "name": "ai_infrastructure",
+      "path": "src/core/ai_infrastructure",
+      "size_bytes": 658835,
+      "size_mb": 0.63
+    },
+    {
+      "name": "ai_orchestrator",
+      "path": "src/core/ai_orchestrator",
+      "size_bytes": 19303,
+      "size_mb": 0.02
+    },
+    {
+      "name": "authentication",
+      "path": "src/core/authentication",
+      "size_bytes": 228779,
+      "size_mb": 0.22
+    },
+    {
+      "name": "authentication-ai-first",
+      "path": "src/core/authentication-ai-first",
+      "size_bytes": 23590,
+      "size_mb": 0.02
+    },
+    {
+      "name": "authentication-ai-first-template",
+      "path": "src/core/authentication-ai-first-template",
+      "size_bytes": 370362,
+      "size_mb": 0.35
+    },
+    {
+      "name": "authentication-ai-first-v9",
+      "path": "src/core/authentication-ai-first-v9",
+      "size_bytes": 153964,
+      "size_mb": 0.15
+    },
+    {
+      "name": "authentication-ai-first-v9-ai-first-ultra",
+      "path": "src/core/authentication-ai-first-v9-ai-first-ultra",
+      "size_bytes": 359053,
+      "size_mb": 0.34
+    },
+    {
+      "name": "business-features",
+      "path": "src/core/business-features",
+      "size_bytes": 59503,
+      "size_mb": 0.06
+    },
+    {
+      "name": "business-logic",
+      "path": "src/core/business-logic",
+      "size_bytes": 258775,
+      "size_mb": 0.25
+    },
+    {
+      "name": "config",
+      "path": "src/core/config",
+      "size_bytes": 153544,
+      "size_mb": 0.15
+    },
+    {
+      "name": "config-ai-first-complete",
+      "path": "src/core/config-ai-first-complete",
+      "size_bytes": 22420,
+      "size_mb": 0.02
+    },
+    {
+      "name": "config-ai-first-direct",
+      "path": "src/core/config-ai-first-direct",
+      "size_bytes": 86612,
+      "size_mb": 0.08
+    },
+    {
+      "name": "config-ai-first-enhanced",
+      "path": "src/core/config-ai-first-enhanced",
+      "size_bytes": 19702,
+      "size_mb": 0.02
+    },
+    {
+      "name": "config-ai-first-template",
+      "path": "src/core/config-ai-first-template",
+      "size_bytes": 98451,
+      "size_mb": 0.09
+    },
+    {
+      "name": "config-ai-first-ultra",
+      "path": "src/core/config-ai-first-ultra",
+      "size_bytes": 210659,
+      "size_mb": 0.2
+    },
+    {
+      "name": "foundation",
+      "path": "src/core/foundation",
+      "size_bytes": 2517523,
+      "size_mb": 2.4
+    },
+    {
+      "name": "foundation-ai-first",
+      "path": "src/core/foundation-ai-first",
+      "size_bytes": 4153,
+      "size_mb": 0.0
+    },
+    {
+      "name": "foundation-ai-first-template",
+      "path": "src/core/foundation-ai-first-template",
+      "size_bytes": 5445,
+      "size_mb": 0.01
+    },
+    {
+      "name": "foundation-ai-first-v9",
+      "path": "src/core/foundation-ai-first-v9",
+      "size_bytes": 95052,
+      "size_mb": 0.09
+    },
+    {
+      "name": "foundation_consolidated",
+      "path": "src/core/foundation_consolidated",
+      "size_bytes": 1102566,
+      "size_mb": 1.05
+    },
+    {
+      "name": "orchestration",
+      "path": "src/core/orchestration",
+      "size_bytes": 327427,
+      "size_mb": 0.31
+    },
+    {
+      "name": "orchestration-ai-first",
+      "path": "src/core/orchestration-ai-first",
+      "size_bytes": 2849,
+      "size_mb": 0.0
+    },
+    {
+      "name": "orchestration-ai-first-v9",
+      "path": "src/core/orchestration-ai-first-v9",
+      "size_bytes": 48410,
+      "size_mb": 0.05
+    },
+    {
+      "name": "security",
+      "path": "src/core/security",
+      "size_bytes": 219861,
+      "size_mb": 0.21
+    },
+    {
+      "name": "security-ai-first",
+      "path": "src/core/security-ai-first",
+      "size_bytes": 65614,
+      "size_mb": 0.06
+    },
+    {
+      "name": "security-ai-first-template",
+      "path": "src/core/security-ai-first-template",
+      "size_bytes": 314155,
+      "size_mb": 0.3
+    },
+    {
+      "name": "swiss_market",
+      "path": "src/core/swiss_market",
+      "size_bytes": 427848,
+      "size_mb": 0.41
+    },
+    {
+      "name": "swiss_market-ai-first",
+      "path": "src/core/swiss_market-ai-first",
+      "size_bytes": 27902,
+      "size_mb": 0.03
+    },
+    {
+      "name": "swiss_market-ai-first-template",
+      "path": "src/core/swiss_market-ai-first-template",
+      "size_bytes": 440202,
+      "size_mb": 0.42
+    },
+    {
+      "name": "training-academy",
+      "path": "src/core/training-academy",
+      "size_bytes": 180398,
+      "size_mb": 0.17
+    },
+    {
+      "name": "training-academy_core",
+      "path": "src/core/training-academy_core",
+      "size_bytes": 662599,
+      "size_mb": 0.63
+    },
+    {
+      "name": "training-academy_core-ai-first",
+      "path": "src/core/training-academy_core-ai-first",
+      "size_bytes": 49521,
+      "size_mb": 0.05
+    }
+  ],
+  "space_saved": 11946908,
+  "timestamp": "2025-07-24T18:08:04.895843"
+}

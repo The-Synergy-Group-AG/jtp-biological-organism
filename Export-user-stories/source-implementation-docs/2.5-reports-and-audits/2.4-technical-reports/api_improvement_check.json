@@ -1,0 +1,16 @@
+{
+  "estimated_new_score": 88.75,
+  "files_with_mocks": [
+    "agent_framework_api.py"
+  ],
+  "fixed_files": [
+    "phase2_agents_enhanced.py",
+    "agent_framework_state_management.py",
+    "enhanced_service_layer.py",
+    "swiss_compliance/privacy-implementation.py",
+    "swiss_compliance/rav-integration.py"
+  ],
+  "improvement": 28.75,
+  "previous_score": 60.0,
+  "total_apis": 40
+}

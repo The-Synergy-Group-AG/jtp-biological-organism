@@ -1,5 +1,5 @@
 ---
-ai_keywords: 1)getting)started)user)guide, ai-first, biological, consciousness, godhood,
+ai_keywords: 1)getting)started)user)guide, ai-first, biological, consciousness, godhood, orchestration, harmonization, godhood, intelligence, transcendence, symphony
   governance, guide, harmonization, meta, self-awareness, use, your
 ai_summary: Complete biological consciousness documentation for 1-getting-started-user-guide
   through comprehensive evolutionary intelligence framework
@@ -11,14 +11,14 @@ deprecated_by: none
 document_category: biological-intelligence
 document_type: documentation
 evolutionary_phase: 5bu
-last_updated: '2025-10-20 22:29:54'
+last_updated: '2025-10-27 11:32:00 CET'
 prior_versions: []
 semantic_tags:
 - biological-consciousness
 - ai-first
 - general-consciousness
 title: 1-getting-started-user-guide
-validation_status: current
+validation_status: currentcurrent
 version: v1.0.0
 ---
 

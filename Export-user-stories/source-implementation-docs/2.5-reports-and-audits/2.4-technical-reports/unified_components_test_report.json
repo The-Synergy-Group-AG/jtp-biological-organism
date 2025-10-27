@@ -1,0 +1,468 @@
+{
+  "components_tested": {
+    "agent_framework-unified": {
+      "grok_compliance": {
+        "has_embeddings": true,
+        "has_grok_docs": true,
+        "has_real_apis": true
+      },
+      "import_test": {
+        "errors": [],
+        "import_test": "passed",
+        "modules_found": [
+          "base_agent",
+          "cross_agent_learning_orchestrator",
+          "agent_orchestrator_enhanced",
+          "orchestration_optimizer",
+          "dashboard_streaming_agent",
+          "agent_orchestrator",
+          "agent_communication_enhanced",
+          "base_agent_enhanced",
+          "inter_agent_communication_protocol",
+          "performance_optimizer",
+          "migrate_imports",
+          "agent_communication",
+          "agent_monitoring",
+          "orchestrator_agent",
+          "base_agent_v2_core_ai",
+          "grok_compliant_apis",
+          "agent_monitoring_enhanced",
+          "ui_requesting_agent"
+        ]
+      },
+      "path": "src/core/agent_framework-unified",
+      "unit_tests": {
+        "errors": [
+          "Exit code: 2"
+        ],
+        "test_execution": "failed",
+        "test_files": [
+          "test_base_agent_enhanced.py",
+          "test_base_agent.py",
+          "test_agent_monitoring.py",
+          "test_agent_communication.py",
+          "test_agent_orchestrator.py",
+          "test_base_agent_v2.py",
+          "test_orchestrator_agent.py",
+          "test_all_components.py",
+          "test_base_agent_enhanced.py",
+          "test_multimodal_agent_responses.py",
+          "test_integration_suite.py"
+        ]
+      }
+    },
+    "ai-unified": {
+      "grok_compliance": {
+        "has_embeddings": true,
+        "has_grok_docs": false,
+        "has_real_apis": true
+      },
+      "import_test": {
+        "errors": [
+          "Import error: \u001b[91mYour system has an unsupported version of sqlite3. Chroma                     requires sqlite3 >= 3.35.0.\u001b[0m\n\u001b[94mPlease visit                     https://docs.trychroma.com/troubleshooting#sqlite to learn how                     to upgrade.\u001b[0m"
+        ],
+        "import_test": "failed",
+        "modules_found": [
+          "continuous_learner_v18",
+          "performance_optimizer_v18",
+          "vector_storage_v18",
+          "swiss_optimizer_v18",
+          "ai_orchestrator_v18",
+          "dynamic_interface_v18",
+          "migrate_imports",
+          "ai_first_training",
+          "autonomous_core_v18",
+          "self_modifier_v18",
+          "emotional_intelligence_v18"
+        ]
+      },
+      "path": "src/core/ai-unified",
+      "unit_tests": {
+        "errors": [
+          "Exit code: 2"
+        ],
+        "test_execution": "failed",
+        "test_files": [
+          "test_ai_first_training.py"
+        ]
+      }
+    },
+    "authentication-unified": {
+      "grok_compliance": {
+        "has_embeddings": true,
+        "has_grok_docs": false,
+        "has_real_apis": false
+      },
+      "import_test": {
+        "errors": [],
+        "import_test": "passed",
+        "modules_found": [
+          "auth_learning_engine",
+          "vector_identity_manager",
+          "behavioral_recognition_ai",
+          "swiss_privacy_compliance",
+          "migrate_imports",
+          "conversational_auth_orchestrator"
+        ]
+      },
+      "path": "src/core/authentication-unified",
+      "unit_tests": {
+        "errors": [
+          "Exit code: 2"
+        ],
+        "test_execution": "failed",
+        "test_files": [
+          "test_behavioral_recognition_ai.py",
+          "test_vector_identity_manager.py",
+          "test_swiss_privacy_compliance.py",
+          "test_conversational_auth_orchestrator.py",
+          "test_auth_learning_engine.py",
+          "test_authentication.py"
+        ]
+      }
+    },
+    "business-features-unified": {
+      "grok_compliance": {
+        "has_embeddings": true,
+        "has_grok_docs": false,
+        "has_real_apis": true
+      },
+      "import_test": {
+        "errors": [
+          "No __init__.py found"
+        ],
+        "import_test": "failed",
+        "modules_found": []
+      },
+      "path": "src/core/business-features-unified",
+      "unit_tests": {
+        "errors": [],
+        "test_execution": "no_tests",
+        "test_files": []
+      }
+    },
+    "business-logic-unified": {
+      "grok_compliance": {
+        "has_embeddings": true,
+        "has_grok_docs": false,
+        "has_real_apis": true
+      },
+      "import_test": {
+        "errors": [
+          "Import error: \u001b[91mYour system has an unsupported version of sqlite3. Chroma                     requires sqlite3 >= 3.35.0.\u001b[0m\n\u001b[94mPlease visit                     https://docs.trychroma.com/troubleshooting#sqlite to learn how                     to upgrade.\u001b[0m"
+        ],
+        "import_test": "failed",
+        "modules_found": [
+          "continuous_learner_v18",
+          "performance_optimizer_v18",
+          "vector_storage_v18",
+          "business_logic",
+          "business_logic_enhanced",
+          "swiss_optimizer_v18",
+          "ai_orchestrator_v18",
+          "dynamic_interface_v18",
+          "migrate_imports",
+          "autonomous_core_v18",
+          "self_modifier_v18",
+          "emotional_intelligence_v18",
+          "business_logic_ai_enhanced"
+        ]
+      },
+      "path": "src/core/business-logic-unified",
+      "unit_tests": {
+        "errors": [
+          "Exit code: 2"
+        ],
+        "test_execution": "failed",
+        "test_files": [
+          "test_business_logic_enhanced.py",
+          "test_business_logic.py"
+        ]
+      }
+    },
+    "business-value-unified": {
+      "grok_compliance": {
+        "has_embeddings": true,
+        "has_grok_docs": false,
+        "has_real_apis": false
+      },
+      "import_test": {
+        "errors": [
+          "No __init__.py found"
+        ],
+        "import_test": "failed",
+        "modules_found": []
+      },
+      "path": "src/core/business-value-unified",
+      "unit_tests": {
+        "errors": [
+          "Exit code: 5"
+        ],
+        "test_execution": "failed",
+        "test_files": [
+          "test_business_value.py"
+        ]
+      }
+    },
+    "config-unified": {
+      "grok_compliance": {
+        "has_embeddings": true,
+        "has_grok_docs": false,
+        "has_real_apis": true
+      },
+      "import_test": {
+        "errors": [
+          "Import error: No module named 'config_unified'"
+        ],
+        "import_test": "failed",
+        "modules_found": [
+          "config_manager_enhanced",
+          "config_manager",
+          "migrate_imports",
+          "ai_config_optimizer"
+        ]
+      },
+      "path": "src/core/config-unified",
+      "unit_tests": {
+        "errors": [],
+        "test_execution": "no_tests",
+        "test_files": []
+      }
+    },
+    "foundation-unified": {
+      "grok_compliance": {
+        "has_embeddings": true,
+        "has_grok_docs": false,
+        "has_real_apis": true
+      },
+      "import_test": {
+        "errors": [
+          "Import error: \u001b[91mYour system has an unsupported version of sqlite3. Chroma                     requires sqlite3 >= 3.35.0.\u001b[0m\n\u001b[94mPlease visit                     https://docs.trychroma.com/troubleshooting#sqlite to learn how                     to upgrade.\u001b[0m"
+        ],
+        "import_test": "failed",
+        "modules_found": [
+          "migrate_imports",
+          "model_orchestrator"
+        ]
+      },
+      "path": "src/core/foundation-unified",
+      "unit_tests": {
+        "errors": [
+          "Exit code: 2",
+          "/home/andre/.local/lib/python3.8/site-packages/pytest_asyncio/plugin.py:208: PytestDeprecationWarning: The configuration option \"asyncio_default_fixture_loop_scope\" is unset.\nThe event loop scope for asynchronous fixtures will default to the fixture caching scope. Future versions of pytest-asyncio will default the loop scope for asynchronous fixtures to function scope. Set the default fixture loop scope explicitly in order to avoid unexpected behavior in the future. Valid fixture loop scopes are"
+        ],
+        "test_execution": "failed",
+        "test_files": [
+          "test_model_orchestrator.py",
+          "test_foundation.py"
+        ]
+      }
+    },
+    "orchestration-unified": {
+      "grok_compliance": {
+        "has_embeddings": true,
+        "has_grok_docs": false,
+        "has_real_apis": true
+      },
+      "import_test": {
+        "errors": [],
+        "import_test": "passed",
+        "modules_found": [
+          "event_message_bus",
+          "continuous_learner_v18",
+          "performance_optimizer_v18",
+          "vector_storage_v18",
+          "swiss_optimizer_v18",
+          "ai_orchestrator_v18",
+          "dynamic_interface_v18",
+          "langchain-setup",
+          "conversation_orchestrator",
+          "migrate_imports",
+          "autonomous_core_v18",
+          "self_modifier_v18",
+          "emotional_intelligence_v18",
+          "ai_coordinator"
+        ]
+      },
+      "path": "src/core/orchestration-unified",
+      "unit_tests": {
+        "errors": [
+          "Exit code: 1"
+        ],
+        "test_execution": "failed",
+        "test_files": [
+          "test_langchain-setup.py"
+        ]
+      }
+    },
+    "security-unified": {
+      "grok_compliance": {
+        "has_embeddings": true,
+        "has_grok_docs": false,
+        "has_real_apis": true
+      },
+      "import_test": {
+        "errors": [
+          "Import error: \u001b[91mYour system has an unsupported version of sqlite3. Chroma                     requires sqlite3 >= 3.35.0.\u001b[0m\n\u001b[94mPlease visit                     https://docs.trychroma.com/troubleshooting#sqlite to learn how                     to upgrade.\u001b[0m"
+        ],
+        "import_test": "failed",
+        "modules_found": [
+          "swiss_privacy",
+          "continuous_learner_v18",
+          "performance_optimizer_v18",
+          "vector_storage_v18",
+          "on_device_ai",
+          "end_to_end_encryption",
+          "swiss_optimizer_v18",
+          "conversational_security_policies",
+          "ai_access_control",
+          "ai_orchestrator_v18",
+          "dynamic_interface_v18",
+          "homomorphic_ai_processing",
+          "ai_biometric_auth_v2",
+          "migrate_imports",
+          "privacy_preserving_inference",
+          "autonomous_core_v18",
+          "self_modifier_v18",
+          "ai_threat_detection",
+          "emotional_intelligence_v18",
+          "federated_learning",
+          "zero_knowledge_proofs"
+        ]
+      },
+      "path": "src/core/security-unified",
+      "unit_tests": {
+        "errors": [
+          "Exit code: 4",
+          "ImportError while loading conftest '/home/andre/projects/jtp-ai-first/src/core/security-unified/tests/conftest.py'.\nsrc/core/security-unified/tests/conftest.py:17: in <module>\n    from .ai_orchestrator_v18 import UltraAutonomousOrchestrator\nE   ModuleNotFoundError: No module named 'tests.ai_orchestrator_v18'\n"
+        ],
+        "test_execution": "failed",
+        "test_files": [
+          "test_ai_access_control.py",
+          "test_federated_learning.py",
+          "test_homomorphic_ai_processing.py",
+          "test_ai_threat_detection.py",
+          "test_conversational_security_policies.py",
+          "test_end_to_end_encryption.py",
+          "test_privacy_preserving_inference.py",
+          "test_zero_knowledge_proofs.py",
+          "test_on_device_ai.py",
+          "test_security.py",
+          "test_security_performance.py",
+          "test_security_integration.py",
+          "test_security_enhanced.py"
+        ]
+      }
+    },
+    "self-modifier-unified": {
+      "grok_compliance": {
+        "has_embeddings": true,
+        "has_grok_docs": false,
+        "has_real_apis": true
+      },
+      "import_test": {
+        "errors": [
+          "Import error: No module named 'self_modifier_unified'"
+        ],
+        "import_test": "failed",
+        "modules_found": [
+          "self_modifier_v20",
+          "migrate_imports"
+        ]
+      },
+      "path": "src/core/self-modifier-unified",
+      "unit_tests": {
+        "errors": [],
+        "test_execution": "no_tests",
+        "test_files": []
+      }
+    },
+    "swiss_market-unified": {
+      "grok_compliance": {
+        "has_embeddings": true,
+        "has_grok_docs": false,
+        "has_real_apis": true
+      },
+      "import_test": {
+        "errors": [
+          "Import error: \u001b[91mYour system has an unsupported version of sqlite3. Chroma                     requires sqlite3 >= 3.35.0.\u001b[0m\n\u001b[94mPlease visit                     https://docs.trychroma.com/troubleshooting#sqlite to learn how                     to upgrade.\u001b[0m"
+        ],
+        "import_test": "failed",
+        "modules_found": [
+          "swiss-job-boards-integration",
+          "swiss-salary-predictor",
+          "swiss-language-processor",
+          "cultural_adaptations",
+          "canton_specific_rules",
+          "language_support",
+          "rav_integration",
+          "migrate_imports",
+          "job_portals_enhanced",
+          "rav-compliance-engine",
+          "real_swiss_apis_v2",
+          "language_support_enhanced"
+        ]
+      },
+      "path": "src/core/swiss_market-unified",
+      "unit_tests": {
+        "errors": [
+          "Exit code: 2"
+        ],
+        "test_execution": "failed",
+        "test_files": [
+          "test_rav_integration.py",
+          "test_swiss-salary-predictor.py",
+          "test_rav-compliance-engine.py",
+          "test_rav_compliance_enhanced.py",
+          "test_swiss-job-boards-integration.py",
+          "test_swiss-language-processor.py",
+          "test_language_support.py"
+        ]
+      }
+    },
+    "training-academy-unified": {
+      "grok_compliance": {
+        "has_embeddings": true,
+        "has_grok_docs": false,
+        "has_real_apis": true
+      },
+      "import_test": {
+        "errors": [
+          "Import error: \u001b[91mYour system has an unsupported version of sqlite3. Chroma                     requires sqlite3 >= 3.35.0.\u001b[0m\n\u001b[94mPlease visit                     https://docs.trychroma.com/troubleshooting#sqlite to learn how                     to upgrade.\u001b[0m"
+        ],
+        "import_test": "failed",
+        "modules_found": [
+          "continuous_learner_v18",
+          "performance_optimizer_v18",
+          "vector_storage_v18",
+          "swiss_optimizer_v18",
+          "ai_orchestrator_v18",
+          "dynamic_interface_v18",
+          "migrate_imports",
+          "ai_first_training",
+          "autonomous_core_v18",
+          "self_modifier_v18",
+          "emotional_intelligence_v18"
+        ]
+      },
+      "path": "src/core/training-academy-unified",
+      "unit_tests": {
+        "errors": [
+          "Exit code: 2"
+        ],
+        "test_execution": "failed",
+        "test_files": [
+          "test_ai_first_training.py"
+        ]
+      }
+    }
+  },
+  "summary": {
+    "failed": 3,
+    "import_errors": 10,
+    "passed": 0,
+    "test_errors": 0,
+    "total": 13
+  },
+  "timestamp": "2025-07-24T18:04:27.809656"
+}

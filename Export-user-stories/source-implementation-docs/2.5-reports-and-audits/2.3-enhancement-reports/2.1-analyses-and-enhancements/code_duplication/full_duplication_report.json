@@ -1,0 +1,1293 @@
+{
+  "refactoring_suggestions": [
+    "Extract ClassDef (581 lines) duplicated 2 times:\n  Locations: ai_story_architect_enhanced.py:78, ai_story_architect_enhanced.py:79",
+    "Extract AsyncFunctionDef (15 lines) duplicated 61 times:\n  Locations: swiss_market_expansion_orchestrator.py:50, aggressive_90_percent_improvements.py:50, final_improvements.py:50 and 58 more",
+    "Extract AsyncFunctionDef (44 lines) duplicated 18 times:\n  Locations: orchestrator.py:36, __init__.py:43, dashboard.py:36 and 15 more",
+    "Extract AsyncFunctionDef (34 lines) duplicated 18 times:\n  Locations: orchestrator.py:82, __init__.py:89, dashboard.py:82 and 15 more",
+    "Extract FunctionDef (26 lines) duplicated 21 times:\n  Locations: canton_nidwalden.py:126, canton_obwalden.py:126, canton_aargau.py:264 and 18 more",
+    "Extract ClassDef (246 lines) duplicated 2 times:\n  Locations: event_bus.py:16, event_bus.py:16",
+    "Extract ClassDef (96 lines) duplicated 5 times:\n  Locations: __init__.py:51, __init__.py:61, __init__.py:55 and 2 more",
+    "Extract ClassDef (52 lines) duplicated 7 times:\n  Locations: api_gateway.py:159, api_gateway.py:338, api_gateway.py:511 and 4 more",
+    "Extract ClassDef (162 lines) duplicated 2 times:\n  Locations: __init__.py:20, __init__.py:20",
+    "Extract FunctionDef (12 lines) duplicated 22 times:\n  Locations: jobs_ch_pilot.py:16, orchestrator.py:121, state_sync.py:16 and 19 more"
+  ],
+  "summary": {
+    "duplicate_groups_found": 50,
+    "estimated_lines_saved": 8694,
+    "potential_time_saved": "173.9 hours",
+    "total_duplicates": 478,
+    "total_files": 879
+  },
+  "top_duplicates": [
+    {
+      "impact_score": 1162,
+      "instances": 2,
+      "lines": 581,
+      "locations": [
+        {
+          "end_line": 659,
+          "file": "src/core/01_agent_systems/agents/ai_story_architect_enhanced.py",
+          "start_line": 78
+        },
+        {
+          "end_line": 660,
+          "file": "src/core/18_utilities_support/consolidated/agent_framework/ai_story_architect_enhanced.py",
+          "start_line": 79
+        }
+      ],
+      "preview": "class AIStoryArchitect(BaseAgent):\n    \"\"\"\n    AI agent that architects compelling career stories\n    Uses advanced NLP to craft narratives that resonate\n    \"\"\"\n\n    def __init__(self, agent_id: str ...",
+      "rank": 1,
+      "type": "ClassDef"
+    },
+    {
+      "impact_score": 915,
+      "instances": 61,
+      "lines": 15,
+      "locations": [
+        {
+          "end_line": 65,
+          "file": "src/core/07_swiss_market/swiss_market/swiss_market_expansion_orchestrator.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/scripts/aggressive_90_percent_improvements.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/scripts/final_improvements.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/scripts/final_boost_improvements.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/scripts/comprehensive_metrics_calculator.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/scripts/recommendations_analyzer.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/scripts/analyze_missing_modules.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/scripts/recommendations_executor.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/scripts/analyze_actual_codebase.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/scripts/count_modules.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/scripts/complete_module_registry.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 66,
+          "file": "src/core/09_voice_communication/voice/voice_integration_example.py",
+          "start_line": 51
+        },
+        {
+          "end_line": 61,
+          "file": "src/core/13_integration_apis/a16z_integration/learning_personalization_engine.py",
+          "start_line": 46
+        },
+        {
+          "end_line": 61,
+          "file": "src/core/13_integration_apis/a16z_integration/multimodal_creative_system.py",
+          "start_line": 46
+        },
+        {
+          "end_line": 75,
+          "file": "src/core/13_integration_apis/external_apis/job_board_integrations.py",
+          "start_line": 60
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/16_business_features/lifecycle_management/success_pattern_learner.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/16_business_features/lifecycle_management/conversational_lifecycle_orchestrator.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/16_business_features/lifecycle_management/continuous_improvement_ai.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 63,
+          "file": "src/core/18_utilities_support/launch/scripts/cleanup_ai_first_violations.py",
+          "start_line": 48
+        },
+        {
+          "end_line": 63,
+          "file": "src/core/18_utilities_support/launch/scripts/predictive_scaler.py",
+          "start_line": 48
+        },
+        {
+          "end_line": 63,
+          "file": "src/core/18_utilities_support/launch/scripts/verify_ai_first_compliance.py",
+          "start_line": 48
+        },
+        {
+          "end_line": 63,
+          "file": "src/core/18_utilities_support/launch/scripts/validate_ai_models.py",
+          "start_line": 48
+        },
+        {
+          "end_line": 63,
+          "file": "src/core/18_utilities_support/launch/scripts/monitor_launch.py",
+          "start_line": 48
+        },
+        {
+          "end_line": 63,
+          "file": "src/core/18_utilities_support/launch/scripts/verify_infrastructure.py",
+          "start_line": 48
+        },
+        {
+          "end_line": 63,
+          "file": "src/core/18_utilities_support/launch/scripts/final_ai_first_cleanup.py",
+          "start_line": 48
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/18_utilities_support/utilities_consolidated/utils/migration.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/18_utilities_support/utilities_consolidated/prompts/ai_prompt_templates.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 49,
+          "file": "src/core/12_frontend_ui/visualization/mindmap_templates.py",
+          "start_line": 34
+        },
+        {
+          "end_line": 49,
+          "file": "src/core/12_frontend_ui/visualization/mindmap_integration_service.py",
+          "start_line": 34
+        },
+        {
+          "end_line": 49,
+          "file": "src/core/12_frontend_ui/visualization/ai_mindmap_engine.py",
+          "start_line": 34
+        },
+        {
+          "end_line": 49,
+          "file": "src/core/12_frontend_ui/ui/claude_artifacts/claude_artifacts_engine.py",
+          "start_line": 34
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/deployment/pilot/generate_pilot_report.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/scripts/master_orchestrator.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/scripts/demo_improvements.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 66,
+          "file": "src/core/09_voice_communication/voice/ai_first_voice.py",
+          "start_line": 51
+        },
+        {
+          "end_line": 66,
+          "file": "src/core/09_voice_communication/voice/voice_configuration.py",
+          "start_line": 51
+        },
+        {
+          "end_line": 49,
+          "file": "src/core/01_agent_systems/mcp_agents/mcp_server.py",
+          "start_line": 34
+        },
+        {
+          "end_line": 49,
+          "file": "src/core/01_agent_systems/mcp_agents/mcp_orchestration.py",
+          "start_line": 34
+        },
+        {
+          "end_line": 49,
+          "file": "src/core/01_agent_systems/mcp_agents/mcp_conversation.py",
+          "start_line": 34
+        },
+        {
+          "end_line": 49,
+          "file": "src/core/01_agent_systems/mcp_agents/mcp_collaboration.py",
+          "start_line": 34
+        },
+        {
+          "end_line": 49,
+          "file": "src/core/01_agent_systems/mcp_agents/mcp_task_management.py",
+          "start_line": 34
+        },
+        {
+          "end_line": 49,
+          "file": "src/core/01_agent_systems/mcp_agents/mcp_learning.py",
+          "start_line": 34
+        },
+        {
+          "end_line": 49,
+          "file": "src/core/01_agent_systems/mcp_agents/mcp_client.py",
+          "start_line": 34
+        },
+        {
+          "end_line": 49,
+          "file": "src/core/01_agent_systems/mcp_agents/mcp_tools.py",
+          "start_line": 34
+        },
+        {
+          "end_line": 189,
+          "file": "src/core/14_training_education/educational_innovation/educational_innovation.py",
+          "start_line": 174
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/03_document_systems/docling_integration/example_usage.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/03_document_systems/docling_integration/setup.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/03_document_systems/docling_integration/config/swiss_config.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/06_mcp_systems/mcp_servers/job_board_mcp_server.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/06_mcp_systems/mcp_servers/base_mcp_server.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/05_infrastructure_devops/production_migration/migration_scripts/export_legacy_data.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/18_utilities_support/multi_region/multi_region.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/18_utilities_support/multi_region/geographic/region_manager.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/17_quality_performance/quality_durability/model_drift_bias_monitoring.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/02_core_ai_systems/advanced_ai/analytics_dashboard_orchestrator.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/02_core_ai_systems/advanced_ai/advanced_ai_integration_orchestrator.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/02_core_ai_systems/advanced_ai/demo_predictive_proactive_ai.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 66,
+          "file": "src/core/02_core_ai_systems/advanced_ai/voice_integration_orchestrator.py",
+          "start_line": 51
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/02_core_ai_systems/advanced_ai/emotional_intelligence_gamification_orchestrator.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/04_feature_modules/modules_models/vector_schema_design.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/04_feature_modules/modules/self_configuration.py",
+          "start_line": 50
+        }
+      ],
+      "preview": "    async def process_intent(self, user_input: str) -> Dict[str, Any]:\n        \"\"\"Process user intent through AI understanding\"\"\"\n        try:\n            intent = await self._extract_intent(user_inpu...",
+      "rank": 2,
+      "type": "AsyncFunctionDef"
+    },
+    {
+      "impact_score": 792,
+      "instances": 18,
+      "lines": 44,
+      "locations": [
+        {
+          "end_line": 80,
+          "file": "src/core/07_swiss_market/swiss_compliance/batch_implementation_core/orchestrator.py",
+          "start_line": 36
+        },
+        {
+          "end_line": 87,
+          "file": "src/core/12_frontend_ui/demo/__init__.py",
+          "start_line": 43
+        },
+        {
+          "end_line": 80,
+          "file": "src/core/12_frontend_ui/dashboard/dashboard.py",
+          "start_line": 36
+        },
+        {
+          "end_line": 85,
+          "file": "src/core/12_frontend_ui/dashboard/core/metric_aggregator.py",
+          "start_line": 41
+        },
+        {
+          "end_line": 85,
+          "file": "src/core/12_frontend_ui/dashboard/core/swiss_optimizer.py",
+          "start_line": 41
+        },
+        {
+          "end_line": 88,
+          "file": "src/core/12_frontend_ui/dashboard/core/__init__.py",
+          "start_line": 44
+        },
+        {
+          "end_line": 85,
+          "file": "src/core/12_frontend_ui/dashboard/core/base.py",
+          "start_line": 41
+        },
+        {
+          "end_line": 85,
+          "file": "src/core/12_frontend_ui/dashboard/core/jtp_docling.py",
+          "start_line": 41
+        },
+        {
+          "end_line": 90,
+          "file": "src/core/01_agent_systems/agents/__init__.py",
+          "start_line": 46
+        },
+        {
+          "end_line": 87,
+          "file": "src/core/03_document_systems/document_generation/__init__.py",
+          "start_line": 43
+        },
+        {
+          "end_line": 85,
+          "file": "src/core/10_security_privacy/enhanced_security/zero_knowledge/zero_knowledge_proofs.py",
+          "start_line": 41
+        },
+        {
+          "end_line": 80,
+          "file": "src/core/infrastructure/production_infrastructure_orchestrator.py",
+          "start_line": 36
+        },
+        {
+          "end_line": 85,
+          "file": "src/core/infrastructure/event_bus.py",
+          "start_line": 41
+        },
+        {
+          "end_line": 101,
+          "file": "src/core/infrastructure/event_system/__init__.py",
+          "start_line": 57
+        },
+        {
+          "end_line": 85,
+          "file": "src/core/infrastructure/event_system/event_bus.py",
+          "start_line": 41
+        },
+        {
+          "end_line": 84,
+          "file": "src/core/02_core_ai_systems/training/n8n_training_exercises.py",
+          "start_line": 40
+        },
+        {
+          "end_line": 95,
+          "file": "src/core/11_analytics_intelligence/analytics/analytics_engine.py",
+          "start_line": 51
+        },
+        {
+          "end_line": 99,
+          "file": "src/core/11_analytics_intelligence/analytics/__init__.py",
+          "start_line": 55
+        }
+      ],
+      "preview": "    async def query(self, query_text: str, n_results: int = 10, filter: dict = None, **kwargs):\n        \"\"\"Execute real vector similarity search with metadata filtering\"\"\"\n        try:\n            # G...",
+      "rank": 3,
+      "type": "AsyncFunctionDef"
+    },
+    {
+      "impact_score": 612,
+      "instances": 18,
+      "lines": 34,
+      "locations": [
+        {
+          "end_line": 116,
+          "file": "src/core/07_swiss_market/swiss_compliance/batch_implementation_core/orchestrator.py",
+          "start_line": 82
+        },
+        {
+          "end_line": 123,
+          "file": "src/core/12_frontend_ui/demo/__init__.py",
+          "start_line": 89
+        },
+        {
+          "end_line": 116,
+          "file": "src/core/12_frontend_ui/dashboard/dashboard.py",
+          "start_line": 82
+        },
+        {
+          "end_line": 121,
+          "file": "src/core/12_frontend_ui/dashboard/core/metric_aggregator.py",
+          "start_line": 87
+        },
+        {
+          "end_line": 121,
+          "file": "src/core/12_frontend_ui/dashboard/core/swiss_optimizer.py",
+          "start_line": 87
+        },
+        {
+          "end_line": 124,
+          "file": "src/core/12_frontend_ui/dashboard/core/__init__.py",
+          "start_line": 90
+        },
+        {
+          "end_line": 121,
+          "file": "src/core/12_frontend_ui/dashboard/core/base.py",
+          "start_line": 87
+        },
+        {
+          "end_line": 121,
+          "file": "src/core/12_frontend_ui/dashboard/core/jtp_docling.py",
+          "start_line": 87
+        },
+        {
+          "end_line": 126,
+          "file": "src/core/01_agent_systems/agents/__init__.py",
+          "start_line": 92
+        },
+        {
+          "end_line": 123,
+          "file": "src/core/03_document_systems/document_generation/__init__.py",
+          "start_line": 89
+        },
+        {
+          "end_line": 121,
+          "file": "src/core/10_security_privacy/enhanced_security/zero_knowledge/zero_knowledge_proofs.py",
+          "start_line": 87
+        },
+        {
+          "end_line": 116,
+          "file": "src/core/infrastructure/production_infrastructure_orchestrator.py",
+          "start_line": 82
+        },
+        {
+          "end_line": 121,
+          "file": "src/core/infrastructure/event_bus.py",
+          "start_line": 87
+        },
+        {
+          "end_line": 137,
+          "file": "src/core/infrastructure/event_system/__init__.py",
+          "start_line": 103
+        },
+        {
+          "end_line": 121,
+          "file": "src/core/infrastructure/event_system/event_bus.py",
+          "start_line": 87
+        },
+        {
+          "end_line": 120,
+          "file": "src/core/02_core_ai_systems/training/n8n_training_exercises.py",
+          "start_line": 86
+        },
+        {
+          "end_line": 131,
+          "file": "src/core/11_analytics_intelligence/analytics/analytics_engine.py",
+          "start_line": 97
+        },
+        {
+          "end_line": 135,
+          "file": "src/core/11_analytics_intelligence/analytics/__init__.py",
+          "start_line": 101
+        }
+      ],
+      "preview": "    async def add_documents(self, documents: List[Dict[str, Any]]):\n        \"\"\"Add documents with embeddings to collection\"\"\"\n        try:\n            ids = []\n            texts = []\n            embed...",
+      "rank": 4,
+      "type": "AsyncFunctionDef"
+    },
+    {
+      "impact_score": 546,
+      "instances": 21,
+      "lines": 26,
+      "locations": [
+        {
+          "end_line": 152,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_nidwalden.py",
+          "start_line": 126
+        },
+        {
+          "end_line": 152,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_obwalden.py",
+          "start_line": 126
+        },
+        {
+          "end_line": 296,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_aargau.py",
+          "start_line": 264
+        },
+        {
+          "end_line": 152,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_uri.py",
+          "start_line": 126
+        },
+        {
+          "end_line": 285,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_zurich.py",
+          "start_line": 253
+        },
+        {
+          "end_line": 152,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_appenzell_innerrhoden.py",
+          "start_line": 126
+        },
+        {
+          "end_line": 152,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_solothurn.py",
+          "start_line": 126
+        },
+        {
+          "end_line": 152,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_grisons.py",
+          "start_line": 126
+        },
+        {
+          "end_line": 303,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_lucerne.py",
+          "start_line": 271
+        },
+        {
+          "end_line": 152,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_glarus.py",
+          "start_line": 126
+        },
+        {
+          "end_line": 152,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_valais.py",
+          "start_line": 126
+        },
+        {
+          "end_line": 152,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_thurgau.py",
+          "start_line": 126
+        },
+        {
+          "end_line": 152,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_zug.py",
+          "start_line": 126
+        },
+        {
+          "end_line": 152,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_neuchatel.py",
+          "start_line": 126
+        },
+        {
+          "end_line": 152,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_jura.py",
+          "start_line": 126
+        },
+        {
+          "end_line": 152,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_schaffhausen.py",
+          "start_line": 126
+        },
+        {
+          "end_line": 302,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_st_gallen.py",
+          "start_line": 270
+        },
+        {
+          "end_line": 152,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_schwyz.py",
+          "start_line": 126
+        },
+        {
+          "end_line": 301,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_basel_landschaft.py",
+          "start_line": 269
+        },
+        {
+          "end_line": 152,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_fribourg.py",
+          "start_line": 126
+        },
+        {
+          "end_line": 152,
+          "file": "src/core/07_swiss_market/swiss_compliance/canton_configs/canton_appenzell_ausserrhoden.py",
+          "start_line": 126
+        }
+      ],
+      "preview": "    def calculate_unemployment_benefit(\n        cls,\n        previous_salary: float,\n        has_children: bool,\n        age: int,\n        contribution_months: int\n    ) -> Dict[str, float]:\n        \"...",
+      "rank": 5,
+      "type": "FunctionDef"
+    },
+    {
+      "impact_score": 492,
+      "instances": 2,
+      "lines": 246,
+      "locations": [
+        {
+          "end_line": 262,
+          "file": "src/core/infrastructure/event_bus.py",
+          "start_line": 16
+        },
+        {
+          "end_line": 262,
+          "file": "src/core/infrastructure/event_system/event_bus.py",
+          "start_line": 16
+        }
+      ],
+      "preview": "class ChromaDBClient:\n    \"\"\"Real ChromaDB implementation with vector storage - NO MOCKS\"\"\"\n\n    def __init__(self, collection_name: str = \"job_tracker\", user_id: Optional[str] = None):\n        import...",
+      "rank": 6,
+      "type": "ClassDef"
+    },
+    {
+      "impact_score": 480,
+      "instances": 5,
+      "lines": 96,
+      "locations": [
+        {
+          "end_line": 147,
+          "file": "src/core/18_utilities_support/offline/__init__.py",
+          "start_line": 51
+        },
+        {
+          "end_line": 157,
+          "file": "src/core/scripts/__init__.py",
+          "start_line": 61
+        },
+        {
+          "end_line": 151,
+          "file": "src/core/18_utilities_support/launch/__init__.py",
+          "start_line": 55
+        },
+        {
+          "end_line": 151,
+          "file": "src/core/18_utilities_support/launch/scripts/__init__.py",
+          "start_line": 55
+        },
+        {
+          "end_line": 144,
+          "file": "src/core/15_innovation_future/shared/__init__.py",
+          "start_line": 48
+        }
+      ],
+      "preview": "class Init:\n    \"\"\"AI-First implementation of   Init\"\"\"\n\n    def __init__(self, user_id: Optional[str] = None):\n        \"\"\"Initialize AI-First components\"\"\"\n        self.vector_store = chromadb.Client...",
+      "rank": 7,
+      "type": "ClassDef"
+    },
+    {
+      "impact_score": 364,
+      "instances": 7,
+      "lines": 52,
+      "locations": [
+        {
+          "end_line": 211,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 159
+        },
+        {
+          "end_line": 390,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 338
+        },
+        {
+          "end_line": 563,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 511
+        },
+        {
+          "end_line": 736,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 684
+        },
+        {
+          "end_line": 909,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 857
+        },
+        {
+          "end_line": 1084,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 1032
+        },
+        {
+          "end_line": 1285,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 1233
+        }
+      ],
+      "preview": "class CacheManager:\n    \"\"\"Intelligent caching system.\"\"\"\n\n    def __init__(self):\n        self._db = get_vector_db(\"cache\")\n        self.stats = {\"hits\": 0, \"misses\": 0}\n\n    async def get(self, meth...",
+      "rank": 8,
+      "type": "ClassDef"
+    },
+    {
+      "impact_score": 324,
+      "instances": 2,
+      "lines": 162,
+      "locations": [
+        {
+          "end_line": 182,
+          "file": "src/core/12_frontend_ui/demo/__init__.py",
+          "start_line": 20
+        },
+        {
+          "end_line": 182,
+          "file": "src/core/03_document_systems/document_generation/__init__.py",
+          "start_line": 20
+        }
+      ],
+      "preview": "class ChromaDBClient:\n    \"\"\"Real ChromaDB implementation with vector storage - NO MOCKS\"\"\"\n\n    def __init__(self, collection_name: str = \"job_tracker\", user_id: Optional[str] = None):\n        import...",
+      "rank": 9,
+      "type": "ClassDef"
+    },
+    {
+      "impact_score": 264,
+      "instances": 22,
+      "lines": 12,
+      "locations": [
+        {
+          "end_line": 28,
+          "file": "src/core/13_integration_apis/integrations/pilots/jobs_ch_pilot.py",
+          "start_line": 16
+        },
+        {
+          "end_line": 133,
+          "file": "src/core/07_swiss_market/swiss_compliance/batch_implementation_core/orchestrator.py",
+          "start_line": 121
+        },
+        {
+          "end_line": 28,
+          "file": "src/core/09_voice_communication/communication/state_sync.py",
+          "start_line": 16
+        },
+        {
+          "end_line": 140,
+          "file": "src/core/12_frontend_ui/demo/__init__.py",
+          "start_line": 128
+        },
+        {
+          "end_line": 29,
+          "file": "src/core/12_frontend_ui/demo/vector_storage.py",
+          "start_line": 17
+        },
+        {
+          "end_line": 37,
+          "file": "src/core/12_frontend_ui/dashboard/__init__.py",
+          "start_line": 25
+        },
+        {
+          "end_line": 133,
+          "file": "src/core/12_frontend_ui/dashboard/dashboard.py",
+          "start_line": 121
+        },
+        {
+          "end_line": 141,
+          "file": "src/core/12_frontend_ui/dashboard/core/__init__.py",
+          "start_line": 129
+        },
+        {
+          "end_line": 29,
+          "file": "src/core/12_frontend_ui/ui/vector_storage.py",
+          "start_line": 17
+        },
+        {
+          "end_line": 143,
+          "file": "src/core/01_agent_systems/agents/__init__.py",
+          "start_line": 131
+        },
+        {
+          "end_line": 140,
+          "file": "src/core/03_document_systems/document_generation/__init__.py",
+          "start_line": 128
+        },
+        {
+          "end_line": 38,
+          "file": "src/core/03_document_systems/documentation/__init__.py",
+          "start_line": 26
+        },
+        {
+          "end_line": 133,
+          "file": "src/core/infrastructure/production_infrastructure_orchestrator.py",
+          "start_line": 121
+        },
+        {
+          "end_line": 28,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/load_distribution/load_distributor.py",
+          "start_line": 16
+        },
+        {
+          "end_line": 28,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/communication/agent_communication.py",
+          "start_line": 16
+        },
+        {
+          "end_line": 28,
+          "file": "src/core/18_utilities_support/multi_region/data_residency/residency_controller.py",
+          "start_line": 16
+        },
+        {
+          "end_line": 28,
+          "file": "src/core/04_feature_modules/modules/ExperiencePersonalization/Core/experience_orchestrator.py",
+          "start_line": 16
+        },
+        {
+          "end_line": 28,
+          "file": "src/core/04_feature_modules/modules/UnifiedExperience/Privacy/experience_privacy.py",
+          "start_line": 16
+        },
+        {
+          "end_line": 28,
+          "file": "src/core/04_feature_modules/modules/privacy/ZeroKnowledge/zero_knowledge_engine.py",
+          "start_line": 16
+        },
+        {
+          "end_line": 28,
+          "file": "src/core/02_core_ai_systems/advanced_ai/ai_learning_adaptation_orchestrator.py",
+          "start_line": 16
+        },
+        {
+          "end_line": 161,
+          "file": "src/core/11_analytics_intelligence/analytics/__init__.py",
+          "start_line": 149
+        },
+        {
+          "end_line": 28,
+          "file": "src/core/04_feature_modules/modules/drag_drop_document_handler.py",
+          "start_line": 16
+        }
+      ],
+      "preview": "    def get_embedding_service(self, *args, **kwargs):\n        \"\"\"AI-First method\"\"\"\n        try:\n            self.logger.debug(\"Executing get_embedding_service\")\n            return {\n                \"...",
+      "rank": 10,
+      "type": "FunctionDef"
+    },
+    {
+      "impact_score": 203,
+      "instances": 7,
+      "lines": 29,
+      "locations": [
+        {
+          "end_line": 156,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 127
+        },
+        {
+          "end_line": 335,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 306
+        },
+        {
+          "end_line": 508,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 479
+        },
+        {
+          "end_line": 681,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 652
+        },
+        {
+          "end_line": 854,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 825
+        },
+        {
+          "end_line": 1029,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 1000
+        },
+        {
+          "end_line": 1230,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 1201
+        }
+      ],
+      "preview": "class RequestRouter:\n    \"\"\"AI-powered request routing.\"\"\"\n\n    async def find_route(\n        self, method: str, path: str, routes: Dict[str, APIRoute]\n    ) -> Optional[APIRoute]:\n        \"\"\"Find mat...",
+      "rank": 11,
+      "type": "ClassDef"
+    },
+    {
+      "impact_score": 196,
+      "instances": 4,
+      "lines": 49,
+      "locations": [
+        {
+          "end_line": 91,
+          "file": "src/core/scripts/emotional_intelligence.py",
+          "start_line": 42
+        },
+        {
+          "end_line": 76,
+          "file": "src/core/13_integration_apis/a16z_integration/emotional_intelligence.py",
+          "start_line": 27
+        },
+        {
+          "end_line": 88,
+          "file": "src/core/18_utilities_support/utils/emotional_intelligence.py",
+          "start_line": 39
+        },
+        {
+          "end_line": 75,
+          "file": "src/core/12_frontend_ui/ui/emotional_intelligence.py",
+          "start_line": 26
+        }
+      ],
+      "preview": "class EmotionalIntelligence:\n    \"\"\"AI with emotional understanding\"\"\"\n\n    def __init__(self):\n        self.empathy_level = 0.9\n        self.emotional_memory = []\n\n    async def detect_emotion(self, ...",
+      "rank": 12,
+      "type": "ClassDef"
+    },
+    {
+      "impact_score": 180,
+      "instances": 3,
+      "lines": 60,
+      "locations": [
+        {
+          "end_line": 104,
+          "file": "src/core/scripts/ai_orchestrator.py",
+          "start_line": 44
+        },
+        {
+          "end_line": 106,
+          "file": "src/core/18_utilities_support/utils/ai_orchestrator.py",
+          "start_line": 46
+        },
+        {
+          "end_line": 103,
+          "file": "src/core/12_frontend_ui/dashboard/ai_orchestrator.py",
+          "start_line": 43
+        }
+      ],
+      "preview": "class UltraAutonomousOrchestrator:\n    \"\"\"V18 Ultra-Autonomous orchestrator with self-modification\"\"\"\n\n    def __init__(self):\n        self.pattern_version = \"V18-ultra-autonomous-v2\"\n        self.swi...",
+      "rank": 13,
+      "type": "ClassDef"
+    },
+    {
+      "impact_score": 156,
+      "instances": 6,
+      "lines": 26,
+      "locations": [
+        {
+          "end_line": 88,
+          "file": "src/core/18_utilities_support/offline/__init__.py",
+          "start_line": 62
+        },
+        {
+          "end_line": 98,
+          "file": "src/core/scripts/__init__.py",
+          "start_line": 72
+        },
+        {
+          "end_line": 92,
+          "file": "src/core/18_utilities_support/launch/__init__.py",
+          "start_line": 66
+        },
+        {
+          "end_line": 92,
+          "file": "src/core/18_utilities_support/launch/scripts/__init__.py",
+          "start_line": 66
+        },
+        {
+          "end_line": 85,
+          "file": "src/core/15_innovation_future/shared/__init__.py",
+          "start_line": 59
+        },
+        {
+          "end_line": 105,
+          "file": "src/core/__init__.py",
+          "start_line": 79
+        }
+      ],
+      "preview": "    async def process_intent(self, user_input: str) -> Dict[str, Any]:\n        \"\"\"Process user intent through AI understanding - NO FORMS, NO CRUD\"\"\"\n        try:\n            # Extract intent using AI...",
+      "rank": 14,
+      "type": "AsyncFunctionDef"
+    },
+    {
+      "impact_score": 156,
+      "instances": 12,
+      "lines": 13,
+      "locations": [
+        {
+          "end_line": 27,
+          "file": "src/core/07_swiss_market/swiss_compliance/batch_implementation_core/orchestrator.py",
+          "start_line": 14
+        },
+        {
+          "end_line": 27,
+          "file": "src/core/12_frontend_ui/dashboard/dashboard.py",
+          "start_line": 14
+        },
+        {
+          "end_line": 32,
+          "file": "src/core/12_frontend_ui/dashboard/core/metric_aggregator.py",
+          "start_line": 19
+        },
+        {
+          "end_line": 32,
+          "file": "src/core/12_frontend_ui/dashboard/core/swiss_optimizer.py",
+          "start_line": 19
+        },
+        {
+          "end_line": 32,
+          "file": "src/core/12_frontend_ui/dashboard/core/base.py",
+          "start_line": 19
+        },
+        {
+          "end_line": 32,
+          "file": "src/core/12_frontend_ui/dashboard/core/jtp_docling.py",
+          "start_line": 19
+        },
+        {
+          "end_line": 37,
+          "file": "src/core/01_agent_systems/agents/__init__.py",
+          "start_line": 24
+        },
+        {
+          "end_line": 32,
+          "file": "src/core/10_security_privacy/enhanced_security/zero_knowledge/zero_knowledge_proofs.py",
+          "start_line": 19
+        },
+        {
+          "end_line": 27,
+          "file": "src/core/infrastructure/production_infrastructure_orchestrator.py",
+          "start_line": 14
+        },
+        {
+          "end_line": 32,
+          "file": "src/core/infrastructure/event_bus.py",
+          "start_line": 19
+        },
+        {
+          "end_line": 32,
+          "file": "src/core/infrastructure/event_system/event_bus.py",
+          "start_line": 19
+        },
+        {
+          "end_line": 31,
+          "file": "src/core/02_core_ai_systems/training/n8n_training_exercises.py",
+          "start_line": 18
+        }
+      ],
+      "preview": "    def __init__(self, collection_name: str = \"job_tracker\", user_id: Optional[str] = None):\n        import os\n\n        import chromadb\n        from chromadb.config import Settings\n\n        self.clien...",
+      "rank": 15,
+      "type": "FunctionDef"
+    },
+    {
+      "impact_score": 156,
+      "instances": 2,
+      "lines": 78,
+      "locations": [
+        {
+          "end_line": 413,
+          "file": "src/core/01_agent_systems/agents/ai_story_architect_enhanced.py",
+          "start_line": 335
+        },
+        {
+          "end_line": 414,
+          "file": "src/core/18_utilities_support/consolidated/agent_framework/ai_story_architect_enhanced.py",
+          "start_line": 336
+        }
+      ],
+      "preview": "    async def _generate_narrative(\n        self,\n        elements: List[StoryElement],\n        context: Dict[str, Any],\n        pattern: Dict[str, Any],\n        style: Optional[str] = None,\n    ) -> s...",
+      "rank": 16,
+      "type": "AsyncFunctionDef"
+    },
+    {
+      "impact_score": 142,
+      "instances": 2,
+      "lines": 71,
+      "locations": [
+        {
+          "end_line": 89,
+          "file": "src/core/12_frontend_ui/ui/performance_optimizer.py",
+          "start_line": 18
+        },
+        {
+          "end_line": 105,
+          "file": "src/core/scripts/performance_optimizer.py",
+          "start_line": 34
+        }
+      ],
+      "preview": "class PerformanceOptimizer:\n    \"\"\"AI-driven performance optimization\"\"\"\n\n    def __init__(self):\n        self.target_latency = 0.1  # 100ms\n        self.optimization_enabled = True\n\n    def optimize(...",
+      "rank": 17,
+      "type": "ClassDef"
+    },
+    {
+      "impact_score": 126,
+      "instances": 7,
+      "lines": 18,
+      "locations": [
+        {
+          "end_line": 124,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 106
+        },
+        {
+          "end_line": 303,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 285
+        },
+        {
+          "end_line": 476,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 458
+        },
+        {
+          "end_line": 649,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 631
+        },
+        {
+          "end_line": 822,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 804
+        },
+        {
+          "end_line": 997,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 979
+        },
+        {
+          "end_line": 1198,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/api_gateway.py",
+          "start_line": 1180
+        }
+      ],
+      "preview": "class RateLimitAdjuster:\n    \"\"\"AI component for dynamic rate limit adjustment.\"\"\"\n\n    def __init__(self):\n        self.client_history = defaultdict(list)\n        self.default_limit = 100\n\n    async ...",
+      "rank": 18,
+      "type": "ClassDef"
+    },
+    {
+      "impact_score": 120,
+      "instances": 3,
+      "lines": 40,
+      "locations": [
+        {
+          "end_line": 80,
+          "file": "src/core/scripts/swiss_optimizer.py",
+          "start_line": 40
+        },
+        {
+          "end_line": 75,
+          "file": "src/core/18_utilities_support/utils/swiss_optimizer.py",
+          "start_line": 35
+        },
+        {
+          "end_line": 62,
+          "file": "src/core/12_frontend_ui/ui/swiss_optimizer.py",
+          "start_line": 22
+        }
+      ],
+      "preview": "class SwissOptimizer:\n    \"\"\"Swiss market optimization engine\"\"\"\n\n    def __init__(self):\n        self.languages = list(SwissLanguage)\n        self.cantons = 26\n        self.compliance_frameworks = [\"...",
+      "rank": 19,
+      "type": "ClassDef"
+    },
+    {
+      "impact_score": 120,
+      "instances": 10,
+      "lines": 12,
+      "locations": [
+        {
+          "end_line": 29,
+          "file": "src/core/13_integration_apis/a16z_integration/ai_agent_automation.py",
+          "start_line": 17
+        },
+        {
+          "end_line": 29,
+          "file": "src/core/18_utilities_support/vector_storage_ai_first_complete/vector_store.py",
+          "start_line": 17
+        },
+        {
+          "end_line": 28,
+          "file": "src/core/18_utilities_support/vector_storage_ai_first_complete/vector_storage.py",
+          "start_line": 16
+        },
+        {
+          "end_line": 44,
+          "file": "src/core/12_frontend_ui/demo/cross_module_learner.py",
+          "start_line": 32
+        },
+        {
+          "end_line": 189,
+          "file": "src/core/infrastructure/production_infrastructure_orchestrator.py",
+          "start_line": 177
+        },
+        {
+          "end_line": 70,
+          "file": "src/core/05_infrastructure_devops/distributed_architecture/communication/agent_communication.py",
+          "start_line": 58
+        },
+        {
+          "end_line": 43,
+          "file": "src/core/15_innovation_future/innovation/ultra_performance.py",
+          "start_line": 31
+        },
+        {
+          "end_line": 44,
+          "file": "src/core/15_innovation_future/shared/cross_module_learner.py",
+          "start_line": 32
+        },
+        {
+          "end_line": 28,
+          "file": "src/core/04_feature_modules/job_connectors/indeed_connector.py",
+          "start_line": 16
+        },
+        {
+          "end_line": 29,
+          "file": "src/core/04_feature_modules/modules/GrowthIntelligence/Insights/growth_insights.py",
+          "start_line": 17
+        }
+      ],
+      "preview": "    def sync_request(self, *args, **kwargs):\n        \"\"\"AI-First method\"\"\"\n        try:\n            self.logger.debug(\"Executing sync_request\")\n            return {\n                \"status\": \"success\"...",
+      "rank": 20,
+      "type": "FunctionDef"
+    }
+  ]
+}

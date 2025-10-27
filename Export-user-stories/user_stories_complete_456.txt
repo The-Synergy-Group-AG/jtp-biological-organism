@@ -1,0 +1,1331 @@
+# Complete User Story Collection (456 Stories)
+
+Total unique user stories: 442
+
+================================================================================
+
+US-001 | to US-015, US-374 to US-388) | "Comprehensive security features"
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-002 | | AI understands career goals | 01.1 | HIGH | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-003 | Dashboard Overview | "As a logged-in user, I want to see a dashboard overview so that I can quickly understand my job search status"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-004 | to US-006** | "Profile import capabilities"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-005 | | Automatic skill extraction | 01.2 | HIGH | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-006 | | Profile completeness feedback | 01.2 | MEDIUM | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-007 | to US-391** | "CV analysis and extraction"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-008 | | Multi-format document support | 01.3 | HIGH | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-009 | | CV analysis insights | 01.3 | MEDIUM | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-010 | Core data protection (`weight | "8`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-011 | to US-014** | "Multimedia onboarding options"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-012 | | Video coaching tips | 01.4 | LOW | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-013 | | Voice setup assistance | 01.5 | MEDIUM | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-014 | | Voice command testing | 01.5 | LOW | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-015 | to US-016** | "Privacy and compliance"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-016 | to US-030, US-046 to US-050) | "Platform infrastructure and admin"
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-017 | | Core module foundation | Backend only | 5 | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-018 | | Module integration core | Backend only | 5 | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-019 | Core service health (`weight | "5`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-020 | | Service discovery core | Backend only | 3 | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-021 | Configuration management (`weight | "5`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-022 | Configuration core (`weight | "5`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-023 | Configuration storage (`weight | "3`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-024 | to US-030, US-034, US-036, US-038, US-040) | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-025 | | Data collection core | Backend only | 3 | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-026 | Workflow core (`weight | "8`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-027 | | 13 | ✅ Complete | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-028 | Security core (`weight | "8`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-029 | | 13 | ✅ Complete | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-030 | | 13 | ✅ Complete | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-031 | to US-045) | "Data collection and storage"
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-032 | **: Core Data Collection | "As a platform, I want to collect user data efficiently so that analytics are accurate"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-033 | **: Core Data Storage | "As a platform, I want to store data reliably so that it's available for analysis"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-034 | **: Event Analytics | "As a platform, I want to analyze events so that I understand user behavior"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-035 | **: Analytics System | "As a platform, I want a comprehensive analytics system so that insights are generated"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-036 | **: Admin Storage | "As an admin, I want dedicated storage so that system data is organized"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-037 | **: Integration Analytics | "As a platform, I want to track integration performance so that I optimize connections"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-038 | **: Event Collection | "As a platform, I want to collect all events so that nothing is missed"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-039 | **: Emotional Data Collection | "As a platform, I want to collect emotional signals so that I provide better support"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-040 | **: Core Analytics | "As a platform, I want core analytics capabilities so that basic metrics are available"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-041 | **: Marketing Data Collection | "As a marketing team, I want to collect campaign data so that I measure effectiveness"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-042 | **: Marketing Analytics | "As a marketing team, I want marketing analytics so that I optimize campaigns"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-043 | **: Business Analytics Storage | "As a business, I want dedicated analytics storage so that reports are fast"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-044 | **: Integration Analytics | "As a platform, I want detailed integration analytics so that I monitor health"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-045 | **: Compliance Data Collection | "As a compliance officer, I want data collection logs so that I ensure compliance"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-046 | | 13 | ✅ Complete | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-047 | | 13 | ✅ Complete | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-048 | | 21 | ✅ Complete | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-049 | | Core admin | Backend only | 5 | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-050 | | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-051 | to US-052) | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-052 | | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-053 | to US-055) | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-054 | Application Metrics | "As a job seeker so that I can measure effectiveness"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-055 | Industry Insights | "As a job seeker so that I can target better"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-056 | Performance Trends | "As a job seeker so that I can improve over time"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-057 | Custom Reports | "As a job seeker so that I can analyze specific data"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-058 | RAV Form Generation | "As a RAV registered job seeker so that I comply with requirements"
+   Source: docs/9.x-user-interface/9.1-wireframes/06_rav_compliance.md
+
+US-059 | to US-061) | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-060 | RAV Integration | "As a platform so that data syncs automatically"
+   Source: docs/9.x-user-interface/9.1-wireframes/06_rav_compliance.md
+
+US-061 | | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-062 | **: Data Processing Pipeline | "As a platform, I want an efficient processing pipeline so that data flows smoothly"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-063 | RAV Counselor Portal | "As a RAV counselor so that I can support job seekers"
+   Source: docs/9.x-user-interface/9.1-wireframes/06_rav_compliance.md
+
+US-064 | to US-071) | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-065 | Document Management | "As a RAV registered job seeker so that I organize RAV papers"
+   Source: docs/9.x-user-interface/9.1-wireframes/06_rav_compliance.md
+
+US-066 | Compliance Analytics | "As a RAV registered job seeker so that I optimize my efforts"
+   Source: docs/9.x-user-interface/9.1-wireframes/06_rav_compliance.md
+
+US-067 | Language Localization | "As a RAV registered job seeker so that I use my preferred language"
+   Source: docs/9.x-user-interface/9.1-wireframes/06_rav_compliance.md
+
+US-068 | Interview Question Bank | "As a job seeker so that I can prepare effectively"
+   Source: docs/9.x-user-interface/9.1-wireframes/05_interview_preparation.md
+
+US-069 | Mock Interview Practice | "As a job seeker so that I can practice"
+   Source: docs/9.x-user-interface/9.1-wireframes/05_interview_preparation.md
+
+US-070 | (not used in wireframes) | AI Team | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/05_interview_preparation.md
+
+US-071 | | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-072 | **: Voice Search | "As a job seeker, I want to search for jobs using voice commands so that I can multitask effectively"
+   Source: docs/9.x-user-interface/9.1-wireframes/08_ai_conversation_flows.md
+
+US-073 | Export Analytics Data | "As a job seeker, I want to export analytics data so that I can analyze externally"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-074 | Benchmarking | "As a job seeker so that I know how I'm doing"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-075 | ROI Analysis | "As a job seeker so that I can optimize efforts"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-076 | Predictive Analytics | "As a job seeker so that I can plan better"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-077 | **: Gamification Analytics | "As a job seeker, I want to see my gamification metrics so that I stay motivated"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-078 | to US-083) | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-079 | Job search portal integration | "As a job seeker, I want to import applications from external portals so that I don't duplicate tracking"
+   Source: docs/9.x-user-interface/9.1-wireframes/03_application_tracking.md
+
+US-080 | LinkedIn job integration | "As a job seeker, I want to import LinkedIn Easy Apply applications so that they're tracked automatically"
+   Source: docs/9.x-user-interface/9.1-wireframes/03_application_tracking.md
+
+US-081 | **: Achievement Tracking | "As a job seeker, I want to track my achievements so that I feel accomplished"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-082 | Portal search functionality | "As a job seeker, I want to search across all connected portals so that I can find applications quickly"
+   Source: docs/9.x-user-interface/9.1-wireframes/03_application_tracking.md
+
+US-083 | | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-084 | to US-086) | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-085 | to US-087) | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-086 | ML model deployment (`weight | "8`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-087 | | 21 | ✅ Complete | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/11_system_administration.md
+
+US-088 | Multi-Language Support | "As a non-English speaker so that I understand better"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-089 | | Version Control | History | "Show previous resume versions" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-090 | Quick Apply | "As a job seeker so that I can apply efficiently"
+   Source: docs/9.x-user-interface/9.1-wireframes/03_application_tracking.md
+
+US-091 | to US-111) | "LinkedIn integration and network features"
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-092 | Network analysis features (`weight | "8`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/12_professional_networking.md
+
+US-093 | Advanced network analysis (`weight | "8`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/12_professional_networking.md
+
+US-094 | Network communication opportunities (`weight | "8`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/12_professional_networking.md
+
+US-095 | | 13 | ✅ Complete | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/12_professional_networking.md
+
+US-096 | AI-powered network communication (`weight | "5`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/12_professional_networking.md
+
+US-097 | Email opportunities from network (`weight | "5`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/12_professional_networking.md
+
+US-098 | Network prospecting (`weight | "8`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/12_professional_networking.md
+
+US-099 | Network analysis and insights (`weight | "8`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/12_professional_networking.md
+
+US-100 | | 21 | ✅ Complete | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/12_professional_networking.md
+
+US-101 | Network opportunities (`weight | "8`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/12_professional_networking.md
+
+US-102 | | 21 | ✅ Complete | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/12_professional_networking.md
+
+US-103 | Ambassador network communication (`weight | "5`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/12_professional_networking.md
+
+US-104 | | 21 | ✅ Complete | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/12_professional_networking.md
+
+US-105 | Network referral tracking (`weight | "8`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/12_professional_networking.md
+
+US-106 | | 21 | ✅ Complete | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/12_professional_networking.md
+
+US-107 | Referral success tracking (`weight | "5`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/12_professional_networking.md
+
+US-108 | | 21 | ✅ Complete | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/12_professional_networking.md
+
+US-109 | Network expansion tracking (`weight | "5`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/12_professional_networking.md
+
+US-110 | Connection quality metrics (`weight | "8`)"
+   Source: docs/9.x-user-interface/9.1-wireframes/12_professional_networking.md
+
+US-111 | | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-112 | Weekly Summaries | "As a job seeker, I want automated weekly progress reports"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-113 | Progress Tracking | "As a job seeker, I want to track week-over-week improvement"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-114 | Invoice generation | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-115 | | 5 | High | 150 | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-116 | Performance Optimization | "As a platform so that gamification runs smoothly"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-117 | Customization Options | "As a job seeker so that I personalize my experience"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-118 | | Rejection Analysis | Learning | "Why rejections?" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-119 | **: Engagement Metrics | "As a platform, I want to measure user engagement so that I can optimize the experience"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-120 | to US-134 (Analytics), US-180 to US-195 (Portals) | ""
+   Source: implementation-code/modules/MODULE-NAMING-CONFLICTS-DETAILED-ANALYSIS.md
+
+US-121 | | Location Analysis | Geography | "Remote vs onsite success?" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-122 | Subscription Plans | "As a platform owner so that I can monetize"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-123 | Payment Processing | "As a platform so that users can subscribe"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-124 | to US-127) | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-125 | Push notification setup | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-126 | SMS notification configuration | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-127 | Automated Actions | "As a job seeker, I want automated actions"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-128 | RAV Workshop Tracking | "As a RAV registered job seeker so that I fulfill requirements"
+   Source: docs/9.x-user-interface/9.1-wireframes/06_rav_compliance.md
+
+US-129 | Benefit Calculator | "As a RAV registered job seeker so that I plan financially"
+   Source: docs/9.x-user-interface/9.1-wireframes/06_rav_compliance.md
+
+US-130 | RAV Office Finder | "As a RAV registered job seeker so that I can visit easily"
+   Source: docs/9.x-user-interface/9.1-wireframes/06_rav_compliance.md
+
+US-131 | Compliance Certificates | "As a RAV registered job seeker so that I prove my efforts"
+   Source: docs/9.x-user-interface/9.1-wireframes/06_rav_compliance.md
+
+US-132 | RAV API Integration | "As a developer so that we automate processes"
+   Source: docs/9.x-user-interface/9.1-wireframes/06_rav_compliance.md
+
+US-133 | **: Industry Insights | "As a job seeker, I want industry insights so that I can target the right companies"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-134 | **: Search Insights and Analytics | "As a job seeker, I want to see search performance metrics so that I can optimize my job search strategy"
+   Source: docs/9.x-user-interface/9.1-wireframes/02_job_search_discovery.md
+
+US-135 | **: Semantic and Conceptual Search | "As a job seeker, I want semantic search capabilities so that I discover related opportunities I might have missed"
+   Source: docs/9.x-user-interface/9.1-wireframes/02_job_search_discovery.md
+
+US-136 | **: Personal Effort Tracking | "As a job seeker, I want to track my personal job search efforts so that I can monitor all my activities"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-137 | Effort Categories | "As a job seeker, I want to categorize my efforts so that I can analyze effectiveness"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-138 | Effort Calendar View | "As a job seeker so that I can see my activity patterns"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-139 | Effort ROI | "As a job seeker, I want to measure effort return on investment"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-140 | Effort Recommendations | "As a job seeker so that I can optimize my efforts"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-141 | to US-144, US-271 to US-284) | "Core search functionality"
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-142 | Mobile RAV Features | "As a RAV registered job seeker so that I manage on-the-go"
+   Source: docs/9.x-user-interface/9.1-wireframes/06_rav_compliance.md
+
+US-143 | Job search landing and recommendations | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/02_job_search_discovery.md
+
+US-144 | Network Analytics | "As a job seeker so that I understand my reach"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-145 | LinkedIn Integration | "As a job seeker so that I sync my network"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-146 | Feedback Collection System | "As a user, I want to provide feedback so that the platform improves"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-147 | Feature Request Portal | "As a user, I want to request features so that my needs are met"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-148 | to US-157) | "CV and document handling"
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-149 | | Success Celebrations | Joy | "Celebrate interview!" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-150 | to US-165 (from 2.5-JobTracking) | ""
+   Source: implementation-code/modules/AI-FIRST-MODULE-REORGANIZATION-PLAN.md
+
+US-151 | | Resilience Building | Strength | "Bounce back tips" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-152 | | Peer Support | Community | "Connect with others" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-153 | | Mentor Matching | Guidance | "Find a mentor" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-154 | | Accountability Partners | Support | "Match me with partner" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-155 | | Progress Sharing | Updates | "Share with mentor" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-156 | to US-173) | ""
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-157 | | Course Tracking | Education | "Track Coursera progress" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-158 | | Skill Development | Improvement | "Develop leadership skills" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-159 | to US-167, US-285 to US-298) | "Pipeline management"
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-160 | | Resume Optimization | Enhancement | "Improve my resume" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-161 | | LinkedIn Optimization | Presence | "Optimize LinkedIn profile" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-162 | | Portfolio Building | Showcase | "Build project portfolio" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-163 | Job Market News | "As a job seeker so that I stay informed"
+   Source: docs/9.x-user-interface/9.1-wireframes/02_job_search_discovery.md
+
+US-164 | Industry Trends | "As a job seeker so that I plan my career"
+   Source: docs/9.x-user-interface/9.1-wireframes/02_job_search_discovery.md
+
+US-165 | Skills Trend Analysis | "As a job seeker so that I learn relevant skills"
+   Source: docs/9.x-user-interface/9.1-wireframes/02_job_search_discovery.md
+
+US-166 | **: Salary Trend Tracking | "As a job seeker so that I negotiate better"
+   Source: docs/9.x-user-interface/9.1-wireframes/07_salary_insights.md
+
+US-167 | | Communication Skills | Improvement | "Better communication?" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-168 | | Technical Skills | Development | "Improve coding skills" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-169 | | Soft Skills | Growth | "Develop soft skills" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-170 | | Leadership Development | Advancement | "Prepare for leadership" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-171 | | Industry Knowledge | Expertise | "Learn about fintech" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-172 | | Trend Awareness | Current | "Latest tech trends?" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-173 | | Continuous Learning | Mindset | "Keep learning plan" |"
+   Source: docs/8.x-reports/8.3-transformation-docs/03-master-transformation-index.md
+
+US-174 | to US-203 | "Progress narratives (Thread 2)"
+   Source: implementation-code/modules/IMPLEMENTATION-TODO-TRACKER-426-STORIES.md
+
+US-175 | through US-196) | ""
+   Source: docs/6.x-testing-docs/6.3-test-strategies/COMPREHENSIVE_TEST_PLAN_SCHEDULE.md
+
+US-182 | to US-265)](#55-professional-development-us-182-to-us-265) | ""
+   Source: docs/2.x-implementation-docs/2.1-guides/ai-first-implementation-blueprint-v2/02-6-integration-specifications.md
+
+US-184 | Professional Networking | ""
+   Source: docs/2.x-implementation-docs/2.2-transformations/03-ai-first-story-transformations.md
+
+US-185 | Resume Builder with AI | "As a job seeker so that my resume is optimized"
+   Source: docs/9.x-user-interface/9.1-wireframes/04_cv_document_management.md
+
+US-186 | to US-199 (14 stories) | ""
+   Source: docs/9.x-user-interface/9.2-analysis-reports/02_gap_analysis_archive/02_WIREFRAME_GAP_ANALYSIS.md
+
+US-187 | - Purpose | "Marketing campaign tracking"
+   Source: docs/9.x-user-interface/9.2-analysis-reports/01_gap_analysis_current/02_wireframe_gap_analysis_v4_changes.md
+
+US-188 | | CV Export | As a user, I want to export my CV in multiple formats so that I meet all requirements | | ""
+   Source: docs/9.x-user-interface/9.6-complete-microservice-mapping/04-cv-document-complete.md
+
+US-189 | | CV Sharing | As a user, I want to share my CV via link so that networking is easier | | ""
+   Source: docs/9.x-user-interface/9.6-complete-microservice-mapping/04-cv-document-complete.md
+
+US-190 | | CV Analytics | As a user, I want CV analytics so that I know when it's viewed | | ""
+   Source: docs/9.x-user-interface/9.6-complete-microservice-mapping/04-cv-document-complete.md
+
+US-191 | Rejection Analysis | "As a job seeker so that I can improve"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-192 | to US-223) | ""
+   Source: docs/6.x-testing-docs/6.1-frameworks/ai-first-conversation-flow-testing-framework/03-10-automated-testing-pipeline.md
+
+US-193 | | Reference Letters | As a user, I want reference letter templates so that I can request recommendations | | ""
+   Source: docs/9.x-user-interface/9.6-complete-microservice-mapping/04-cv-document-complete.md
+
+US-194 | | Portfolio Documents | As a user, I want portfolio document templates so that I present work professionally | | ""
+   Source: docs/9.x-user-interface/9.6-complete-microservice-mapping/04-cv-document-complete.md
+
+US-195 | to US-206, US-355 to US-373) | "Metrics and reporting"
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-196 | to US-215 (Gamification), US-240 to US-283 (Networking) | ""
+   Source: implementation-code/modules/MODULE-NAMING-CONFLICTS-DETAILED-ANALYSIS.md
+
+US-197 | through US-211) | ""
+   Source: docs/6.x-testing-docs/6.3-test-strategies/COMPREHENSIVE_TEST_PLAN_SCHEDULE.md
+
+US-200 | to US-210 (11 stories) | ""
+   Source: docs/9.x-user-interface/9.2-analysis-reports/02_gap_analysis_archive/02_WIREFRAME_GAP_ANALYSIS.md
+
+US-201 | - Purpose | "Employer-side metrics"
+   Source: docs/9.x-user-interface/9.2-analysis-reports/01_gap_analysis_current/02_wireframe_gap_analysis_v4_changes.md
+
+US-202 | Portfolio Showcase Builder | "As a job seeker, I want to create an online portfolio so that I can showcase my work"
+   Source: docs/9.x-user-interface/9.1-wireframes/04_cv_document_management.md
+
+US-203 | LinkedIn Profile Optimizer | "As a job seeker, I want to optimize my LinkedIn so that recruiters find me"
+   Source: docs/9.x-user-interface/9.1-wireframes/04_cv_document_management.md
+
+US-204 | Cover Letter Generator | "As a job seeker so that I apply efficiently"
+   Source: docs/9.x-user-interface/9.1-wireframes/04_cv_document_management.md
+
+US-205 | Personal Profile Page Builder | "As a job seeker so that I have a professional online presence I can share with employers"
+   Source: docs/9.x-user-interface/9.1-wireframes/04_cv_document_management.md
+
+US-206 | - RAV Compliance | "US-357 (partial coverage)"
+   Source: implementation-code/modules/ai-first-story-gap-analysis-2025-01-16.md
+
+US-207 | | Languages Section Management | Content Building | | ""
+   Source: docs/9.x-user-interface/9.5-actual-microservice-mapping-ARCHIVED/04-cv-document.md
+
+US-208 | | Certifications Section Management | Content Building | | ""
+   Source: docs/9.x-user-interface/9.5-actual-microservice-mapping-ARCHIVED/04-cv-document.md
+
+US-209 | Video Resume Creator | "As a job seeker so that I stand out"
+   Source: docs/9.x-user-interface/9.1-wireframes/04_cv_document_management.md
+
+US-210 | | Keywords Analysis | ATS Features | | ""
+   Source: docs/9.x-user-interface/9.5-actual-microservice-mapping-ARCHIVED/04-cv-document.md
+
+US-211 | to US-215) | "5 stories now covered"
+   Source: docs/9.x-user-interface/9.2-analysis-reports/01_gap_analysis_current/02_wireframe_gap_analysis_v4_changes.md
+
+US-212 | through US-223) | ""
+   Source: docs/6.x-testing-docs/6.3-test-strategies/COMPREHENSIVE_TEST_PLAN_SCHEDULE.md
+
+US-213 | Content Marketing Hub | "As a content marketer so that I manage content effectively"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-214 | Webinar Platform Integration | "As a marketing manager, I want to host webinars so that I educate and convert"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-221 | to US-232) | "RAV and Swiss market requirements"
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-223 | Effort Goals Setting | "As a job seeker, I want to set effort goals so that I stay motivated"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-224 | Effort Analytics Dashboard | "As a job seeker so that I can improve my strategy"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-227 | | Application Timeline | As a user, I want to see application timelines so that I understand the process | | ""
+   Source: docs/9.x-user-interface/9.6-complete-microservice-mapping/03-application-interview-complete.md
+
+US-228 | Rejection Analysis | "As a job seeker so that I can improve"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-229 | Application Collaboration | "As a job seeker, I want to collaborate on applications so that I can get help"
+   Source: docs/9.x-user-interface/9.1-wireframes/03_application_tracking.md
+
+US-230 | **: Cohort Analysis | "As a job seeker so that I can learn from others"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-231 | **: Analytics Coaching | "As a job seeker so that I can improve faster"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-232 | Competition Analysis | "As a job seeker so that I can differentiate myself"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-234 | Professional Photo Tools | "As a job seeker so that I look professional"
+   Source: docs/9.x-user-interface/9.1-wireframes/04_cv_document_management.md
+
+US-235 | through US-237) | ""
+   Source: docs/6.x-testing-docs/6.3-test-strategies/COMPREHENSIVE_TEST_PLAN_SCHEDULE.md
+
+US-237 | Network Opportunity Alerts | "Your Network is Moving!"
+   Source: docs/10.x-resources/10.6-requirements/ai-first-transformations/01-thread-4-professional-development-conversations.md
+
+US-238 | through US-255) | ""
+   Source: docs/6.x-testing-docs/6.3-test-strategies/COMPREHENSIVE_TEST_PLAN_SCHEDULE.md
+
+US-239 | STAR Method Training | "As a job seeker so that I answer effectively"
+   Source: docs/9.x-user-interface/9.1-wireframes/05_interview_preparation.md
+
+US-240 | Company Research Templates | "As a job seeker so that I prepare thoroughly"
+   Source: docs/9.x-user-interface/9.1-wireframes/05_interview_preparation.md
+
+US-241 | Interview Outfit Planner | "As a job seeker so that I dress appropriately"
+   Source: docs/9.x-user-interface/9.1-wireframes/05_interview_preparation.md
+
+US-242 | Post-Interview Tracker | "As a job seeker so that I follow up properly"
+   Source: docs/9.x-user-interface/9.1-wireframes/05_interview_preparation.md
+
+US-243 | Salary Negotiation Prep | "As a job seeker so that I maximize offers"
+   Source: docs/9.x-user-interface/9.1-wireframes/05_interview_preparation.md
+
+US-244 | Interview Anxiety Tools | "As a job seeker so that I perform better"
+   Source: docs/9.x-user-interface/9.1-wireframes/05_interview_preparation.md
+
+US-245 | Technical Interview Prep | "As a tech job seeker so that I ace coding interviews"
+   Source: docs/9.x-user-interface/9.1-wireframes/05_interview_preparation.md
+
+US-246 | Interview Debrief System | "As a job seeker so that I improve continuously"
+   Source: docs/9.x-user-interface/9.1-wireframes/05_interview_preparation.md
+
+US-248 | Beta Testing Program | "As a power user so that I test new features"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-250 | Ambassador Levels | "Your Growth as a JTP Champion"
+   Source: docs/10.x-resources/10.6-requirements/ai-first-transformations/01-thread-4-professional-development-conversations.md
+
+US-251 | Ambassador Analytics | "The Ripple Effect of Your Help"
+   Source: docs/10.x-resources/10.6-requirements/ai-first-transformations/01-thread-4-professional-development-conversations.md
+
+US-252 | Ambassador Recognition | "Celebrating Your Impact"
+   Source: docs/10.x-resources/10.6-requirements/ai-first-transformations/01-thread-4-professional-development-conversations.md
+
+US-253 | Profile Setup Wizard | "As a new user so that I configure quickly"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-254 | Video Tutorials | "As a new user so that I learn visually"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-255 | Quick Start Guide | "As a new user so that I begin immediately"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-256 | to US-270) | "User preferences and settings"
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-257 | Onboarding Analytics | "As a product manager so that I optimize conversion"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-258 | Dark Mode | "As a user so that I reduce eye strain"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-259 | **: Industry Benchmarks | "As a job seeker, I want industry salary benchmarks so that I can set realistic expectations"
+   Source: docs/9.x-user-interface/9.1-wireframes/07_salary_insights.md
+
+US-260 | Accessibility Options | "As a user with disabilities so that I can use the platform"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-261 | **: Salary Projections | "As a job seeker, I want future salary projections so that I can plan my career"
+   Source: docs/9.x-user-interface/9.1-wireframes/07_salary_insights.md
+
+US-262 | Career Milestone Tracker | "Celebrating Your Professional Journey"
+   Source: docs/10.x-resources/10.6-requirements/ai-first-transformations/02-thread-5-professional-development-ai-conversations.md
+
+US-263 | Regional Settings | "As a user so that data is localized"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-264 | **: Pension Analysis | "As a job seeker, I want to understand pension contributions so that I can plan for retirement"
+   Source: docs/9.x-user-interface/9.1-wireframes/07_salary_insights.md
+
+US-265 | Cultural Adaptation | "As a international user so that content is relevant"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-266 | **: Decision Matrix | "As a job seeker, I want a decision framework so that I can evaluate offers objectively"
+   Source: docs/9.x-user-interface/9.1-wireframes/07_salary_insights.md
+
+US-267 | **: Risk Assessment | "As a job seeker, I want to assess offer risks so that I can make informed decisions"
+   Source: docs/9.x-user-interface/9.1-wireframes/07_salary_insights.md
+
+US-268 | through US-275) | ""
+   Source: docs/6.x-testing-docs/6.3-test-strategies/COMPREHENSIVE_TEST_PLAN_SCHEDULE.md
+
+US-269 | Career Decision Matrix | "Navigating Your Career Crossroads"
+   Source: docs/10.x-resources/10.6-requirements/ai-first-transformations/02-thread-5-professional-development-ai-conversations.md
+
+US-270 | AI Resume Writer | "As a job seeker so that I create better resumes"
+   Source: docs/9.x-user-interface/9.1-wireframes/04_cv_document_management.md
+
+US-271 | AI Cover Letters | "As a job seeker so that I personalize applications"
+   Source: docs/9.x-user-interface/9.1-wireframes/04_cv_document_management.md
+
+US-272 | AI-powered search capabilities | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/02_job_search_discovery.md
+
+US-273 | | Industry Insights | "Get insights about target industries" | | ""
+   Source: docs/9.x-user-interface/9.3-microservice-mapping/02-job-search-discovery-services.md
+
+US-274 | Dynamic results and filtering | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/02_job_search_discovery.md
+
+US-275 | AI Career Advisor | "As a job seeker so that I make good decisions"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-276 | AI Content Optimizer | "As a job seeker so that I improve existing materials"
+   Source: docs/9.x-user-interface/9.1-wireframes/04_cv_document_management.md
+
+US-277 | Terms of Service | "Understanding Our Partnership"
+   Source: docs/10.x-resources/10.6-requirements/ai-first-transformations/02-thread-5-professional-development-ai-conversations.md
+
+US-278 | Privacy Policy | "Your Data, Your Control"
+   Source: docs/10.x-resources/10.6-requirements/ai-first-transformations/02-thread-5-professional-development-ai-conversations.md
+
+US-279 | User Agreements | "Our Success Partnership Agreement"
+   Source: docs/10.x-resources/10.6-requirements/ai-first-transformations/02-thread-5-professional-development-ai-conversations.md
+
+US-280 | to US-323 (44 stories) | ""
+   Source: implementation-code/modules/BATCH-IMPLEMENTATION-PLAN-6x2GB.md
+
+US-284 | to US-298 (Timeline), US-400 to US-415 (Trends) | ""
+   Source: implementation-code/modules/MODULE-NAMING-CONFLICTS-DETAILED-ANALYSIS.md
+
+US-288 | to US-319) | ""
+   Source: docs/6.x-testing-docs/6.1-frameworks/ai-first-conversation-flow-testing-framework/03-10-automated-testing-pipeline.md
+
+US-291 | to US-323) | ""
+   Source: docs/0.x-project-overview/0.2-execution/02-ai-execution-wave-plan.md
+
+US-293 | Notification System | "As a platform so that users receive updates"
+   Source: docs/9.x-user-interface/9.1-wireframes/03_application_tracking.md
+
+US-294 | File Storage Abstraction | "As a developer so that files work across environments"
+   Source: docs/9.x-user-interface/9.1-wireframes/04_cv_document_management.md
+
+US-296 | through US-310) | ""
+   Source: docs/6.x-testing-docs/6.3-test-strategies/COMPREHENSIVE_TEST_PLAN_SCHEDULE.md
+
+US-297 | OAuth2 Integration | "As a user so that I can login easily"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-298 | Data management | "As a user, I want to manage my data"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-299 | to US-309 (Feedback), US-180 to US-195 (Portals) | ""
+   Source: implementation-code/modules/MODULE-NAMING-CONFLICTS-DETAILED-ANALYSIS.md
+
+US-300 | | Video Practice | 05_interview.md | 5.9 | | ""
+   Source: docs/9.x-user-interface/9.2-analysis-reports/01_gap_analysis_current/03_user_story_wireframe_mapping.md
+
+US-301 | | Interview Checklist | 05_interview.md | 5.10 | | ""
+   Source: docs/9.x-user-interface/9.2-analysis-reports/01_gap_analysis_current/03_user_story_wireframe_mapping.md
+
+US-302 | Privacy Controls | "As a user so that I control my data"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-303 | | Thank You Notes | 05_interview.md | 5.11 | | ""
+   Source: docs/9.x-user-interface/9.2-analysis-reports/01_gap_analysis_current/03_user_story_wireframe_mapping.md
+
+US-304 | | Interview History | 05_interview.md | 5.5 | | ""
+   Source: docs/9.x-user-interface/9.2-analysis-reports/01_gap_analysis_current/03_user_story_wireframe_mapping.md
+
+US-306 | Configuration Monitoring | "As a system so that changes are tracked"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-308 | | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-309 | Voice Job Search | "As a job seeker so that I can search hands-free"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-310 | Voice search and commands | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/02_job_search_discovery.md
+
+US-311 | through US-328) | ""
+   Source: docs/6.x-testing-docs/6.3-test-strategies/COMPREHENSIVE_TEST_PLAN_SCHEDULE.md
+
+US-314 | to US-370) | ""
+   Source: docs/8.x-reports/8.4-guidelines/03-testing-checklist.md
+
+US-317 | MCP Standards Integration | "As a platform developer so that AI assistants can interact with our platform effectively"
+   Source: docs/9.x-user-interface/9.1-wireframes/08_ai_conversation_flows.md
+
+US-318 | | Quick Actions | As a user, I want quick action buttons so that common tasks are fast | | ""
+   Source: docs/9.x-user-interface/9.6-complete-microservice-mapping/05-analytics-ai-complete.md
+
+US-319 | | Chat History | As a user, I want searchable chat history so that I can find past information | | ""
+   Source: docs/9.x-user-interface/9.6-complete-microservice-mapping/05-analytics-ai-complete.md
+
+US-320 | RAV Timeline Tracking | "As a RAV-registered job seeker, I want to track how much time I have left on benefits (up to 24 months or more) so that I can plan my job search strategy accordingly"
+   Source: docs/9.x-user-interface/9.1-wireframes/06_rav_compliance.md
+
+US-321 | Adaptive Emotional Support | "As a job seeker facing time pressure, I want to receive appropriate emotional support and practical guidance so that I stay motivated and take effective action"
+   Source: docs/9.x-user-interface/9.1-wireframes/08_ai_conversation_flows.md
+
+US-322 | | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-323 | | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-324 | RAV Counselor Timeline Visibility | "As a RAV counselor, I want to see which clients are approaching benefit expiration so that I can provide targeted support and interventions"
+   Source: docs/9.x-user-interface/9.1-wireframes/06_rav_compliance.md
+
+US-325 | | RAV Communication | As a user, I want integrated RAV communication so that correspondence is tracked | | ""
+   Source: docs/9.x-user-interface/9.6-complete-microservice-mapping/06-swiss-compliance-complete.md
+
+US-326 | Success Probability Insights | "As a job seeker, I want to understand success patterns for my timeline stage so that I can set realistic expectations"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-327 | Timeline-Based Community Groups | "As a job seeker, I want to connect with others at similar timeline stages"
+   Source: docs/9.x-user-interface/9.1-wireframes/10_settings_personalization.md
+
+US-328 | Benefit Extension Information | "As a RAV-registered job seeker, I want to understand options for benefit extensions so that I can plan accordingly if eligible"
+   Source: docs/9.x-user-interface/9.1-wireframes/06_rav_compliance.md
+
+US-329 | through US-336) | ""
+   Source: docs/6.x-testing-docs/6.3-test-strategies/COMPREHENSIVE_TEST_PLAN_SCHEDULE.md
+
+US-330 | Progressive Onboarding Flow | "As a new user, I want to be guided through an onboarding process after registration so that the platform can understand my needs and provide appropriate support"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-331 | | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-332 | Goal Setting Wizard | "As a new user, I want to set clear job search goals so that I can track my progress effectively"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-333 | Personalized Dashboard Setup | "As a new user, I want to customize my dashboard during onboarding so that I see the most relevant information"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-334 | Tutorial System | "As a new user, I want to access interactive tutorials so that I can learn platform features effectively"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-335 | Welcome Email Sequence | "As a new user, I want to receive helpful onboarding emails so that I stay engaged and learn platform features"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-336 | Profile Completion Tracking | "As a user, I want to see my profile completion progress so that I can improve my job search effectiveness"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-337 | First Week Checklist | "As a new user so that I maximize platform benefits quickly"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-338 | Onboarding Analytics | "As a product manager so that I can optimize the user experience"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-339 | | 3 | LOW | 500 | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-340 | Onboarding A/B Testing | "As a product manager, I want to A/B test different onboarding flows so that I can optimize conversion and engagement"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-341 | | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-342 | **: Real-Time Mood Detection | "As a job seeker so that it can provide appropriate support and encouragement"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-343 | UI Adaptation Based on Mood | "As a stressed job seeker so that I can focus on essential tasks"
+   Source: docs/9.x-user-interface/9.1-wireframes/08_ai_conversation_flows.md
+
+US-344 | Personalized Emotional Messaging | "As a discouraged job seeker so that I feel understood and motivated"
+   Source: docs/9.x-user-interface/9.1-wireframes/08_ai_conversation_flows.md
+
+US-345 | Mood Journey Visualization | "As a job seeker so that I can understand my patterns and progress"
+   Source: docs/9.x-user-interface/9.1-wireframes/08_ai_conversation_flows.md
+
+US-346 | Pre-Application Emotional Check | ""
+   Source: docs/2.x-implementation-docs/2.2-transformations/04-ai-first-business-operations-transformations-us341-356.md
+
+US-347 | Interview Confidence Booster | ""
+   Source: docs/2.x-implementation-docs/2.2-transformations/04-ai-first-business-operations-transformations-us341-356.md
+
+US-348 | Rejection Resilience Support | ""
+   Source: docs/2.x-implementation-docs/2.2-transformations/04-ai-first-business-operations-transformations-us341-356.md
+
+US-349 | Celebration Amplification | ""
+   Source: docs/2.x-implementation-docs/2.2-transformations/04-ai-first-business-operations-transformations-us341-356.md
+
+US-350 | Stress Detection and Intervention | ""
+   Source: docs/2.x-implementation-docs/2.2-transformations/04-ai-first-business-operations-transformations-us341-356.md
+
+US-351 | Motivational Momentum Tracking | "As a job seeker so that it can help maintain my momentum"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-352 | Emotional Analytics Dashboard | "As a job seeker so that I can optimize my job search timing"
+   Source: docs/9.x-user-interface/9.1-wireframes/08_ai_conversation_flows.md
+
+US-353 | Peer Mood Matching | ""
+   Source: docs/2.x-implementation-docs/2.2-transformations/04-ai-first-business-operations-transformations-us341-356.md
+
+US-354 | | | ""
+   Source: docs/9.x-user-interface/9.1-wireframes/00_index.md
+
+US-355 | Mood-Based Feature Discovery | "As a job seeker so that I discover helpful tools when I need them"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-356 | Emotional Privacy Controls | ""
+   Source: docs/2.x-implementation-docs/2.2-transformations/04-ai-first-business-operations-transformations-us341-356.md
+
+US-357 | to US-409)** | ""
+   Source: implementation-code/modules/COMPREHENSIVE-GAP-ANALYSIS-456-STORIES-VS-77-MODULES-2025-01-16.md
+
+US-358 | Discovery Mode | "As a job seeker so that I can pivot my career"
+   Source: docs/9.x-user-interface/9.1-wireframes/02_job_search_discovery.md
+
+US-359 | Voice Job Search | "As a job seeker so that I can search hands-free"
+   Source: docs/9.x-user-interface/9.1-wireframes/08_ai_conversation_flows.md
+
+US-360 | Commute Analysis | "As a job seeker so that I can factor commute into decisions"
+   Source: docs/9.x-user-interface/9.1-wireframes/02_job_search_discovery.md
+
+US-361 | Job Change Alerts | "As a job seeker so that I stay informed of updates"
+   Source: docs/9.x-user-interface/9.1-wireframes/02_job_search_discovery.md
+
+US-362 | Similar Jobs | "As a job seeker so that I expand my options"
+   Source: docs/9.x-user-interface/9.1-wireframes/02_job_search_discovery.md
+
+US-363 | Personal Qualities Identifier | ""
+   Source: implementation-code/modules/rav-assessment-conversational-transformations.md
+
+US-364 | Comprehensive Keyword Generator | ""
+   Source: implementation-code/modules/rav-assessment-conversational-transformations.md
+
+US-365 | SMART Goals Workshop | ""
+   Source: implementation-code/modules/rav-assessment-conversational-transformations.md
+
+US-366 | Career Positioning Matrix | ""
+   Source: implementation-code/modules/rav-assessment-conversational-transformations.md
+
+US-367 | Task Derivation Engine | ""
+   Source: implementation-code/modules/rav-assessment-conversational-transformations.md
+
+US-368 | Multi-Dimensional Job Targeter | ""
+   Source: implementation-code/modules/rav-assessment-conversational-transformations.md
+
+US-369 | Employer Probability Calculator | ""
+   Source: implementation-code/modules/rav-assessment-conversational-transformations.md
+
+US-370 | Transform "Resource assessment" → "What resources do you need?" | ""
+   Source: implementation-code/modules/IMPLEMENTATION-TODO-TRACKER-426-STORIES.md
+
+US-371 | Transform "Progress tracking" → "How will we measure success?" | ""
+   Source: implementation-code/modules/IMPLEMENTATION-TODO-TRACKER-426-STORIES.md
+
+US-372 | Eight-Dimension Preference Profiler | ""
+   Source: implementation-code/modules/rav-assessment-conversational-transformations.md
+
+US-373 | Transform "Value clarification" → "What matters most in your work?" | ""
+   Source: implementation-code/modules/IMPLEMENTATION-TODO-TRACKER-426-STORIES.md
+
+US-374 | Market Context Analyzer | ""
+   Source: implementation-code/modules/rav-assessment-conversational-transformations.md
+
+US-375 | Own Proposition Builder | ""
+   Source: implementation-code/modules/rav-assessment-conversational-transformations.md
+
+US-376 | Transform "Role definition" → "What role would fulfill you?" | ""
+   Source: implementation-code/modules/IMPLEMENTATION-TODO-TRACKER-426-STORIES.md
+
+US-377 | Transform "Company research form" → "What kind of company culture fits you?" | ""
+   Source: implementation-code/modules/IMPLEMENTATION-TODO-TRACKER-426-STORIES.md
+
+US-378 | Keyword Extraction Wizard | ""
+   Source: implementation-code/modules/rav-assessment-conversational-transformations.md
+
+US-379 | Transform "Salary expectations" → "What compensation feels fair?" | ""
+   Source: implementation-code/modules/IMPLEMENTATION-TODO-TRACKER-426-STORIES.md
+
+US-380 | USP Development Workshop | ""
+   Source: implementation-code/modules/rav-assessment-conversational-transformations.md
+
+US-381 | Networking Goal Tracker | "As a job seeker, I want to set and track networking goals for job search assistance so that I can maintain consistent outreach efforts"
+   Source: docs/9.x-user-interface/9.1-wireframes/09_dashboard_analytics.md
+
+US-382 | Transform "Team preferences" → "How do you like to collaborate?" | ""
+   Source: implementation-code/modules/IMPLEMENTATION-TODO-TRACKER-426-STORIES.md
+
+US-383 | Recruiter Empathy Map Builder | ""
+   Source: implementation-code/modules/rav-assessment-conversational-transformations.md
+
+US-384 | Professional Network Mapper | ""
+   Source: implementation-code/modules/rav-assessment-conversational-transformations.md
+
+US-385 | Transform "Learning goals" → "What do you want to learn?" | ""
+   Source: implementation-code/modules/IMPLEMENTATION-TODO-TRACKER-426-STORIES.md
+
+US-386 | Multi-Channel Strategy Planner | ""
+   Source: implementation-code/modules/rav-assessment-conversational-transformations.md
+
+US-387 | Transform "Network mapping" → "Who's in your professional circle?" | ""
+   Source: implementation-code/modules/IMPLEMENTATION-TODO-TRACKER-426-STORIES.md
+
+US-388 | Transform "Reference management" → "Who can vouch for your work?" | ""
+   Source: implementation-code/modules/IMPLEMENTATION-TODO-TRACKER-426-STORIES.md
+
+US-389 | Transform "Portfolio creation" → "Show me your best work" | ""
+   Source: implementation-code/modules/IMPLEMENTATION-TODO-TRACKER-426-STORIES.md
+
+US-390 | Transform "Brand development" → "How do you want to be known?" | ""
+   Source: implementation-code/modules/IMPLEMENTATION-TODO-TRACKER-426-STORIES.md
+
+US-391 | LinkedIn Profile Import During Onboarding | "As a new user, I want to import my LinkedIn profile during onboarding so that I can quickly populate my Job Tracker Pro profile with my professional information"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-392 | LinkedIn Profile Completeness Analysis | "As a new user, I want to see an analysis of my LinkedIn profile completeness so that I can identify areas for improvement before starting my job search"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-393 | Skills Gap Analysis from LinkedIn | "As a new user so that I can identify skills I need to develop"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-394 | LinkedIn Network Analysis for Job Opportunities | "As a new user, I want to analyze my LinkedIn network during onboarding so that I can identify potential job opportunities through connections"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-395 | LinkedIn Profile Keyword Optimization | "As a new user, I want to receive keyword recommendations based on my LinkedIn profile so that I can optimize it for recruiter searches"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-396 | LinkedIn Activity Analysis | "As a new user so that I can understand how to improve my professional presence"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-397 | Profile Sync Automation ✅ | "As a user with a LinkedIn profile, I want to schedule automatic profile syncs so that my job search profile stays up-to-date with my LinkedIn changes"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-398 | "Let's review your job search activities together" | ""
+   Source: implementation-code/modules/BATCH-IMPLEMENTATION-PLAN-6x2GB.md
+
+US-399 | "Tell me about the positions you explored" | ""
+   Source: implementation-code/modules/BATCH-IMPLEMENTATION-PLAN-6x2GB.md
+
+US-400 | "What challenges did you face this month?" | ""
+   Source: implementation-code/modules/BATCH-IMPLEMENTATION-PLAN-6x2GB.md
+
+US-401 | "Share your networking efforts" | ""
+   Source: implementation-code/modules/BATCH-IMPLEMENTATION-PLAN-6x2GB.md
+
+US-402 | "Describe your skill development activities" | ""
+   Source: implementation-code/modules/BATCH-IMPLEMENTATION-PLAN-6x2GB.md
+
+US-403 | "How many applications did you submit?" | ""
+   Source: implementation-code/modules/BATCH-IMPLEMENTATION-PLAN-6x2GB.md
+
+US-404 | "Which interviews did you attend?" | ""
+   Source: implementation-code/modules/BATCH-IMPLEMENTATION-PLAN-6x2GB.md
+
+US-405 | "What feedback have you received?" | ""
+   Source: implementation-code/modules/BATCH-IMPLEMENTATION-PLAN-6x2GB.md
+
+US-406 | "How can we improve your search strategy?" | ""
+   Source: implementation-code/modules/BATCH-IMPLEMENTATION-PLAN-6x2GB.md
+
+US-407 | "Let's plan next month's activities" | ""
+   Source: implementation-code/modules/BATCH-IMPLEMENTATION-PLAN-6x2GB.md
+
+US-408 | "Confirm your availability status" | ""
+   Source: implementation-code/modules/BATCH-IMPLEMENTATION-PLAN-6x2GB.md
+
+US-409 | - Module assignments and dependencies | ""
+   Source: docs/13.x-prompts/extracted/raw_docx_text.txt
+
+US-410 | to US-456)** | ""
+   Source: implementation-code/modules/COMPREHENSIVE-GAP-ANALYSIS-456-STORIES-VS-77-MODULES-2025-01-16.md
+
+US-411 | Success Story Library | "Victory Celebration Partner"
+   Source: implementation-code/modules/day2-training-ai-first-conversational-transformations.md
+
+US-412 | Application Strategy Optimizer | "Strategic Application Advisor"
+   Source: implementation-code/modules/day2-training-ai-first-conversational-transformations.md
+
+US-413 | Regional Market Adapter | "Local Market Expert"
+   Source: implementation-code/modules/day2-training-ai-first-conversational-transformations.md
+
+US-414 | ATS Optimization Engine | "Resume Optimization Specialist"
+   Source: implementation-code/modules/day2-training-ai-first-conversational-transformations.md
+
+US-415 | Rejection Learning System | "Resilience Building Coach"
+   Source: implementation-code/modules/day2-training-ai-first-conversational-transformations.md
+
+US-416 | Application Quality Scorer | "Application Excellence Coach"
+   Source: implementation-code/modules/day2-training-ai-first-conversational-transformations.md
+
+US-417 | Guerrilla Tactics Generator | "Creative Strategy Innovator"
+   Source: implementation-code/modules/day2-training-ai-first-conversational-transformations.md
+
+US-418 | Digital Footprint Manager | "Online Presence Optimizer"
+   Source: implementation-code/modules/day2-training-ai-first-conversational-transformations.md
+
+US-419 | Cultural Fit Analyzer | "Culture Match Advisor"
+   Source: implementation-code/modules/day2-training-ai-first-conversational-transformations.md
+
+US-420 | Salary Negotiation Strategist | "Compensation Negotiation Partner"
+   Source: implementation-code/modules/day2-training-ai-first-conversational-transformations.md
+
+US-421 | Application Timeline Optimizer | "Strategic Timing Advisor"
+   Source: implementation-code/modules/day2-training-ai-first-conversational-transformations.md
+
+US-422 | Referral Request Manager | "Referral Relationship Builder"
+   Source: implementation-code/modules/day2-training-ai-first-conversational-transformations.md
+
+US-423 | Portfolio Integration Hub | "Work Showcase Curator"
+   Source: implementation-code/modules/day2-training-ai-first-conversational-transformations.md
+
+US-424 | Video Application Creator | "Video Confidence Builder"
+   Source: implementation-code/modules/day2-training-ai-first-conversational-transformations.md
+
+US-425 | Recruiter Behavior Analyzer | "Recruiter Psychology Expert"
+   Source: implementation-code/modules/day2-training-ai-first-conversational-transformations.md
+
+US-426 | Market Trends Predictor | "Market Intelligence Advisor"
+   Source: implementation-code/modules/day2-training-ai-first-conversational-transformations.md
+
+US-427 | Competition Benchmarker | "Strategic Market Intelligence Coach"
+   Source: implementation-code/modules/day2-training-complete-ai-first-summary.md
+
+US-428 | Success Pattern Recognizer | "Career Success Archeologist"
+   Source: implementation-code/modules/day2-training-complete-ai-first-summary.md
+
+US-429 | Channel ROI Calculator | "Strategic Effort Investment Advisor"
+   Source: implementation-code/modules/day2-training-complete-ai-first-summary.md
+
+US-430 | Keyword Performance Tracker | "Strategic Keyword Intelligence Coach"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-431 | Network Value Analyzer | "Relationship Capital Strategist"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-432 | Application Conversion Funnel | "Career Pipeline Optimization Expert"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-433 | Personal Story Builder | "Narrative Identity Architect"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-434 | USP Development Workshop | "Unique Value Proposition Designer"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-435 | Impact Statement Generator | "Achievement Amplification Specialist"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-436 | Demographic Profile Capture | "As a new user, I want to provide my gender and age during onboarding so that I receive personalized emotional support messages"
+   Source: docs/9.x-user-interface/9.1-wireframes/08_ai_conversation_flows.md
+
+US-437 | Emotional Privacy Controls | "As a privacy-conscious user so that I feel safe using mood features"
+   Source: docs/9.x-user-interface/9.1-wireframes/08_ai_conversation_flows.md
+
+US-438 | User Registration | "As a new user, I want to register for an account so that I can access the job tracking features"
+   Source: docs/9.x-user-interface/9.1-wireframes/01_onboarding.md
+
+US-439 | Career Narrative Optimizer | "Professional Story Alchemist"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-440 | Achievement Quantifier | "Impact Metrics Specialist"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-441 | Personal Brand Auditor | "Brand Consistency Inspector"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-442 | Testimonial Collector | "Social Proof Orchestrator"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-443 | Thought Leadership Planner | "Authority Building Architect"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-444 | Skills Gap Identifier | "Strategic Capability Developer"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-445 | Strategic Network Mapper | "Opportunity Ecosystem Designer"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-446 | Warm Introduction Facilitator | "Connection Catalyst Strategist"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-447 | Networking Event ROI Tracker | "Strategic Relationship Investment Analyst"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-448 | Relationship Strength Calculator | "Connection Depth Analyst"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-449 | Value-First Networking Planner | "Reciprocity Strategist"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-450 | Alumni Network Activator | "Academic Tribe Strategist"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-451 | Industry Community Navigator | "Professional Tribe Builder"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-452 | Mentor Matching System | "Growth Partnership Architect"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-453 | Coffee Chat Optimizer | "Strategic Conversation Architect"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-454 | Social Proof Aggregator | "Credibility Portfolio Curator"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-455 | Network Nurturing Scheduler | "Relationship Gardening System"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-456 | Referral Network Builder | "Advocacy Ecosystem Creator"
+   Source: implementation-code/modules/day2-training-advanced-ai-first-conversational-transformations.md
+
+US-501 | As a job seeker, I want AI to automatically detect my canton so that I receive canton-specific guidance | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-502 | As a job seeker, I want AI to prepare my monthly RAV declaration through conversation | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-503 | As a job seeker, I want AI to track my job search activities automatically | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-504 | As a job seeker, I want AI to calculate my unemployment benefits | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-505 | As a job seeker, I want AI to remind me of RAV obligations | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-506 | through US-545 continue with similar patterns for | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-546 | As a job seeker, I want AI to search arbeit.swiss Job-Room naturally | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-547 | As a job seeker, I want AI to sync my applications with official systems | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-571 | As a job seeker, I want AI to handle canton-specific requirements | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-601 | As a job seeker, I want AI to search all Swiss job portals simultaneously | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-602 | As a job seeker, I want AI to track new postings in real-time | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-603 | As a job seeker, I want AI to provide salary intelligence | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-621 | As a job seeker, I want AI to identify companies likely to hire | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-622 | As a job seeker, I want AI to leverage my network intelligently | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-641 | As a job seeker, I want AI to provide deep company insights | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-701 | As a job seeker, I want AI to recommend relevant training | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-702 | As a job seeker, I want AI to track my learning progress | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-721 | As a job seeker, I want AI to assess my language needs | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-801 | As a job seeker, I want AI to create Swiss-standard application documents | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-802 | As a job seeker, I want AI to optimize for Swiss ATS systems | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-821 | As a job seeker, I want AI to provide Swiss interview coaching | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-901 | As an international job seeker, I want AI to manage my permit status | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-902 | As an international job seeker, I want AI to guide permit applications | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md
+
+US-921 | As an international job seeker, I want AI to guide credential recognition | ""
+   Source: docs/5.x-business-features/5.2-swiss-compliance/02-swiss-compliance-strategic-plan.md

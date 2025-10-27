@@ -1,0 +1,213 @@
+{
+  "_meta": {
+    "original_file": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md",
+    "split_date": "2025-07-06T19:18:23.947005",
+    "parts": 3
+  },
+  "mappings": [
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#integration-bridge-implementation-guide",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/01-integration-bridge-implementation-guide.md#integration-bridge-implementation-guide",
+      "section": "Integration Bridge Implementation Guide",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#executive-summary",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/01-integration-bridge-implementation-guide.md#executive-summary",
+      "section": "Executive Summary",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#table-of-contents",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/01-integration-bridge-implementation-guide.md#table-of-contents",
+      "section": "Table of Contents",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#1-core-architecture",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/01-integration-bridge-implementation-guide.md#1-core-architecture",
+      "section": "1. Core Architecture",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#integration-bridge-pattern",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/01-integration-bridge-implementation-guide.md#integration-bridge-pattern",
+      "section": "Integration Bridge Pattern",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#integration-registry",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/01-integration-bridge-implementation-guide.md#integration-registry",
+      "section": "Integration Registry",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#2-integration-bridge-framework",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/01-integration-bridge-implementation-guide.md#2-integration-bridge-framework",
+      "section": "2. Integration Bridge Framework",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#natural-language-detection",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/01-integration-bridge-implementation-guide.md#natural-language-detection",
+      "section": "Natural Language Detection",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#conversational-suggestion-engine",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/01-integration-bridge-implementation-guide.md#conversational-suggestion-engine",
+      "section": "Conversational Suggestion Engine",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#3-linkedin-bridge-implementation",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/01-integration-bridge-implementation-guide.md#3-linkedin-bridge-implementation",
+      "section": "3. LinkedIn Bridge Implementation",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#linkedin-integration-bridge",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/01-integration-bridge-implementation-guide.md#linkedin-integration-bridge",
+      "section": "LinkedIn Integration Bridge",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#linkedin-conversation-flows",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/01-integration-bridge-implementation-guide.md#linkedin-conversation-flows",
+      "section": "LinkedIn Conversation Flows",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#4-calendar-bridge-implementation",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/01-integration-bridge-implementation-guide.md#4-calendar-bridge-implementation",
+      "section": "4. Calendar Bridge Implementation",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#calendar-integration-bridge",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/01-integration-bridge-implementation-guide.md#calendar-integration-bridge",
+      "section": "Calendar Integration Bridge",
+      "part": 1
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#calendar-intelligence-engine",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/02-5-email-bridge-implementation.md#calendar-intelligence-engine",
+      "section": "Calendar Intelligence Engine",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#5-email-bridge-implementation",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/02-5-email-bridge-implementation.md#5-email-bridge-implementation",
+      "section": "5. Email Bridge Implementation",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#email-integration-bridge",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/02-5-email-bridge-implementation.md#email-integration-bridge",
+      "section": "Email Integration Bridge",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#email-template-intelligence",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/02-5-email-bridge-implementation.md#email-template-intelligence",
+      "section": "Email Template Intelligence",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#6-job-board-bridge-implementation",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/02-5-email-bridge-implementation.md#6-job-board-bridge-implementation",
+      "section": "6. Job Board Bridge Implementation",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#job-board-integration-bridge",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/02-5-email-bridge-implementation.md#job-board-integration-bridge",
+      "section": "Job Board Integration Bridge",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#job-intelligence-engine",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/02-5-email-bridge-implementation.md#job-intelligence-engine",
+      "section": "Job Intelligence Engine",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#7-document-storage-bridge-implementation",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/02-5-email-bridge-implementation.md#7-document-storage-bridge-implementation",
+      "section": "7. Document Storage Bridge Implementation",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#document-storage-integration-bridge",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/02-5-email-bridge-implementation.md#document-storage-integration-bridge",
+      "section": "Document Storage Integration Bridge",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#document-ai-engine",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/02-5-email-bridge-implementation.md#document-ai-engine",
+      "section": "Document AI Engine",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#8-conversation-flow-engine",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/02-5-email-bridge-implementation.md#8-conversation-flow-engine",
+      "section": "8. Conversation Flow Engine",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#master-conversation-controller",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/02-5-email-bridge-implementation.md#master-conversation-controller",
+      "section": "Master Conversation Controller",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#flow-state-management",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/02-5-email-bridge-implementation.md#flow-state-management",
+      "section": "Flow State Management",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#9-security-privacy",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/02-5-email-bridge-implementation.md#9-security-privacy",
+      "section": "9. Security & Privacy",
+      "part": 2
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#privacy-first-integration-security",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/03-10-testing-monitoring.md#privacy-first-integration-security",
+      "section": "Privacy-First Integration Security",
+      "part": 3
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#data-minimization-engine",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/03-10-testing-monitoring.md#data-minimization-engine",
+      "section": "Data Minimization Engine",
+      "part": 3
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#10-testing-monitoring",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/03-10-testing-monitoring.md#10-testing-monitoring",
+      "section": "10. Testing & Monitoring",
+      "part": 3
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#integration-testing-framework",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/03-10-testing-monitoring.md#integration-testing-framework",
+      "section": "Integration Testing Framework",
+      "part": 3
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#monitoring-analytics",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/03-10-testing-monitoring.md#monitoring-analytics",
+      "section": "Monitoring & Analytics",
+      "part": 3
+    },
+    {
+      "old": "docs/2.x-implementation-docs/2.4-integrations/02-integration-bridge-implementation-guide.md#conclusion",
+      "new": "docs/2.x-implementation-docs/2.4-integrations/integration-bridge-implementation-guide/03-10-testing-monitoring.md#conclusion",
+      "section": "Conclusion",
+      "part": 3
+    }
+  ]
+}

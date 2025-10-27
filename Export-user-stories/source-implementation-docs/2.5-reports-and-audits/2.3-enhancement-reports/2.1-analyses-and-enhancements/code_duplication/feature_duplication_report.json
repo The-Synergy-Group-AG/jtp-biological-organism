@@ -1,0 +1,191 @@
+{
+  "refactoring_suggestions": [
+    "Extract FunctionDef (12 lines) duplicated 4 times:\n  Locations: drag_drop_document_handler.py:16, experience_orchestrator.py:16, experience_privacy.py:16 and 1 more",
+    "Extract AsyncFunctionDef (15 lines) duplicated 2 times:\n  Locations: vector_schema_design.py:50, self_configuration.py:50",
+    "Extract FunctionDef (12 lines) duplicated 2 times:\n  Locations: indeed_connector.py:16, growth_insights.py:17",
+    "Extract FunctionDef (12 lines) duplicated 2 times:\n  Locations: experience_privacy.py:30, zero_knowledge_engine.py:30",
+    "Extract AsyncFunctionDef (11 lines) duplicated 2 times:\n  Locations: help_center.py:142, experience_personalization.py:161",
+    "Extract AsyncFunctionDef (7 lines) duplicated 2 times:\n  Locations: vector_schema_design.py:67, self_configuration.py:67",
+    "Extract AsyncFunctionDef (6 lines) duplicated 2 times:\n  Locations: vector_schema_design.py:81, self_configuration.py:81",
+    "Extract FunctionDef (5 lines) duplicated 2 times:\n  Locations: vector_schema_design.py:43, self_configuration.py:43"
+  ],
+  "summary": {
+    "duplicate_groups_found": 8,
+    "estimated_lines_saved": 104,
+    "potential_time_saved": "2.1 hours",
+    "total_duplicates": 18,
+    "total_files": 90
+  },
+  "top_duplicates": [
+    {
+      "impact_score": 48,
+      "instances": 4,
+      "lines": 12,
+      "locations": [
+        {
+          "end_line": 28,
+          "file": "src/core/04_feature_modules/modules/drag_drop_document_handler.py",
+          "start_line": 16
+        },
+        {
+          "end_line": 28,
+          "file": "src/core/04_feature_modules/modules/ExperiencePersonalization/Core/experience_orchestrator.py",
+          "start_line": 16
+        },
+        {
+          "end_line": 28,
+          "file": "src/core/04_feature_modules/modules/UnifiedExperience/Privacy/experience_privacy.py",
+          "start_line": 16
+        },
+        {
+          "end_line": 28,
+          "file": "src/core/04_feature_modules/modules/privacy/ZeroKnowledge/zero_knowledge_engine.py",
+          "start_line": 16
+        }
+      ],
+      "preview": "    def get_embedding_service(self, *args, **kwargs):\n        \"\"\"AI-First method\"\"\"\n        try:\n            self.logger.debug(\"Executing get_embedding_service\")\n            return {\n                \"...",
+      "rank": 1,
+      "type": "FunctionDef"
+    },
+    {
+      "impact_score": 30,
+      "instances": 2,
+      "lines": 15,
+      "locations": [
+        {
+          "end_line": 65,
+          "file": "src/core/04_feature_modules/modules_models/vector_schema_design.py",
+          "start_line": 50
+        },
+        {
+          "end_line": 65,
+          "file": "src/core/04_feature_modules/modules/self_configuration.py",
+          "start_line": 50
+        }
+      ],
+      "preview": "    async def process_intent(self, user_input: str) -> Dict[str, Any]:\n        \"\"\"Process user intent through AI understanding\"\"\"\n        try:\n            intent = await self._extract_intent(user_inpu...",
+      "rank": 2,
+      "type": "AsyncFunctionDef"
+    },
+    {
+      "impact_score": 24,
+      "instances": 2,
+      "lines": 12,
+      "locations": [
+        {
+          "end_line": 28,
+          "file": "src/core/04_feature_modules/job_connectors/indeed_connector.py",
+          "start_line": 16
+        },
+        {
+          "end_line": 29,
+          "file": "src/core/04_feature_modules/modules/GrowthIntelligence/Insights/growth_insights.py",
+          "start_line": 17
+        }
+      ],
+      "preview": "    def sync_request(self, *args, **kwargs):\n        \"\"\"AI-First method\"\"\"\n        try:\n            self.logger.debug(\"Executing sync_request\")\n            return {\n                \"status\": \"success\"...",
+      "rank": 3,
+      "type": "FunctionDef"
+    },
+    {
+      "impact_score": 24,
+      "instances": 2,
+      "lines": 12,
+      "locations": [
+        {
+          "end_line": 42,
+          "file": "src/core/04_feature_modules/modules/UnifiedExperience/Privacy/experience_privacy.py",
+          "start_line": 30
+        },
+        {
+          "end_line": 42,
+          "file": "src/core/04_feature_modules/modules/privacy/ZeroKnowledge/zero_knowledge_engine.py",
+          "start_line": 30
+        }
+      ],
+      "preview": "    def _initialize_swiss_privacy(self, *args, **kwargs):\n        \"\"\"AI-First method\"\"\"\n        try:\n            self.logger.debug(\"Executing _initialize_swiss_privacy\")\n            return {\n         ...",
+      "rank": 4,
+      "type": "FunctionDef"
+    },
+    {
+      "impact_score": 22,
+      "instances": 2,
+      "lines": 11,
+      "locations": [
+        {
+          "end_line": 153,
+          "file": "src/core/04_feature_modules/modules/HelpCenter/help_center.py",
+          "start_line": 142
+        },
+        {
+          "end_line": 173,
+          "file": "src/core/04_feature_modules/modules/ExperiencePersonalization/experience_personalization.py",
+          "start_line": 161
+        }
+      ],
+      "preview": "    async def _generate_embeddings(self, text: str) -> List[float]:\n        \"\"\"Generate embeddings using OpenAI\"\"\"\n        try:\n            response = await asyncio.to_thread(\n                self.cli...",
+      "rank": 5,
+      "type": "AsyncFunctionDef"
+    },
+    {
+      "impact_score": 14,
+      "instances": 2,
+      "lines": 7,
+      "locations": [
+        {
+          "end_line": 74,
+          "file": "src/core/04_feature_modules/modules_models/vector_schema_design.py",
+          "start_line": 67
+        },
+        {
+          "end_line": 74,
+          "file": "src/core/04_feature_modules/modules/self_configuration.py",
+          "start_line": 67
+        }
+      ],
+      "preview": "    async def generate_ui(self, context: Dict[str, Any]) -> str:\n        \"\"\"Generate UI dynamically\"\"\"\n        try:\n            ui_type = context.get(\"ui_type\", \"conversational\")\n            return f\"...",
+      "rank": 6,
+      "type": "AsyncFunctionDef"
+    },
+    {
+      "impact_score": 12,
+      "instances": 2,
+      "lines": 6,
+      "locations": [
+        {
+          "end_line": 87,
+          "file": "src/core/04_feature_modules/modules_models/vector_schema_design.py",
+          "start_line": 81
+        },
+        {
+          "end_line": 87,
+          "file": "src/core/04_feature_modules/modules/self_configuration.py",
+          "start_line": 81
+        }
+      ],
+      "preview": "    async def _execute_intent(self, intent: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Execute intent through AI\"\"\"\n        return {\n            \"status\": \"completed\",\n            \"data\": {},\n     ...",
+      "rank": 7,
+      "type": "AsyncFunctionDef"
+    },
+    {
+      "impact_score": 10,
+      "instances": 2,
+      "lines": 5,
+      "locations": [
+        {
+          "end_line": 48,
+          "file": "src/core/04_feature_modules/modules_models/vector_schema_design.py",
+          "start_line": 43
+        },
+        {
+          "end_line": 48,
+          "file": "src/core/04_feature_modules/modules/self_configuration.py",
+          "start_line": 43
+        }
+      ],
+      "preview": "    def __init__(self, user_id: Optional[str] = None):\n        \"\"\"Initialize AI-First components\"\"\"\n        self.vector_store = chromadb.Client()\n        self.ai_model = SentenceTransformer(\"all-MiniL...",
+      "rank": 8,
+      "type": "FunctionDef"
+    }
+  ]
+}
