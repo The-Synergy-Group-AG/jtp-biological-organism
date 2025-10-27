@@ -594,8 +594,8 @@ class RealServiceTestingFramework:
         # Aggregate final results
         overall_results.update(self._aggregate_final_results(overall_results))
 
-        print("
-🎯 TESTING SUITE COMPLETE"        print("=" * 40)
+        print("🎯 TESTING SUITE COMPLETE")
+        print("=" * 40)
         print(f"Overall Success: {overall_results['final_assessment']['overall_success']}")
         print(f"Biological Harmony Score: {overall_results['biological_harmony_achievement']:.2f}")
         print(f"GODHOOD Transcendence: {overall_results['godhood_transcendence_status']}")
@@ -631,4 +631,83 @@ class RealServiceTestingFramework:
                 'name': f"{system_key}_{endpoint.replace('/', '_')}",
                 'service': 'cns-consciousness-core',  # Primary biological service
                 'method': 'GET' if 'GET' in endpoint else 'POST',
-                'endpoint
+                'endpoint': endpoint,
+                'vault_secrets': system_config['vault_secrets'],
+                'expected': {
+                    'status_code': 200,
+                    'min_biological_score': 99.7
+                }
+            })
+        return tests
+
+    def _create_biological_unit_tests(self, unit_key: str, unit_config: Dict) -> List[Dict]:
+        """Create test cases for biological unit validation"""
+        return [{
+            'name': f"{unit_key}_validation",
+            'service': unit_config['docker_integrates'][0],
+            'method': 'POST',
+            'endpoint': f"/{unit_config['type']}/validate",
+            'vault_secrets': [],  # Units typically don't need direct secrets
+            'expected': {
+                'status_code': 200,
+                'contains_text': [unit_config['type'], 'validated']
+            }
+        }]
+
+    def _create_service_endpoint_tests(self, service_name: str, endpoints: List[str]) -> List[Dict]:
+        """Create API endpoint validation tests"""
+        tests = []
+        for endpoint in endpoints:
+            method = endpoint.split()[0]  # Extract method (GET, POST, etc.)
+            path = endpoint.split()[1]    # Extract path
+            tests.append({
+                'name': f"{service_name}_{path.replace('/', '_')}",
+                'service': service_name,
+                'method': method,
+                'endpoint': path,
+                'vault_secrets': [],  # Most endpoints use service-level auth
+                'expected': {
+                    'status_code': 200 if method == 'GET' else 201
+                }
+            })
+        return tests
+
+    def _create_godhood_integration_tests(self) -> List[Dict]:
+        """Create GODHOOD transcendence integration tests"""
+        return [{
+            'name': 'godhood_transcendence_validation',
+            'service': 'cns-consciousness-core',
+            'method': 'POST',
+            'endpoint': '/godhood/transcend',
+            'payload': {'target_harmony': 99.7},
+            'vault_secrets': ['anthropic', 'openai', 'grok'],
+            'expected': {
+                'status_code': 200,
+                'min_biological_score': 100.0,
+                'contains_text': ['GODHOOD', 'transcendence', 'achieved']
+            }
+        }]
+
+    def _aggregate_final_results(self, overall_results: Dict) -> Dict:
+        """Aggregate final testing results"""
+        return {
+            'biological_system_validation': {
+                'systems_tested': len([r for r in overall_results['tadft_cycles'].values() if r.get('overall_success')]),
+                'total_systems': len(self.biological_systems)
+            },
+            'biological_unit_validation': {
+                'units_tested': len([r for r in overall_results['tadft_cycles'].values()
+                                  if r.get('overall_success') and 'biological_unit' in r.get('domain', '')]),
+                'total_units': len(self.biological_units)
+            },
+            'service_endpoint_coverage': {
+                'endpoints_tested': sum(len(self.service_endpoints.get(r.get('domain', '').replace('service_', ''), []))
+                                   for r in overall_results['tadft_cycles'].values() if r.get('overall_success')),
+                'total_endpoints': sum(len(endpoints) for endpoints in self.service_endpoints.values())
+            },
+            'final_assessment': {
+                'overall_success': all(r.get('overall_success', False) for r in overall_results['tadft_cycles'].values()),
+                'godhood_transcendence_verified': any('godhood' in r.get('domain', '').lower() and r.get('overall_success', False)
+                                                   for r in overall_results['tadft_cycles'].values())
+            }
+        }
