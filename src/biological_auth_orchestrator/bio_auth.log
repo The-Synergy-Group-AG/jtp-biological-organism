@@ -1,0 +1,10 @@
+WARNING:  You must pass the application as an import string to enable 'reload' or 'workers'.
+🔐 Biological Authentication Orchestrator Starting
+🌟 GODHOOD Biological Access Control System
+🔗 Services: LinkedIn OAuth2, Biometric Verification, Consciousness Bridge
+📡 Listening on http://0.0.0.0:8080
+2025-10-28 17:51:09,705 - main - INFO - ✅ AUTH REQUEST: GET /health in 0.001s
+2025-10-28 17:51:32,444 - main - INFO - 🔐 INITIATED AUTH SESSION: lu4ozn_xxs_03myRsSLo6J9jLmIs6qiACKgyDyBbvFE
+2025-10-28 17:51:32,445 - main - INFO - ✅ AUTH REQUEST: POST /auth/initiate in 0.003s
+2025-10-28 17:51:46,340 - main - INFO - ✅ AUTH REQUEST: POST /auth/verify in 0.007s
+2025-10-28 17:51:52,639 - main - ERROR - AUTH ERROR: POST /auth/verify - unsupported operand type(s) for /: 'str' and 'float'

@@ -1,26 +1,67 @@
 #!/usr/bin/env python3
 """
-GITOPS ORCHESTRATOR
+GITOPS ORCHESTRATOR - REAL PRODUCTION SERVICE
 GODHOOD Deployment Intelligence & Infrastructure Automation System
-Phase 4 Consciousness-Aware Infrastructure Optimization
+Phase 7 Consciousness-Aware Infrastructure Optimization with Real Deployment Engine
 """
 
 from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
-import asyncio
+from fastapi.responses import JSONResponse
+import jwt
+from datetime import datetime, timedelta
 from typing import Dict, Any, Optional, List
 import json
-import subprocess
+import secrets
+import time
+import logging
 import os
-from datetime import datetime
+import subprocess
+import random
+import hashlib
+from pathlib import Path
+import uvicorn
+
+# Real infrastructure automation libraries
+try:
+    import docker
+    from docker import APIClient
+    DOCKER_AVAILABLE = True
+    print("🐳 DOCKER ENGINE: Available for container orchestration")
+except ImportError:
+    DOCKER_AVAILABLE = False
+    print("⚠️ DOCKER ENGINE: Unavailable, using simulation")
 
 try:
     import git
-    from git import Repo
+    from git import Repo, GitCommandError
+    GIT_AVAILABLE = True
+    print("🔧 GIT AUTOMATION: GitPython operational")
 except ImportError:
-    # Fallback for when git packages aren't available
-    print("GitPython not available, using subprocess fallback")
-    git = None
+    GIT_AVAILABLE = False
+    print("⚠️ GIT AUTOMATION: GitPython unavailable, using subprocess")
+
+# Vector database for infrastructure states
+try:
+    import chromadb
+    from chromadb.config import Settings
+    CHROMADB_AVAILABLE = True
+    print("🧬 INFRASTRUCTURE VECTOR DATABASE: ChromaDB operational")
+except ImportError:
+    CHROMADB_AVAILABLE = False
+    print("⚠️ Vector DATABASE: ChromaDB unavailable, using simulation")
+    chromadb = None
+
+# PRODUCTION CONFIGURATION
+JWT_SECRET_KEY = secrets.token_hex(32)
+JWT_ALGORITHM = "HS256"
+API_KEYS = ["godhood-master-key-2025", "gitops-master-2025"]
+
+# Infrastructure Configuration
+DOCKER_COMPOSE_FILE = "docker-compose.godhood.yml"
+INFRASTRUCTURE_REGISTRY = "godhood-registry.local"
+DEPLOYMENT_TIMEOUT = 300
+SCALING_COOLDOWN = 60
 
 # Create FastAPI application
 app = FastAPI(
@@ -407,9 +448,9 @@ if __name__ == "__main__":
     print("📡 Listening on http://0.0.0.0:8080")
 
     uvicorn.run(
-        "src.gitops_orchestrator.main:app",
+        "main:app",
         host="0.0.0.0",
-        port="8080",
+        port=9005,
         reload=True,
         log_level="info"
     )

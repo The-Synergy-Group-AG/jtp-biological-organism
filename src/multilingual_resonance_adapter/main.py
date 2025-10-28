@@ -373,9 +373,9 @@ if __name__ == "__main__":
     print("📡 Listening on http://0.0.0.0:8080")
 
     uvicorn.run(
-        "src.multilingual_resonance_adapter.main:app",
+        "main:app",
         host="0.0.0.0",
-        port=8080,
+        port=9003,
         reload=True,
         log_level="info"
     )

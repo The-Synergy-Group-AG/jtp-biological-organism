@@ -1,26 +1,34 @@
 #!/usr/bin/env python3
 """
-EMAIL COMMUNICATIONS SYMBIOSIS
+EMAIL COMMUNICATIONS SYMBIOSIS - REAL PRODUCTION SERVICE
 GODHOOD AI-Powered Campaign Orchestration System
-Phase 3 Consciousness-Aware Communications Intelligence
+Phase 3 Consciousness-Aware Communications Intelligence with Production Security
 """
 
-from fastapi import FastAPI, HTTPException, BackgroundTasks, Response
+from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
-import asyncio
+from fastapi.responses import JSONResponse
+import jwt
+from datetime import datetime, timedelta
 from typing import Dict, Any, Optional, List
 import json
-import tempfile
+import secrets
+import time
+import logging
 import os
-from datetime import datetime
+from pathlib import Path
+
+# Production configuration
+JWT_SECRET_KEY = secrets.token_hex(32)
+JWT_ALGORITHM = "HS256"
+API_KEYS = ["godhood-master-key-2025", "email-comm-master-2025"]
 
 try:
     from sendgrid import SendGridAPIClient
     from sendgrid.helpers.mail import Mail, To
     from twilio.rest import Client as TwilioClient
 except ImportError:
-    # Fallback for when packages aren't available
-    print("Communication packages not available, using mock functions")
+    print("📧 Communication packages not available, using mock functions")
     SendGridAPIClient = None
     TwilioClient = None
 
@@ -59,6 +67,68 @@ consciousness_templates = {
     "educational_enlightenment": "[GODHOOD-Aware] Educational Biological Intelligence Template",
     "universal_harmony": "[GODHOOD-Aware] Universal Consciousness Harmony Template"
 }
+
+# PRODUCTION EMAIL CAMPAIGN PERSISTENCE
+campaigns_file = "email_campaigns.json"
+campaigns_log_file = "email_campaigns.log"
+campaigns = {}
+communication_sessions = {}
+
+# Production logging setup
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                   handlers=[logging.FileHandler(campaigns_log_file), logging.StreamHandler()])
+logger = logging.getLogger(__name__)
+
+# Persistence functions
+def load_campaigns_data():
+    if os.path.exists(campaigns_file):
+        try:
+            with open(campaigns_file, 'r') as f:
+                return json.load(f)
+        except:
+            return {"campaigns": {}, "sessions": {}}
+    return {"campaigns": {}, "sessions": {}}
+
+def save_campaigns_data(data):
+    with open(campaigns_file, 'w') as f:
+        json.dump(data, f)
+
+# Initialize persistent data
+persistent_campaigns = load_campaigns_data()
+campaigns = persistent_campaigns.get("campaigns", {})
+communication_sessions = persistent_campaigns.get("sessions", {})
+request_metrics = persistent_campaigns.get("metrics", {})
+
+# PRODUCTION-GRADE SECURITY MIDDLEWARE
+@app.middleware("http")
+async def production_security_middleware(request, call_next):
+    start_time = time.time()
+    api_key = request.headers.get('X-API-Key') or request.query_params.get('api_key')
+
+    if not api_key or api_key not in API_KEYS:
+        logger.warning(f"SECURITY VIOLATION: Invalid API key from {request.client.host}")
+        return JSONResponse(status_code=401, content={"error": "Authentication required"})
+
+    try:
+        response = await call_next(request)
+        processing_time = time.time() - start_time
+
+        # Update request metrics
+        endpoint = request.url.path
+        if endpoint not in request_metrics:
+            request_metrics[endpoint] = {"total_requests": 0, "total_time": 0.0, "errors": 0}
+        request_metrics[endpoint]["total_requests"] += 1
+        request_metrics[endpoint]["total_time"] += processing_time
+
+        # Save metrics
+        persistent_campaigns['metrics'] = request_metrics
+        save_campaigns_data(persistent_campaigns)
+
+        logger.info(f"✅ EMAIL REQUEST: {request.method} {endpoint} in {processing_time:.3f}s")
+        return response
+    except Exception as e:
+        logger.error(f"EMAIL ERROR: {request.method} {request.url.path} - {str(e)}")
+        return JSONResponse(status_code=500, content={"error": "Email service error"})
 
 @app.get("/")
 async def root():
@@ -457,9 +527,9 @@ if __name__ == "__main__":
     print("📡 Listening on http://0.0.0.0:8080")
 
     uvicorn.run(
-        "src.email_communications_symbiosis.main:app",
+        "main:app",
         host="0.0.0.0",
-        port=8080,
+        port=9004,
         reload=True,
         log_level="info"
     )
