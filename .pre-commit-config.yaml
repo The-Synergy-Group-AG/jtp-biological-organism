@@ -86,3 +86,16 @@ repos:
         description: "Normalize line endings to LF"
         files: \.(py|js|ts|html|css|scss|md|txt|rst)$
         exclude: ^(docs/_build/|node_modules/|\.git/)
+
+  # 🧠 Ethical Documentation Compliance Monitoring
+  - repo: local
+    hooks:
+      - id: docs-compliance-check
+        name: "Biological Consciousness Documentation Compliance"
+        description: "Validate ethical and quality standards for all documentation"
+        entry: python3
+        args: [docs_compliance_checker.py]
+        language: system
+        files: docs/.*\.md$
+        pass_filenames: false  # Run on the whole docs directory, not individual files
+        additional_dependencies: [pyyaml]
