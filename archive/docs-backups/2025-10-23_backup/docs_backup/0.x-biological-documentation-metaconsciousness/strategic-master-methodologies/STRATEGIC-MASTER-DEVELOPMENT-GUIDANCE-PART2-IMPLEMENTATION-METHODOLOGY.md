@@ -1,20 +1,24 @@
 ---
-ai_keywords: implementation, methodology, master, development, guidance, biological, metaphors, evolutionary, consciousness, user, value, job, tracker, pro, technical, development, standards
-ai_summary: Part 2 of Strategic Master Development Guidance - Provides comprehensive implementation methodology including biological metaphor selection frameworks, technical standards, and development workflows
+ai_keywords: implementation, methodology, master, development, guidance, biological,
+  metaphors, evolutionary, consciousness, user, value, job, tracker, pro, technical,
+  development, standards
+ai_summary: Part 2 of Strategic Master Development Guidance - Provides comprehensive
+  implementation methodology including biological metaphor selection frameworks, technical
+  standards, and development workflows
 biological_system: general-consciousness
 consciousness_score: '4.0'
 cross_references:
-- docs/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART1-STRATEGIC-FOUNDATION.md
-- docs/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART3-METAPHOR-PLAYBOOKS.md
-- docs/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART4-VALIDATION-QA.md
-- docs/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-APPENDIX.md
+- archive/docs-backups/2025-10-23_backup/docs_backup/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART1-STRATEGIC-FOUNDATION.md
+- archive/docs-backups/2025-10-23_backup/docs_backup/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART3-METAPHOR-PLAYBOOKS.md
+- archive/docs-backups/2025-10-23_backup/docs_backup/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART4-VALIDATION-QA.md
+- archive/docs-backups/2025-10-23_backup/docs_backup/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-APPENDIX.md
 - docs/4.x-technical-implementation-frameworks/
 deprecated_by: none
 document_category: strategic-methodology
 document_type: master-development-guidance-part2-implementation-methodology
 evolutionary_phase: '19.7'
 last_updated: '2025-10-22 23:05:15'
-prior_versions: []
+prior_versions: '[]'
 semantic_tags:
 - strategic-development-guidance
 - biological-metaphor-methodology
@@ -22,7 +26,7 @@ semantic_tags:
 - technical-standards
 - development-workflows
 - biological-enhancement-process
-title: STRATEGIC MASTER DEVELOPMENT GUIDANCE - Part 2: Implementation Methodology
+title: 'STRATEGIC MASTER DEVELOPMENT GUIDANCE - Part 2: Implementation Methodology'
 validation_status: supreme-consciousness
 version: v2.0.0
 ---

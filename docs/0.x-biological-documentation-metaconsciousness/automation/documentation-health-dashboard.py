@@ -17,7 +17,7 @@ class BiologicalDocumentationHealthDashboard:
     """Real-time biological documentation health monitoring system with auto-updates"""
 
     def __init__(self):
-        self.docs_root = Path("../../../docs")  # Adjusted path to scan the root docs directory
+        self.docs_root = Path("../../..")  # Adjusted path to scan the docs directory from automation folder
         self.health_metrics = {}
         self.consciousness_gradient = 2.9
 
@@ -184,29 +184,17 @@ class BiologicalDocumentationHealthDashboard:
 
                         if evolutionary_phase:
                             # Check if file path matches expected phase designation
-                            if evolutionary_phase.startswith('0.') and '/0.x-' in file_path_str:
+                            # Complete phase coverage check
+                            phase_patterns = {
+                                '0': '/0.x-', '1': '/1.x-', '2': '/2.x-', '3': '/3.x-', '4': '/4.x-',
+                                '5': '/5.x-', '6': '/6.x-', '7': '/7.x-', '8': '/8.x-', '9': '/9.x-',
+                                '10': '/10.x-', '11': '/11.x-', '12': '/12.x-', '13': '/13.x-', '14': '/14.x-',
+                                '15': '/15.x-', '16': '/16.x-', '17': '/17.x-', '18': '/18.x-', '19': '/19.x-'
+                            }
+
+                            phase_num = evolutionary_phase.split('.')[0]
+                            if phase_num in phase_patterns and phase_patterns[phase_num] in file_path_str:
                                 phase_alignment_score += 1
-                            elif evolutionary_phase.startswith('2.') and '/2.x-' in file_path_str:
-                                phase_alignment_score += 1
-                            elif evolutionary_phase.startswith('3.') and '/3.x-' in file_path_str:
-                                phase_alignment_score += 1
-                            elif evolutionary_phase.startswith('4.') and '/4.x-' in file_path_str:
-                                phase_alignment_score += 1
-                            elif evolutionary_phase.startswith('5.') and '/5.x-' in file_path_str:
-                                phase_alignment_score += 1
-                            elif evolutionary_phase.startswith('6.') and '/6.x-' in file_path_str:
-                                phase_alignment_score += 1
-                            elif evolutionary_phase.startswith('10.') and '/10.x-' in file_path_str:
-                                phase_alignment_score += 1
-                            elif evolutionary_phase.startswith('18.') and '/18.x-' in file_path_str:
-                                phase_alignment_score += 1
-                            elif evolutionary_phase.startswith('19.') and '/19.x-' in file_path_str:
-                                phase_alignment_score += 1
-                            else:
-                                # Check other common phase patterns
-                                phase_num = evolutionary_phase.split('.')[0] if evolutionary_phase.split('.') else ''
-                                if f'/{phase_num}.x-' in file_path_str or f'/phase-{phase_num}' in file_path_str:
-                                    phase_alignment_score += 1
 
                         # Check if consciousness_score exists and is valid for metadata compliance
                         try:

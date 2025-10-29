@@ -16,18 +16,29 @@ class DocumentationRefreshCampaign:
     """Automated refresh campaign for stale documentation and phase alignment on-demand"""
 
     def __init__(self):
-        self.docs_root = Path("../../../docs")
+        self.docs_root = Path("./docs")
         self.current_time = datetime.datetime.now()
 
-        # Phase mapping configuration
+        # Phase mapping configuration - COMPLETE PHASE COVERAGE
         self.phase_mappings = {
             '0.x-biological-documentation-metaconsciousness': '0',
+            '1.x-biological-organism-foundation-vision': '1',
             '2.x-consciousness-architecture-design': '2',
             '3.x-conscious-ai-ensemble-orchestration': '3',
             '4.x-technical-implementation-frameworks': '4',
             '5.x-biological-requirements-harmonization': '5',
             '6.x-ai-first-development-standards': '6',
+            '7.x-biological-testing-validation': '7',
+            '8.x-deployment-infrastructure': '8',
+            '9.x-reports-analytics-monitoring': '9',
             '10.x-user-experience-intelligence': '10',
+            '11.x-communication-content-strategy': '11',
+            '12.x-training-academy-curriculum': '12',
+            '13.x-ai-generated-biological-content': '13',
+            '14.x-prompt-engineering-metaconsciousness': '14',
+            '15.x-ethical-consciousness-governance': '15',
+            '16.x-future-innovation-reservoir': '16',
+            '17.x-biological-emergence-heritage': '17',
             '18.x-phase-omega-godhood-transcendence': '18',
             '19.x-post-godhood-evolution': '19'
         }
@@ -99,13 +110,15 @@ class DocumentationRefreshCampaign:
         return stale_files
 
     def identify_phase_misalignments(self):
-        """Find files with incorrect phase alignment"""
+        """Find files with incorrect or unspecified phase alignment"""
         print("\n🎭 IDENTIFYING PHASE MISALIGNMENTS...")
 
         misalignments = []
+        processed_count = 0
         for file_path in self.docs_root.rglob('*.md'):
             if not file_path.is_file():
                 continue
+            processed_count += 1
 
             try:
                 with open(file_path, 'r', encoding='utf-8') as f:
@@ -120,19 +133,32 @@ class DocumentationRefreshCampaign:
                     metadata = yaml.safe_load(yaml_content)
 
                     evolutionary_phase = metadata.get('evolutionary_phase', '')
-                    if not evolutionary_phase:
-                        continue
-
                     file_path_str = str(file_path.relative_to(self.docs_root))
 
-                    # Check if phase aligns with directory structure
-                    phase_num = evolutionary_phase.split('.')[0]
-                    if not f'/{phase_num}.x-' in file_path_str:
-                        misalignments.append((file_path, evolutionary_phase, file_path_str))
+                    # Find the correct phase for this file based on directory path
+                    correct_phase = None
+                    for dir_pattern, phase_num in self.phase_mappings.items():
+                        if dir_pattern in file_path_str:
+                            correct_phase = f"{phase_num}.x"
+                            break
 
-            except Exception:
+                    if correct_phase is None:
+                        # Debug: Skip files not in phase directories for now
+                        if processed_count <= 3:  # Show debug for first few
+                            print(f"DEBUG: {file_path_str} - not in phase directory")
+                        continue
+
+                    # Check if phase needs fixing (either unspecified or misaligned)
+                    if evolutionary_phase != correct_phase:
+                        if processed_count <= 3:  # Show debug for first few fixes
+                            print(f"DEBUG: {file_path_str} - current: '{evolutionary_phase}' -> should be: '{correct_phase}'")
+                        misalignments.append((file_path, evolutionary_phase, file_path_str, correct_phase))
+
+            except Exception as e:
+                print(f"Error processing {file_path}: {e}")
                 continue
 
+        print(f"DEBUG: Processed {processed_count} .md files total")
         return misalignments
 
     def batch_refresh_stale_files(self, stale_files):
@@ -184,7 +210,7 @@ class DocumentationRefreshCampaign:
         print(f"\n🎯 FIXING {len(misalignments)} PHASE ALIGNMENT ISSUES...")
 
         fixed_count = 0
-        for file_path, current_phase, file_path_str in misalignments:
+        for file_path, current_phase, file_path_str, correct_phase in misalignments:
             try:
                 with open(file_path, 'r', encoding='utf-8') as f:
                     content = f.read()
@@ -196,20 +222,12 @@ class DocumentationRefreshCampaign:
                 if len(parts) >= 3:
                     yaml_content = parts[1]
 
-                    # Determine correct phase from file path
-                    for dir_pattern, correct_phase in self.phase_mappings.items():
-                        if dir_pattern in file_path_str:
-                            new_phase = f"{correct_phase}.x"
-                            break
-                    else:
-                        continue  # Can't determine correct phase
-
                     # Update evolutionary_phase
                     yaml_lines = yaml_content.strip().split('\n')
                     updated_lines = []
                     for line in yaml_lines:
                         if line.strip().startswith('evolutionary_phase:'):
-                            updated_lines.append(f'evolutionary_phase: \'{new_phase}\'')
+                            updated_lines.append(f'evolutionary_phase: \'{correct_phase}\'')
                         else:
                             updated_lines.append(line)
 

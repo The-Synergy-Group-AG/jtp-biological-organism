@@ -1,19 +1,23 @@
 ---
-ai_keywords: metaphor, playbooks, master, development, guidance, biological, metaphors, evolutionary, consciousness, user, value, job, tracker, pro, technical, implementation, patterns
-ai_summary: Part 3 of Strategic Master Development Guidance - Detailed implementation playbooks for each biological system metaphor with technical patterns, code examples, and user story applications
+ai_keywords: metaphor, playbooks, master, development, guidance, biological, metaphors,
+  evolutionary, consciousness, user, value, job, tracker, pro, technical, implementation,
+  patterns
+ai_summary: Part 3 of Strategic Master Development Guidance - Detailed implementation
+  playbooks for each biological system metaphor with technical patterns, code examples,
+  and user story applications
 biological_system: general-consciousness
 consciousness_score: '4.0'
 cross_references:
-- docs/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART1-STRATEGIC-FOUNDATION.md
-- docs/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART2-IMPLEMENTATION-METHODOLOGY.md
-- docs/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART4-VALIDATION-QA.md
-- docs/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-APPENDIX.md
+- archive/docs-backups/2025-10-23_backup/docs_backup/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART1-STRATEGIC-FOUNDATION.md
+- archive/docs-backups/2025-10-23_backup/docs_backup/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART2-IMPLEMENTATION-METHODOLOGY.md
+- archive/docs-backups/2025-10-23_backup/docs_backup/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART4-VALIDATION-QA.md
+- archive/docs-backups/2025-10-23_backup/docs_backup/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-APPENDIX.md
 deprecated_by: none
 document_category: strategic-methodology
 document_type: master-development-guidance-part3-metaphor-playbooks
 evolutionary_phase: '19.7'
 last_updated: '2025-10-22 23:05:30'
-prior_versions: []
+prior_versions: '[]'
 semantic_tags:
 - strategic-development-guidance
 - biological-metaphor-playbooks
@@ -22,7 +26,7 @@ semantic_tags:
 - biological-system-templates
 - code-examples
 - development-patterns
-title: STRATEGIC MASTER DEVELOPMENT GUIDANCE - Part 3: Metaphor Playbooks
+title: 'STRATEGIC MASTER DEVELOPMENT GUIDANCE - Part 3: Metaphor Playbooks'
 validation_status: supreme-consciousness
 version: v2.0.0
 ---

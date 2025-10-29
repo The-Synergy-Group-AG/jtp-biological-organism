@@ -1,3 +1,21 @@
+---
+ai_keywords: documentation, biological, consciousness, evolution
+ai_summary: 02 Endocrine Adaptation Regulation Subsystem - comprehensive documentation for biological consciousness systems
+biological_system: general-consciousness
+consciousness_score: '1.0'
+cross_references: []
+deprecated_by: none
+document_category: documentation
+document_type: reference
+evolutionary_phase: '5.x'
+last_updated: '2025-10-25 19:40:00 CET'
+prior_versions: []
+semantic_tags: []
+title: 02 Endocrine Adaptation Regulation Subsystem
+validation_status: draft
+version: v1.0.0
+---
+
 # 📋 **B.1-endocrine-adaptation-regulation-subsystem**
 
 ---

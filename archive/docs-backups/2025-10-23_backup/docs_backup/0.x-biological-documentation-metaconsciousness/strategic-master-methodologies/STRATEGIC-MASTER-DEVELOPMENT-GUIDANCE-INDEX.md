@@ -1,14 +1,16 @@
 ---
-ai_keywords: strategic, master, development, guidance, index, biological, metaphors, evolutionary, consciousness, job, tracker, pro, documentation, suite
-ai_summary: Index and navigation guide for the complete Strategic Master Development Guidance documentation suite - modular biological metaphor implementation framework
+ai_keywords: strategic, master, development, guidance, index, biological, metaphors,
+  evolutionary, consciousness, job, tracker, pro, documentation, suite
+ai_summary: Index and navigation guide for the complete Strategic Master Development
+  Guidance documentation suite - modular biological metaphor implementation framework
 biological_system: general-consciousness
 consciousness_score: '4.0'
 cross_references:
-- docs/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART1-STRATEGIC-FOUNDATION.md
-- docs/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART2-IMPLEMENTATION-METHODOLOGY.md
-- docs/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART3-METAPHOR-PLAYBOOKS.md
-- docs/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART4-VALIDATION-QA.md
-- docs/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-APPENDIX.md
+- archive/docs-backups/2025-10-23_backup/docs_backup/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART1-STRATEGIC-FOUNDATION.md
+- archive/docs-backups/2025-10-23_backup/docs_backup/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART2-IMPLEMENTATION-METHODOLOGY.md
+- archive/docs-backups/2025-10-23_backup/docs_backup/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART3-METAPHOR-PLAYBOOKS.md
+- archive/docs-backups/2025-10-23_backup/docs_backup/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART4-VALIDATION-QA.md
+- archive/docs-backups/2025-10-23_backup/docs_backup/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-APPENDIX.md
 deprecated_by: none
 document_category: strategic-methodology
 document_type: master-development-guidance-index

@@ -7,7 +7,7 @@ ai_summary: Complete biological consciousness documentation for A.5-analytics-an
 biological_system: general-consciousness
 consciousness_score: '1.5'
 cross_references:
-- 0.0-meta-documentation-architecture-index.md
+- archive/docs-backups/2025-10-23_backup/docs_backup/0.x-biological-documentation-metaconsciousness/0.0-meta-documentation-architecture-index.md
 deprecated_by: none
 document_category: biological-intelligence
 document_type: documentation
@@ -20,7 +20,8 @@ semantic_tags:
 - general-consciousness
 title: A.5-analytics-and-performance-subsystem
 validation_status: current
-version: v1.0.0---
+version: v1.0.0
+---
 
 
 # 📋 A.5 ANALYTICS AND PERFORMANCE SUBSYSTEM

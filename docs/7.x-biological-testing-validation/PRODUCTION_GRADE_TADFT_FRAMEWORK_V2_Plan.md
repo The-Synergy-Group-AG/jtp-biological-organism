@@ -1,3 +1,21 @@
+---
+ai_keywords: documentation, biological, consciousness, evolution
+ai_summary: Production Grade Tadft Framework V2 Plan - comprehensive documentation for biological consciousness systems
+biological_system: general-consciousness
+consciousness_score: '1.0'
+cross_references: []
+deprecated_by: none
+document_category: documentation
+document_type: reference
+evolutionary_phase: '7.x'
+last_updated: '2025-10-25 19:40:00 CET'
+prior_versions: []
+semantic_tags: []
+title: Production Grade Tadft Framework V2 Plan
+validation_status: draft
+version: v1.0.0
+---
+
 # 📋 **Production Grade Tadft Framework V2 Plan**
 
 ---

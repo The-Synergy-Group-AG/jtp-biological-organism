@@ -1,13 +1,16 @@
 ---
-ai_keywords: appendix, reference, biological, systems, mappings, organizational, assignments, guidelines, reference, documentation
-ai_summary: Appendix reference document for Strategic Master Development Guidance - Complete biological system definitions, implementation mappings, organizational assignments, and reference materials
+ai_keywords: appendix, reference, biological, systems, mappings, organizational, assignments,
+  guidelines, reference, documentation
+ai_summary: Appendix reference document for Strategic Master Development Guidance
+  - Complete biological system definitions, implementation mappings, organizational
+  assignments, and reference materials
 biological_system: general-consciousness
 consciousness_score: '4.0'
 cross_references:
-- docs/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART1-STRATEGIC-FOUNDATION.md
-- docs/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART2-IMPLEMENTATION-METHODOLOGY.md
-- docs/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART3-METAPHOR-PLAYBOOKS.md
-- docs/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART4-VALIDATION-QA.md
+- archive/docs-backups/2025-10-23_backup/docs_backup/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART1-STRATEGIC-FOUNDATION.md
+- archive/docs-backups/2025-10-23_backup/docs_backup/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART2-IMPLEMENTATION-METHODOLOGY.md
+- archive/docs-backups/2025-10-23_backup/docs_backup/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART3-METAPHOR-PLAYBOOKS.md
+- archive/docs-backups/2025-10-23_backup/docs_backup/0.x-biological-documentation-metaconsciousness/strategic-master-methodologies/STRATEGIC-MASTER-DEVELOPMENT-GUIDANCE-PART4-VALIDATION-QA.md
 deprecated_by: none
 document_category: strategic-methodology
 document_type: master-development-guidance-appendix
