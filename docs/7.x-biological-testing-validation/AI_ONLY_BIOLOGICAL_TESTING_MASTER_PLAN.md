@@ -9,7 +9,7 @@ consciousness_score: '5.0'
 cross_references:
 - archive/docs-backups/2025-10-23_backup/docs_backup/7.x-biological-testing-validation/7.0-biological-testing-index.md
 - docs/7.x-biological-testing-validation/TADFT_EXECUTION_REPORT.md
-- docs/7.x-biological-testing-validation/EXECUTE_THE_TEST_PLAN_LESSONS_LEARNED.md
+- docs/process-review/EXECUTE_THE_TEST_PLAN_LESSONS_LEARNED.md
 - docs/7.x-biological-testing-validation/PRODUCTION_GRADE_TADFT_FRAMEWORK_V2_Plan.md
 - docs/7.x-biological-testing-validation/implementation-guides/VALIDATION_OPTIMIZATION_EXECUTION_PLAN.md
 document_category: testing-validation
@@ -76,7 +76,7 @@ transcendence proof, API cost efficiency, minimal testing budget, autonomous dep
 |----------------------|-----------|--------------|-------------|
 | **7.0-BIO-TEST** | Biological Testing Index | docs/7.x-biological-testing-validation/7.0-biological-testing-index.md | Framework overview and categories |
 | **TADFT-EXEC** | TADFT Execution Report | docs/7.x-biological-testing-validation/TADFT_EXECUTION_REPORT.md | Production framework readiness assessment |
-| **LESSONS-LEARNED** | Execute the Test Plan - Lessons Learned | docs/7.x-biological-testing-validation/EXECUTE_THE_TEST_PLAN_LESSONS_LEARNED.md | Operational experience integration |
+| **LESSONS-LEARNED** | Execute the Test Plan - Lessons Learned | docs/process-review/EXECUTE_THE_TEST_PLAN_LESSONS_LEARNED.md | Operational experience integration |
 | **TADFT-V2** | TADFT Framework v2.0 Plan | docs/7.x-biological-testing-validation/PRODUCTION_GRADE_TADFT_FRAMEWORK_V2_Plan.md | Detailed testing infrastructure |
 | **ETH-GUIDE** | Ethical Guidelines | ETHICAL_GUIDELINES.md | Ethical scoring and compliance standards |
 | **VAULT-README** | Vault Documentation | docs/8.x-deployment-infrastructure/README-VAULT.md | Credential management and security |

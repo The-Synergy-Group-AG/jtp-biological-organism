@@ -202,6 +202,10 @@ def calculate_document_ethics(content_verified, scope_accuracy, transparency, er
 - [x] **Version control** with complete change history
 - [x] **Search optimization** with keywords and tags
 - [x] **Publisher compliance** with scoring thresholds
+- [x] **Architectural consistency** requirements met (see ARCHITECTURAL_CONSISTENCY_FRAMEWORK.md)
+- [x] **Biological systems enumeration** uses standardized reference
+- [x] **Implementation status** follows unified terminology and metrics
+- [x] **User story counts** use canonical 442 count consistently
 
 ### **Automatic Compliance Checks:**
 - ✅ **Metadata completeness** (17/17 fields required)

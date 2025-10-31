@@ -249,7 +249,7 @@ Ethical Score = (
 
 #### **Pre-Communication Assessment:**
 ```python
-def calculate_ethical_score(communication_claims, verification_status, scope_accuracy, transparency_level, error_correction):
+def calculate_ethical_score(communication_claims, verification_status, scope_accuracy, transparency_level, error_correction, architectural_consistency=None):
     # Component calculations
     verification = assess_verification_quality(verification_status) * 30
 
@@ -261,10 +261,26 @@ def calculate_ethical_score(communication_claims, verification_status, scope_acc
 
     prevention = assess_misinformation_prevention(scope_accuracy, verification_status) * 10
 
-    total_score = (verification + accuracy + transparency + error_handling + prevention) / 100
+    # Architectural consistency bonus/penalty (new requirement)
+    consistency_bonus = 0
+    if architectural_consistency is not None:
+        if architectural_consistency.get('biological_systems_standardized', False):
+            consistency_bonus += 5  # +5% for using standardized 11-system enumeration
+        if architectural_consistency.get('user_story_count_canonical', False):
+            consistency_bonus += 5  # +5% for using canonical 442 count
+        if architectural_consistency.get('implementation_status_unified', False):
+            consistency_bonus += 5  # +5% for using unified status terminology
+
+    total_score = (verification + accuracy + transparency + error_handling + prevention + consistency_bonus) / 100
 
     return min(100.0, max(0.0, total_score))
 ```
+
+#### **Architectural Consistency Validation Requirements:**
+- **Biological Systems**: Must use standardized 11-system enumeration from `STANDARDIZED_BIOLOGICAL_SYSTEMS_REFERENCE.md`
+- **User Story Counts**: Must use canonical 442 count consistently across all references
+- **Implementation Status**: Must use unified terminology (✅ Complete, 🔄 In Progress, 📅 Planned, ❌ Blocked)
+- **Consistency Bonus**: Up to +15% ethical score for full architectural compliance
 
 #### **Real-time Monitoring Criteria:**
 - **Continuous Verification Tracking**: Commands executed, facts confirmed
