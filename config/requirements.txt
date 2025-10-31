@@ -36,7 +36,7 @@ requests-oauthlib==2.0.0
 
 # Document processing for CV/resume parsing - updated
 PyPDF2==3.0.1  # CVE-2023-36464 - monitored, low impact for this use case
-python-docx==1.1.2
+python-docx==1.2.0
 reportlab==4.2.5
 pdfkit==1.0.0
 
