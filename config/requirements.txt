@@ -77,5 +77,5 @@ python-dateutil==2.9.0.post0
 pytz==2024.2
 click==8.1.8
 rich==13.9.4
-pyyaml==6.0.2
+pyyaml==6.0.3
 toml==0.10.2
