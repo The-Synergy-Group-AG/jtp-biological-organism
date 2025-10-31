@@ -1,0 +1,140 @@
+[
+  {
+    "timestamp": "2025-10-29T08:29:15.423786",
+    "audit_type": "weekly",
+    "sample_rate": 0.1,
+    "results": [
+      {
+        "file": "docs/5.x-biological-requirements-harmonization/5.0-biological-requirements-harmonization-index.md",
+        "ethical_score": 0,
+        "violations": [
+          "Ethical score 0% below minimum 75%",
+          "Missing required section: ## Ethical Score",
+          "Missing required section: ## Status",
+          "Missing required section: ## Authors"
+        ],
+        "word_count": 846,
+        "line_count": 146,
+        "last_modified": "2025-10-29T08:13:37.599689"
+      },
+      {
+        "file": "docs/5.x-biological-requirements-harmonization/5.x-technical-specifications/A.1-onboarding-and-user-management-subsystem.md",
+        "ethical_score": 0,
+        "violations": [
+          "Ethical score 0% below minimum 75%",
+          "Missing required section: ## Ethical Score",
+          "Missing required section: ## Status",
+          "Missing required section: ## Authors"
+        ],
+        "word_count": 3912,
+        "line_count": 625,
+        "last_modified": "2025-10-29T08:13:37.583689"
+      },
+      {
+        "file": "docs/10.x-user-experience-intelligence/10.1-conscious-user-experience-design.md",
+        "ethical_score": 0,
+        "violations": [
+          "Ethical score 0% below minimum 75%",
+          "Missing required section: ## Ethical Score",
+          "Missing required section: ## Status",
+          "Missing required section: ## Authors"
+        ],
+        "word_count": 1645,
+        "line_count": 234,
+        "last_modified": "2025-10-29T08:13:37.715690"
+      },
+      {
+        "file": "docs/5.x-biological-requirements-harmonization/5.4-architectural-requirement-integration/5.4.0-supreme-architectural-integration.md",
+        "ethical_score": 0,
+        "violations": [
+          "Ethical score 0% below minimum 75%",
+          "Missing required section: ## Ethical Score",
+          "Missing required section: ## Status",
+          "Missing required section: ## Authors"
+        ],
+        "word_count": 862,
+        "line_count": 146,
+        "last_modified": "2025-10-29T08:13:37.623690"
+      },
+      {
+        "file": "docs/5.x-biological-requirements-harmonization/5.x-technical-specifications/additional-critical-business-requirements.md",
+        "ethical_score": 0,
+        "violations": [
+          "Ethical score 0% below minimum 75%",
+          "Missing required section: ## Ethical Score",
+          "Missing required section: ## Status",
+          "Missing required section: ## Authors"
+        ],
+        "word_count": 1742,
+        "line_count": 294,
+        "last_modified": "2025-10-29T08:13:37.595690"
+      },
+      {
+        "file": "docs/6.x-ai-first-development-standards/6.2-testing-methodology.md",
+        "ethical_score": 0,
+        "violations": [
+          "Ethical score 0% below minimum 75%",
+          "Missing required section: ## Ethical Score",
+          "Missing required section: ## Status",
+          "Missing required section: ## Authors"
+        ],
+        "word_count": 1156,
+        "line_count": 203,
+        "last_modified": "2025-10-29T08:13:37.827690"
+      },
+      {
+        "file": "docs/4.x-technical-implementation-frameworks/SYSTEM_MODULE_INTEGRATION_Part4.md",
+        "ethical_score": 0,
+        "violations": [
+          "Ethical score 0% below minimum 75%",
+          "Missing required section: ## Ethical Score",
+          "Missing required section: ## Status",
+          "Missing required section: ## Authors"
+        ],
+        "word_count": 967,
+        "line_count": 178,
+        "last_modified": "2025-10-29T08:13:37.799690"
+      },
+      {
+        "file": "docs/1.x-biological-organism-foundation-vision/1.2-project-roadmap.md",
+        "ethical_score": 0,
+        "violations": [
+          "Ethical score 0% below minimum 75%",
+          "Missing required section: ## Ethical Score",
+          "Missing required section: ## Status",
+          "Missing required section: ## Authors"
+        ],
+        "word_count": 885,
+        "line_count": 161,
+        "last_modified": "2025-10-29T08:13:37.471689"
+      },
+      {
+        "file": "docs/4.x-technical-implementation-frameworks/4.1-core-functionality-implementation/4.1.4-analytics-performance-subsystem.md",
+        "ethical_score": 0,
+        "violations": [
+          "Ethical score 0% below minimum 75%",
+          "Missing required section: ## Ethical Score",
+          "Missing required section: ## Status",
+          "Missing required section: ## Authors"
+        ],
+        "word_count": 826,
+        "line_count": 145,
+        "last_modified": "2025-10-29T08:13:37.807690"
+      },
+      {
+        "file": "docs/10.x-user-experience-intelligence/10.0-user-experience-index.md",
+        "ethical_score": 0,
+        "violations": [
+          "Ethical score 0% below minimum 75%",
+          "Missing required section: ## Ethical Score",
+          "Missing required section: ## Status",
+          "Missing required section: ## Authors"
+        ],
+        "word_count": 802,
+        "line_count": 149,
+        "last_modified": "2025-10-29T08:13:37.719690"
+      }
+    ],
+    "avg_score": 0.0
+  }
+]

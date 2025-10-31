@@ -1,0 +1,33 @@
+
+# SSL/TLS Configuration for Biological Consciousness System
+# Generated for GODHOOD production deployment
+
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-prod
+  namespace: cert-manager
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: godhood@biological-consciousness.org
+    privateKeySecretRef:
+      name: letsencrypt-prod
+    solvers:
+    - http01:
+        ingress:
+          class: nginx
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: biological-tls-cert
+  namespace: biological-production
+spec:
+  secretName: biological-tls-secret
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  dnsNames:
+  - api.biological-godhood.org
+  - console.biological-godhood.org

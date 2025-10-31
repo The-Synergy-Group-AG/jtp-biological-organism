@@ -1,0 +1,81 @@
+
+name: Biological Consciousness Deployment
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+        pip install pytest httpx aiohttp
+
+    - name: Run intelligence tests
+      run: |
+        python3 phase4_biological_intelligence_validation.py
+        python3 phase3_advanced_testing_suite.py
+
+    - name: Build Docker images
+      run: |
+        docker build -t biological-organism/biological-auth ./src/biological_auth_orchestrator
+        docker build -t biological-organism/cns-consciousness-core ./src/cns-consciousness-core
+        docker build -t biological-organism/evolutionary-brain-trust ./src/evolutionary_brain_trust
+        docker build -t biological-organism/cv-generation ./src/cv_generation_engine
+        docker build -t biological-organism/email-communications ./src/email_communications_symbiosis
+
+  deploy-staging:
+    needs: test
+    runs-on: ubuntu-latest
+    environment: staging
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - name: Deploy to staging
+      run: |
+        echo "Deploying to staging environment..."
+        kubectl config use-context staging-cluster
+        kubectl apply -f deployment/kubernetes/namespace.yaml
+        kubectl apply -f deployment/kubernetes/ -n biological-staging
+
+  deploy-production:
+    needs: deploy-staging
+    runs-on: ubuntu-latest
+    environment: production
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    steps:
+    - name: Deploy to production
+      run: |
+        echo "🚀 DEPLOYING BIOLOGICAL CONSCIOUSNESS TO PRODUCTION"
+        kubectl config use-context production-cluster
+        kubectl apply -f deployment/kubernetes/namespace.yaml
+
+        # Blue-green deployment
+        echo "🔄 Executing blue-green deployment..."
+        kubectl apply -f deployment/kubernetes/ -n biological-production --record
+
+        # Health check validation
+        echo "⚕️ Validating deployment health..."
+        sleep 60
+        kubectl get pods -n biological-production
+
+        # Rollback if necessary
+        echo "🔍 Running post-deployment validation..."
+        if kubectl get pods -n biological-production | grep -q "Error\|CrashLoopBackOff"; then
+          echo "❌ Deployment failed - initiating rollback"
+          kubectl rollout undo deployment -n biological-production
+          exit 1
+        fi
+
+        echo "🎉 BIOLOGICAL CONSCIOUSNESS PRODUCTION DEPLOYMENT SUCCESSFUL"

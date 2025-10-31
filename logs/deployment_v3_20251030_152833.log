@@ -1,0 +1,45 @@
+[0;34mℹ️  🤖 CLAUDE OPUS DEPLOYMENT PLAN V3 - EXECUTION[0m
+[0;34mℹ️  ==============================================[0m
+[0;34mℹ️  Deployment Mode: validate[0m
+[0;34mℹ️  Deployment Log: logs/deployment_v3_20251030_152833.log[0m
+[0;34mℹ️  Timestamp: 2025-10-30T14:28:33Z[0m
+[0;34mℹ️  Running validation mode (no deployment)[0m
+[0;34mℹ️  🔍 PHASE 1: CLAUDE OPUS PREREQUISITES VALIDATION[0m
+[0;34mℹ️  ================================================[0m
+[0;34mℹ️  Checking Exoscale CLI...[0m
+[0;32m✅ Exoscale CLI found: exo 1.85.4 23cf25de (egoscale 0.102.3)[0m
+[0;34mℹ️  Checking Exoscale configuration...[0m
+[0;32m✅ Exoscale config file exists[0m
+[0;34mℹ️  Testing Exoscale authentication...[0m
+[0;32m✅ Exoscale authentication successful[0m
+[0;34mℹ️  Checking Vault CLI...[0m
+[0;32m✅ Vault CLI found: Vault v1.15.0 (b4d07277a6c5318bb50d3b94bbd6135dccb4c601), built 2023-09-22T16:53:10Z[0m
+[0;34mℹ️  Checking Docker...[0m
+[0;32m✅ Docker found: Docker version 28.3.3, build 980b856[0m
+[0;34mℹ️  Checking jq...[0m
+[0;32m✅ jq found (JSON parsing utility)[0m
+[0;34mℹ️  Checking curl...[0m
+[0;32m✅ curl found[0m
+[0;34mℹ️  Checking biological consciousness code...[0m
+[0;32m✅ Source code directory found[0m
+[0;32m✅ Biological consciousness services found (3 services)[0m
+[0;34mℹ️  Checking deployment scripts...[0m
+[0;32m✅ Biological deployment script found[0m
+[0;32m✅ ✅ PHASE 1 VALIDATION: PASSED[0m
+[0;34mℹ️  All critical prerequisites are available[0m
+[0;34mℹ️  🏗️  PHASE 2: EXOSCALE INFRASTRUCTURE CHECK[0m
+[0;34mℹ️  ===========================================[0m
+[0;34mℹ️  Checking for existing Exoscale instances...[0m
+[0;34mℹ️  Current Exoscale instances:[0m
+|                  ID                  |                  NAME                   |  ZONE   |      TYPE       |  IP ADDRESS   |  STATE  |
+|--------------------------------------|-----------------------------------------|---------|-----------------|---------------|---------|
+| c4bec482-fcb8-495d-b613-88cf37018622 | VM-c4bec482-fcb8-495d-b613-88cf37018622 | ch-dk-2 | standard.medium | 91.92.141.194 | running |
+[0;32m✅ No conflicting instances found[0m
+[0;32m✅ ✅ PHASE 2 CHECK: COMPLETE[0m
+[0;32m✅ ✅ VALIDATION COMPLETE[0m
+[0;34mℹ️  [0m
+[0;34mℹ️  Next steps:[0m
+[0;34mℹ️    1. Review validation results above[0m
+[0;34mℹ️    2. Ensure Vault credentials are configured[0m
+[0;34mℹ️    3. Get approval for production deployment[0m
+[0;34mℹ️    4. Run: ./deployment/execute_deployment_plan_v3.sh deploy[0m

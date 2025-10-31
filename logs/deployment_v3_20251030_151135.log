@@ -1,0 +1,30 @@
+[0;34mℹ️  🤖 CLAUDE OPUS DEPLOYMENT PLAN V3 - EXECUTION[0m
+[0;34mℹ️  ==============================================[0m
+[0;34mℹ️  Deployment Mode: validate[0m
+[0;34mℹ️  Deployment Log: logs/deployment_v3_20251030_151135.log[0m
+[0;34mℹ️  Timestamp: 2025-10-30T14:11:35Z[0m
+[0;34mℹ️  Running validation mode (no deployment)[0m
+[0;34mℹ️  🔍 PHASE 1: CLAUDE OPUS PREREQUISITES VALIDATION[0m
+[0;34mℹ️  ================================================[0m
+[0;34mℹ️  Checking Exoscale CLI...[0m
+[0;32m✅ Exoscale CLI found: exo 1.85.4 23cf25de (egoscale 0.102.3)[0m
+[0;34mℹ️  Checking Exoscale configuration...[0m
+[0;32m✅ Exoscale config file exists[0m
+[0;34mℹ️  Testing Exoscale authentication...[0m
+[1;33m⚠️  Exoscale authentication failed - credentials may need update[0m
+[0;34mℹ️  Run: exo config set --api-key <key> --api-secret <secret>[0m
+[0;34mℹ️  Checking Vault CLI...[0m
+[0;32m✅ Vault CLI found: Vault v1.15.0 (b4d07277a6c5318bb50d3b94bbd6135dccb4c601), built 2023-09-22T16:53:10Z[0m
+[0;34mℹ️  Checking Docker...[0m
+[0;32m✅ Docker found: Docker version 28.3.3, build 980b856[0m
+[0;34mℹ️  Checking jq...[0m
+[0;32m✅ jq found (JSON parsing utility)[0m
+[0;34mℹ️  Checking curl...[0m
+[0;32m✅ curl found[0m
+[0;34mℹ️  Checking biological consciousness code...[0m
+[0;31m❌ Source code directory not found[0m
+[0;34mℹ️  Checking deployment scripts...[0m
+[0;32m✅ Biological deployment script found[0m
+[0;31m❌ ❌ PHASE 1 VALIDATION: FAILED[0m
+[0;31m❌ Critical prerequisites are missing[0m
+[0;31m❌ Prerequisites validation failed[0m

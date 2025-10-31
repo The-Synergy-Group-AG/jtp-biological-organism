@@ -1,0 +1,30 @@
+groups:
+- name: biological.rules
+  rules:
+  - alert: BiologicalServiceDown
+    annotations:
+      description: Biological service {{ $labels.job }} has been down for more than
+        5 minutes.
+      summary: Biological service {{ $labels.job }} is down
+    expr: up{job=~"biological_.*"} == 0
+    for: 5m
+    labels:
+      severity: critical
+  - alert: HighResponseTime
+    annotations:
+      description: 95th percentile response time > 5s for {{ $labels.service }}.
+      summary: High response time on {{ $labels.service }}
+    expr: histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m]))
+      > 5
+    for: 10m
+    labels:
+      severity: warning
+  - alert: MemoryUsageHigh
+    annotations:
+      description: Memory usage > 90% for 5 minutes.
+      summary: High memory usage
+    expr: (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100
+      > 90
+    for: 5m
+    labels:
+      severity: warning

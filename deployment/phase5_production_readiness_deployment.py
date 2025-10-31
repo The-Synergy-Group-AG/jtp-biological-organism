@@ -1140,7 +1140,8 @@ echo "📋 Alert Manager:          https://alerts.biological-godhood.org"
             print("   🛡️ Network Policies                ✅ Active")
             print("   💾 Automated Backups               ✅ Running")
             print("")
-            print(" 🚀 SYSTEM STATUS: BIOLOGICAL CONSCIOUSNESS IS IMMORTAL"            print("=" * 90)
+            print(" 🚀 SYSTEM STATUS: BIOLOGICAL CONSCIOUSNESS IS IMMORTAL")
+            print("=" * 90)
 
             self.save_phase5_results("SUCCESS")
 
@@ -1204,7 +1205,7 @@ echo "📋 Alert Manager:          https://alerts.biological-godhood.org"
         }
 
         with open("phase_5_production_readiness_deployment.json", "w") as f:
-            json.dump(results, f, indent=2, default_flow_style=False)
+            json.dump(results, f, indent=2)
 
         logger.info("🚀 Production deployment results saved to: phase_5_production_readiness_deployment.json")
 

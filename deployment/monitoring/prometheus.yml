@@ -1,0 +1,44 @@
+global:
+  evaluation_interval: 15s
+  scrape_interval: 15s
+rule_files:
+- rules.yml
+scrape_configs:
+- job_name: biological_biological-auth
+  metrics_path: /metrics
+  scrape_interval: 30s
+  static_configs:
+  - targets:
+    - biological-auth-service.biological-production.svc.cluster.local:9101
+- job_name: biological_cns-consciousness-core
+  metrics_path: /metrics
+  scrape_interval: 30s
+  static_configs:
+  - targets:
+    - cns-consciousness-core-service.biological-production.svc.cluster.local:8101
+- job_name: biological_evolutionary-brain-trust
+  metrics_path: /metrics
+  scrape_interval: 30s
+  static_configs:
+  - targets:
+    - evolutionary-brain-trust-service.biological-production.svc.cluster.local:9998
+- job_name: biological_cv-generation
+  metrics_path: /metrics
+  scrape_interval: 30s
+  static_configs:
+  - targets:
+    - cv-generation-service.biological-production.svc.cluster.local:9102
+- job_name: biological_email-communications
+  metrics_path: /metrics
+  scrape_interval: 30s
+  static_configs:
+  - targets:
+    - email-communications-service.biological-production.svc.cluster.local:9104
+- job_name: prometheus
+  static_configs:
+  - targets:
+    - localhost:9090
+- job_name: node
+  static_configs:
+  - targets:
+    - node-exporter:9100

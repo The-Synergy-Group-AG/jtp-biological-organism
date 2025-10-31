@@ -1,0 +1,106 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cv-generation-deployment
+  namespace: biological-production
+  labels:
+    app: biological-organism
+    component: cv-generation
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: biological-organism
+      component: cv-generation
+  template:
+    metadata:
+      labels:
+        app: biological-organism
+        component: cv-generation
+    spec:
+      containers:
+      - name: cv-generation
+        image: biological-organism/cv-generation:latest
+        ports:
+        - containerPort: 9102
+          protocol: TCP
+        env:
+        - name: ENVIRONMENT
+          value: "production"
+        - name: SERVICE_PORT
+          value: "9102"
+        - name: MONITORING_ENABLED
+          value: "true"
+        resources:
+          limits:
+            cpu: "1000m"
+            memory: "1Gi"
+          requests:
+            cpu: "500m"
+            memory: "512Mi"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 9102
+          initialDelaySeconds: 60
+          periodSeconds: 30
+          timeoutSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 9102
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+        volumeMounts:
+        - name: logs-volume
+          mountPath: /var/log/biological
+      volumes:
+      - name: logs-volume
+        persistentVolumeClaim:
+          claimName: biological-logs-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cv-generation-service
+  namespace: biological-production
+  labels:
+    app: biological-organism
+    component: cv-generation
+spec:
+  selector:
+    app: biological-organism
+    component: cv-generation
+  ports:
+  - name: http
+    port: 9102
+    targetPort: 9102
+    protocol: TCP
+  type: ClusterIP
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cv-generation-ingress
+  namespace: biological-production
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+spec:
+  tls:
+  - hosts:
+    - cv-generation.biological-godhood.org
+    secretName: cv-generation-tls
+  rules:
+  - host: cv-generation.biological-godhood.org
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: cv-generation-service
+            port:
+              number: 9102

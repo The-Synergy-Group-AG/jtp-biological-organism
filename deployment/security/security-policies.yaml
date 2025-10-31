@@ -1,0 +1,42 @@
+networkPolicies:
+- egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          app: biological-organism
+  - to:
+    - ipBlock:
+        cidr: 8.8.8.8/32
+  - to:
+    - ipBlock:
+        cidr: 8.8.4.4/32
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: biological-organism
+    ports:
+    - port: http
+      protocol: TCP
+  name: biological-network-policy
+  podSelector:
+    matchLabels:
+      app: biological-organism
+  policyTypes:
+  - Ingress
+  - Egress
+podSecurityPolicy:
+  allowPrivilegeEscalation: false
+  fsGroup:
+    ranges:
+    - max: 2000
+      min: 1000
+    rule: MustRunAs
+  privileged: false
+  runAsUser:
+    rule: MustRunAsNonRoot
+  supplementalGroups:
+    ranges:
+    - max: 2000
+      min: 1000
+    rule: MustRunAs

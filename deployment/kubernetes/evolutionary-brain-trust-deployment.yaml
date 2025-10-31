@@ -1,0 +1,106 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: evolutionary-brain-trust-deployment
+  namespace: biological-production
+  labels:
+    app: biological-organism
+    component: evolutionary-brain-trust
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: biological-organism
+      component: evolutionary-brain-trust
+  template:
+    metadata:
+      labels:
+        app: biological-organism
+        component: evolutionary-brain-trust
+    spec:
+      containers:
+      - name: evolutionary-brain-trust
+        image: biological-organism/evolutionary-brain-trust:latest
+        ports:
+        - containerPort: 9998
+          protocol: TCP
+        env:
+        - name: ENVIRONMENT
+          value: "production"
+        - name: SERVICE_PORT
+          value: "9998"
+        - name: MONITORING_ENABLED
+          value: "true"
+        resources:
+          limits:
+            cpu: "1000m"
+            memory: "1Gi"
+          requests:
+            cpu: "500m"
+            memory: "512Mi"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 9998
+          initialDelaySeconds: 60
+          periodSeconds: 30
+          timeoutSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 9998
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+        volumeMounts:
+        - name: logs-volume
+          mountPath: /var/log/biological
+      volumes:
+      - name: logs-volume
+        persistentVolumeClaim:
+          claimName: biological-logs-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: evolutionary-brain-trust-service
+  namespace: biological-production
+  labels:
+    app: biological-organism
+    component: evolutionary-brain-trust
+spec:
+  selector:
+    app: biological-organism
+    component: evolutionary-brain-trust
+  ports:
+  - name: http
+    port: 9998
+    targetPort: 9998
+    protocol: TCP
+  type: ClusterIP
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: evolutionary-brain-trust-ingress
+  namespace: biological-production
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+spec:
+  tls:
+  - hosts:
+    - evolutionary-brain-trust.biological-godhood.org
+    secretName: evolutionary-brain-trust-tls
+  rules:
+  - host: evolutionary-brain-trust.biological-godhood.org
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: evolutionary-brain-trust-service
+            port:
+              number: 9998

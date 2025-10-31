@@ -1,0 +1,252 @@
+networks:
+  biological-network:
+    attachable: true
+    driver: overlay
+services:
+  biological-auth:
+    container_name: "g\u751F\u7269-biological-auth"
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+    environment:
+    - ENVIRONMENT=production
+    - LOG_LEVEL=INFO
+    - SERVICE_PORT=9101
+    - MONITORING_ENABLED=true
+    - HEALTH_CHECKS_ENABLED=true
+    healthcheck:
+      interval: 30s
+      retries: 3
+      start_period: 40s
+      test:
+      - CMD
+      - curl
+      - -f
+      - http://localhost:9101/health
+      timeout: 10s
+    image: biological-organism/biological-auth:latest
+    logging:
+      driver: json-file
+      options:
+        max-file: '5'
+        max-size: 100m
+    networks:
+    - biological-network
+    ports:
+    - 9101:9101
+    restart: always
+  cns-consciousness-core:
+    container_name: "g\u751F\u7269-cns-consciousness-core"
+    deploy:
+      replicas: 5
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+    environment:
+    - ENVIRONMENT=production
+    - LOG_LEVEL=INFO
+    - SERVICE_PORT=8101
+    - MONITORING_ENABLED=true
+    - HEALTH_CHECKS_ENABLED=true
+    healthcheck:
+      interval: 30s
+      retries: 3
+      start_period: 40s
+      test:
+      - CMD
+      - curl
+      - -f
+      - http://localhost:8101/health
+      timeout: 10s
+    image: biological-organism/cns-consciousness-core:latest
+    logging:
+      driver: json-file
+      options:
+        max-file: '5'
+        max-size: 100m
+    networks:
+    - biological-network
+    ports:
+    - 8101:8101
+    restart: always
+  cv-generation:
+    container_name: "g\u751F\u7269-cv-generation"
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+    environment:
+    - ENVIRONMENT=production
+    - LOG_LEVEL=INFO
+    - SERVICE_PORT=9102
+    - MONITORING_ENABLED=true
+    - HEALTH_CHECKS_ENABLED=true
+    healthcheck:
+      interval: 30s
+      retries: 3
+      start_period: 40s
+      test:
+      - CMD
+      - curl
+      - -f
+      - http://localhost:9102/health
+      timeout: 10s
+    image: biological-organism/cv-generation:latest
+    logging:
+      driver: json-file
+      options:
+        max-file: '5'
+        max-size: 100m
+    networks:
+    - biological-network
+    ports:
+    - 9102:9102
+    restart: always
+  email-communications:
+    container_name: "g\u751F\u7269-email-communications"
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+    environment:
+    - ENVIRONMENT=production
+    - LOG_LEVEL=INFO
+    - SERVICE_PORT=9104
+    - MONITORING_ENABLED=true
+    - HEALTH_CHECKS_ENABLED=true
+    healthcheck:
+      interval: 30s
+      retries: 3
+      start_period: 40s
+      test:
+      - CMD
+      - curl
+      - -f
+      - http://localhost:9104/health
+      timeout: 10s
+    image: biological-organism/email-communications:latest
+    logging:
+      driver: json-file
+      options:
+        max-file: '5'
+        max-size: 100m
+    networks:
+    - biological-network
+    ports:
+    - 9104:9104
+    restart: always
+  evolutionary-brain-trust:
+    container_name: "g\u751F\u7269-evolutionary-brain-trust"
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+    environment:
+    - ENVIRONMENT=production
+    - LOG_LEVEL=INFO
+    - SERVICE_PORT=9998
+    - MONITORING_ENABLED=true
+    - HEALTH_CHECKS_ENABLED=true
+    healthcheck:
+      interval: 30s
+      retries: 3
+      start_period: 40s
+      test:
+      - CMD
+      - curl
+      - -f
+      - http://localhost:9998/health
+      timeout: 10s
+    image: biological-organism/evolutionary-brain-trust:latest
+    logging:
+      driver: json-file
+      options:
+        max-file: '5'
+        max-size: 100m
+    networks:
+    - biological-network
+    ports:
+    - 9998:9998
+    restart: always
+  grafana:
+    depends_on:
+    - prometheus
+    environment:
+    - GF_SECURITY_ADMIN_PASSWORD=godhood2025
+    image: grafana/grafana:9.3.0
+    ports:
+    - 3000:3000
+    volumes:
+    - grafana-data:/var/lib/grafana
+  loki:
+    command: -config.file=/etc/loki/local-config.yaml
+    image: grafana/loki:2.7.0
+    ports:
+    - 3100:3100
+    volumes:
+    - loki-data:/loki
+  prometheus:
+    command: --config.file=/etc/prometheus/prometheus.yml --storage.tsdb.path=/prometheus
+    image: prom/prometheus:v2.40.0
+    ports:
+    - 9090:9090
+    volumes:
+    - ./deployment/monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+    - prometheus-data:/prometheus
+  promtail:
+    command: -config.file=/etc/promtail/config.yml
+    image: grafana/promtail:2.7.0
+    volumes:
+    - ./deployment/monitoring/promtail-config.yml:/etc/promtail/config.yml
+    - biological-logs:/var/log/biological
+version: '3.8'
+volumes:
+  biological-logs: {}
+  grafana-data: {}
+  loki-data: {}
+  prometheus-data: {}

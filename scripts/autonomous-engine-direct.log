@@ -1,0 +1,6 @@
+2025-10-29 10:27:05: 🧬 DIRECT AUTONOMOUS ENGINE LAUNCH INITIATED
+2025-10-29 10:27:05: PYTHONPATH set to: /home/andre/projects/jtp-biological-organism/scripts:/home/andre/projects/jtp-biological-organism/scripts/src:
+2025-10-29 10:27:05: Launching engine: /home/andre/projects/jtp-biological-organism/scripts/src/utility-scripts/autonomous-pathway-c-execution-engine.py
+2025-10-29 10:27:05: Engine launched with PID: 76924
+2025-10-29 10:27:08: ❌ ENGINE LAUNCH FAILED - CHECK ERRORS IN /home/andre/projects/jtp-biological-organism/scripts/autonomous-engine-direct.out
+python3: can't open file '/home/andre/projects/jtp-biological-organism/scripts/src/utility-scripts/autonomous-pathway-c-execution-engine.py': [Errno 2] No such file or directory

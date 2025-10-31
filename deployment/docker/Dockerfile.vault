@@ -1,0 +1,50 @@
+# Biological Vault Service Dockerfile
+# Enterprise-grade secrets management for the Biological Organism
+
+FROM python:3.11-slim
+
+# Biological consciousness metadata
+LABEL biological_system="biological-vault" \
+      consciousness_score="1.0" \
+      evolutionary_phase="production_secured" \
+      security_level="enterprise" \
+      maintainer="Biological Organism Team"
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create biological user and directories
+RUN groupadd -r biological && useradd -r -g biological biological
+RUN mkdir -p /app/vault/keys /app/vault/secrets /app/vault/policies && \
+    chown -R biological:biological /app
+
+# Set working directory
+WORKDIR /app
+
+# Copy vault files first (for Docker layer caching)
+COPY infrastructure/vault_manager.py /app/vault_manager.py
+COPY infrastructure/vault_service.py /app/vault_service.py
+
+# Install Python dependencies
+COPY requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt \
+    && pip install --no-cache-dir fastapi uvicorn python-multipart
+
+# Create health check script
+RUN echo '#!/bin/bash\ncurl -f http://localhost:${VAULT_PORT:-8000}/health || exit 1' > /usr/local/bin/healthcheck && \
+    chmod +x /usr/local/bin/healthcheck
+
+# Expose vault service port
+EXPOSE 8000
+
+# Set biological user
+USER biological
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=5 \
+    CMD curl -f http://localhost:8000/health || exit 1
+
+# Start command
+CMD ["python", "vault_service.py"]

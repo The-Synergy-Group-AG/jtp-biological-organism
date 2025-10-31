@@ -1,0 +1,106 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: email-communications-deployment
+  namespace: biological-production
+  labels:
+    app: biological-organism
+    component: email-communications
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: biological-organism
+      component: email-communications
+  template:
+    metadata:
+      labels:
+        app: biological-organism
+        component: email-communications
+    spec:
+      containers:
+      - name: email-communications
+        image: biological-organism/email-communications:latest
+        ports:
+        - containerPort: 9104
+          protocol: TCP
+        env:
+        - name: ENVIRONMENT
+          value: "production"
+        - name: SERVICE_PORT
+          value: "9104"
+        - name: MONITORING_ENABLED
+          value: "true"
+        resources:
+          limits:
+            cpu: "1000m"
+            memory: "1Gi"
+          requests:
+            cpu: "500m"
+            memory: "512Mi"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 9104
+          initialDelaySeconds: 60
+          periodSeconds: 30
+          timeoutSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 9104
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+        volumeMounts:
+        - name: logs-volume
+          mountPath: /var/log/biological
+      volumes:
+      - name: logs-volume
+        persistentVolumeClaim:
+          claimName: biological-logs-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: email-communications-service
+  namespace: biological-production
+  labels:
+    app: biological-organism
+    component: email-communications
+spec:
+  selector:
+    app: biological-organism
+    component: email-communications
+  ports:
+  - name: http
+    port: 9104
+    targetPort: 9104
+    protocol: TCP
+  type: ClusterIP
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: email-communications-ingress
+  namespace: biological-production
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+spec:
+  tls:
+  - hosts:
+    - email-communications.biological-godhood.org
+    secretName: email-communications-tls
+  rules:
+  - host: email-communications.biological-godhood.org
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: email-communications-service
+            port:
+              number: 9104

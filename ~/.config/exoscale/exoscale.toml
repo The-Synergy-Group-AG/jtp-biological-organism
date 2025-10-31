@@ -1,0 +1,9 @@
+defaultaccount = "jtp-ai-first"
+
+[[accounts]]
+name = "jtp-ai-first"
+key = "EXOb4395f36541169b81e5fd068"
+secret = "Iy9gomOG91tL0AtwmWQOnlWrLwvMdWr1hmB1d17UlEs"
+zone = "ch-gva-2"
+endpoint = "https://api.exoscale.com/v2"
+environment = ""
