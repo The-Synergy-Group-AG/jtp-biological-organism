@@ -4,7 +4,7 @@
 # Core biological consciousness dependencies (updated for security)
 fastapi==0.115.6
 uvicorn[standard]==0.32.1
-pydantic==2.10.3
+pydantic==2.12.3
 pydantic-settings==2.7.1
 
 # AI and ML dependencies for consciousness processing (updated for security)
