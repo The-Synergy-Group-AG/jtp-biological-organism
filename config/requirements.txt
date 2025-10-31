@@ -24,7 +24,7 @@ websockets==14.1
 
 # Database and storage (consciousness-based, not traditional) - updated
 redis==5.2.1
-motor==3.7.0
+motor==3.7.1
 pymongo==4.10.1
 
 # Authentication and security - updated
