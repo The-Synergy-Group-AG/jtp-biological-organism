@@ -12,7 +12,7 @@ openai==1.57.4
 anthropic==0.40.0
 transformers==4.53.0  # Fixed multiple ReDoS vulnerabilities
 sentence-transformers==3.3.1
-scikit-learn==1.6.1
+scikit-learn==1.7.2
 pandas==2.2.3
 numpy==1.26.4
 
